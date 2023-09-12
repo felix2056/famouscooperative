@@ -1,0 +1,317 @@
+<!DOCTYPE html><html lang="zh-cn" itemscope="" itemtype="http://schema.org/Article"><head><script async="" src="../js/optimize.js"></script><script>window.redwood={"consentGroups":{"C0001":true,"C0002":true,"C0003":true,"C0004":true},"country":"NG","colo":"LOS","user":null,"locale":"zh-CN"}</script>
+    <script type="text/javascript">
+      var OneTrust={"geolocationResponse":{"countryCode":"NG"}}
+    </script>
+    <script>
+     const acceptedLocales = [
+      'en-au',
+      'en-ca',
+      'en-gb',
+      'en-in',
+      'en-us',
+      'de-de',
+      'es-es',
+      'fr-fr',
+      'it-it',
+      'ja-jp',
+      'ko-kr',
+      'pt-br',
+      'zh-tw',
+      'zh-cn',
+      'zh-Hans-CN',
+    ];
+    const orphanLocales = [
+      'ru-ru',
+      'sv-se',
+      'nl-nl',
+      'vi-vn',
+      'th-th',
+      'id-id',
+      'tr-tr',
+    ];
+    const ignoreList = [
+      'apps',
+      'docs',
+      'rate-limit-test',
+      'rss',
+    ]
+    function getPathFromLocale(locale, code, pathString) {
+      if ( locale === code || !acceptedLocales.includes(code) || acceptedLocales.includes(locale) || orphanLocales.includes(locale) ) {
+        return null;
+      } else {
+        return [code, locale ? locale : '', pathString].filter(part => part !== '').join('/');
+      }
+    };
+    if(window.location.host !== 'staging.cloudflare-cn.com' && window.location.host !== 'cloudflare-cn.com' && window.location.host !== 'www.cloudflare-cn.com') {
+      if (localStorage.getItem('langPreference')) {
+        if (localStorage.getItem('langPreference').toLowerCase() != 'en-us') {
+            const langPreference = localStorage.getItem('langPreference').toLowerCase();
+            const splitPath = window.location.pathname.split('/').filter(part => part !== '');
+            const currentLang = splitPath[0];
+            if (!acceptedLocales.includes(currentLang) && !orphanLocales.includes(currentLang) && !ignoreList.includes(splitPath[0])) {
+              splitPath.splice(0, 0, langPreference.toLowerCase());
+              const newUrl = 'https://' + window.location.hostname + '/' + splitPath.join('/') + '/' + window.location.search;
+              window.location.replace(newUrl);
+            }
+          }
+      } else if (!window.navigator.userAgent.toLowerCase().includes('googlebot')) {
+          const requestedLang = window.navigator.language;
+          const splitPath = window.location.pathname.split('/').filter(part => part !== '');
+          const maybeLocale = splitPath.shift();
+          const splitPathString = splitPath.join('/');
+
+          if (requestedLang && requestedLang.toLowerCase() != "en-us") {
+            const requestedLangCode = requestedLang
+              .toLowerCase()
+              .replace('_', '-');
+            const redirectPath = getPathFromLocale(maybeLocale, requestedLangCode, splitPathString);
+            if (redirectPath && !ignoreList.includes(maybeLocale)) {
+              window.location.replace('https://' + window.location.hostname + '/' + redirectPath + '/' + window.location.search);
+            }
+          }
+      }
+    }
+    </script>
+<meta charset="UTF-8">
+<title>This page is missing | Cloudflare </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://www.cloudflare.com/fonts/cloudflare.ttf/">
+<meta itemprop="name" content="This page is missing | Cloudflare ">
+<meta itemprop="description" content="Cloudflare is a free global CDN and DNS provider that can speed up and protect any site online">
+<meta itemprop="image" content="https://www.cloudflare.com/img/cf-facebook-card.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="This page is missing | Cloudflare ">
+<meta name="twitter:description" content="Cloudflare is a free global CDN and DNS provider that can speed up and protect any site online">
+<meta name="twitter:site" content="@cloudflare">
+<meta name="twitter:creator" content="@cloudflare">
+<meta name="twitter:image" content="https://www.cloudflare.com/img/cf-twitter-card.png">
+<meta property="og:title" content="This page is missing | Cloudflare ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.cloudflare.com/zh-cn/fonts/cloudflare.ttf/">
+<meta property="og:image" content="https://www.cloudflare.com/img/cf-facebook-card.png">
+<meta property="og:description" content="Cloudflare is a free global CDN and DNS provider that can speed up and protect any site online">
+<meta property="og:site_name" content="Cloudflare">
+<meta class="swiftype" name="language" data-type="string" content="zh-cn">
+<meta class="swiftype" name="title" data-type="string" content="This page is missing">
+<meta class="swiftype" name="description" data-type="string" content="Cloudflare is a free global CDN and DNS provider that can speed up and protect any site online">
+<meta class="swiftype" name="url" data-type="enum" content="https://www.cloudflare.com/zh-cn/fonts/cloudflare.ttf/">
+<meta name="baidu-site-verification" content="N0CNJSCAk5">
+<meta name="baidu-site-verification" content="Kj9FQ1BEWh">
+<meta name="baidu-site-verification" content="OEDgbws38Y">
+<meta name="baidu-site-verification" content="code-LHd7bZjChM">
+<link rel="icon" type="image/x-icon" href="../favicon_1.ico">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-128.png" sizes="128x128">
+<meta name="application-name" content="Cloudflare">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="msapplication-square70x70logo" content="/mstile-70x70.png">
+<meta name="msapplication-square150x150logo" content="/mstile-150x150.png">
+<meta name="msapplication-wide310x150logo" content="/mstile-310x150.png">
+<meta name="msapplication-square310x310logo" content="/mstile-310x310.png">
+<noscript><style>.nojs-hide{display: none;}</style></noscript>
+<style>.async-hide {opacity: 0 !important}</style>
+<link rel="stylesheet" href="https://assets.www.cloudflare.com/css/application-7d1e9e47f6.min.css">
+<script nonce="dd43683d-9ce4-482c-b83e-c1623fce0e83">
+  window.CFJS = {
+    config: {
+      rumEnabled: true,
+      env: '/marketing-api',
+      availableLanguages: ''.split(','),
+      excludeMarketo: false,
+      marketoEnabled: true,
+      bizibleEnabled: true,
+      excludeHeapAnalytics: false,
+      asyncHide: false,
+      remarketingEnabled: false,
+      sentryDSN: 'https://bd9df81d859641f39ce626ce2a2cc90d@sentry.io/229513',
+      serverLang: "zh-cn",
+      isEnglish: false,
+      isLocalized: false,
+      intlTelInputUtils: '/js/chunk-ed207c16f1337d207f80.js',
+      cookieDomain: "cloudflare.com",
+      techtargetEnabled: true,
+      googleOptimizeEnabled: true,
+        marketoFormEmbedTranslations: "{\"50\":\"50+\",\"mb\":\"MB\",\"no\":\"否\",\"or\":\"或者\",\"all\":\"所有\",\"cdn\":\"CDN\",\"dns\":\"DNS\",\"ssl\":\"SSL\",\"yes\":\"是\",\"5 mb\":\"5 MB\",\"asia\":\"亚洲\",\"back\":\"返回\",\"blog\":\"博客\",\"both\":\"两者\",\"bots\":\"机器人\",\"chad\":\"乍得\",\"city\":\"城市：*\",\"cuba\":\"古巴\",\"ddos\":\"DDoS\",\"date\":\"日期\",\"fiji\":\"斐济\",\"guam\":\"关岛\",\"iran\":\"伊朗\",\"iraq\":\"伊拉克\",\"link\":\"链接\",\"mali\":\"马里\",\"niue\":\"纽埃\",\"none\":\"无\",\"oman\":\"阿曼\",\"past\":\"过去\",\"peru\":\"秘鲁\",\"plan\":\"计划\",\"rsvp\":\"注册\",\"send\":\"发送\",\"time\":\"时间\",\"togo\":\"多哥\",\"year\":\"年份\",\"10 mb\":\"10 MB\",\"apply\":\"应用\",\"asn\":\"ASN*\",\"aruba\":\"阿鲁巴\",\"benin\":\"贝宁\",\"chile\":\"智利\",\"china\":\"中国大陆\",\"cloud\":\"云\",\"congo\":\"刚果\",\"ebook\":\"电子书\",\"egypt\":\"埃及\",\"gabon\":\"加蓬\",\"ghana\":\"加纳\",\"haiti\":\"海地\",\"india\":\"印度\",\"italy\":\"意大利语\",\"japan\":\"日本\",\"kenya\":\"肯尼亚\",\"level\":\"级别\",\"libya\":\"利比亚\",\"macao\":\"中国澳门特别行政区\",\"malta\":\"马耳他\",\"nauru\":\"瑙鲁\",\"nepal\":\"尼泊尔\",\"niger\":\"尼日尔\",\"other\":\"其他\",\"palau\":\"帕劳\",\"phone\":\"电话：*\",\"qatar\":\"卡塔尔\",\"sales\":\"销售\",\"samoa\":\"萨摩亚\",\"spain\":\"西班牙\",\"state\":\"州\",\"sudan\":\"苏丹\",\"syria\":\"叙利亚\",\"title\":\"职位\",\"tonga\":\"汤加\",\"vegan\":\"严格素食者\",\"video\":\"视频\",\"watch\":\"观看\",\"yemen\":\"也门\",\"plans\":{\"pro\":{\"id\":\"pro\",\"displayName\":\"Pro 计划\"},\"free\":{\"id\":\"free\",\"displayName\":\"Free 计划\"},\"business\":{\"id\":\"business\",\"displayName\":\"Business 计划\"}},\"$3000\":\"$3000+\",\"100 mb\":\"100 MB\",\"africa\":\"非洲\",\"agenda\":\"议程\",\"angola\":\"安哥拉\",\"belize\":\"伯利兹\",\"bhutan\":\"不丹\",\"brazil\":\"巴西\",\"brunei\":\"文莱\",\"canada\":\"加拿大\",\"cyprus\":\"塞浦路斯\",\"email\":\"电子邮件：*\",\"europe\":\"欧洲\",\"filter\":\"筛选器\",\"france\":\"法国\",\"gambia\":\"冈比亚\",\"greece\":\"希腊\",\"guinea\":\"几内亚\",\"guyana\":\"圭亚那\",\"israel\":\"以色列\",\"jersey\":\"新泽西\",\"jordan\":\"约旦\",\"kosovo\":\"科索沃\",\"kuwait\":\"科威特\",\"latvia\":\"拉脱维亚\",\"length\":\"长度\",\"malawi\":\"马拉维\",\"mexico\":\"墨西哥\",\"monaco\":\"摩纳哥\",\"norway\":\"挪威\",\"panama\":\"巴拿马\",\"poland\":\"波兰\",\"rwanda\":\"卢旺达\",\"serbia\":\"塞尔维亚\",\"simple\":\"简单\",\"source\":\"来源\",\"submit\":\"提交\",\"sweden\":\"瑞典\",\"taiwan\":\"中国台湾省\",\"turkey\":\"土耳其\",\"tuvalu\":\"图瓦卢\",\"uganda\":\"乌干达\",\"zambia\":\"赞比亚\",\"address\":\"地址：*\",\"albania\":\"阿尔巴尼亚\",\"algeria\":\"阿尔及利亚\",\"analyst\":\"分析师\",\"andorra\":\"安道尔\",\"archive\":\"存档\",\"armenia\":\"亚美尼亚\",\"austria\":\"奥地利\",\"bahamas\":\"巴哈马\",\"bahrain\":\"巴林\",\"belarus\":\"白俄罗斯\",\"belgium\":\"比利时\",\"bermuda\":\"百慕大\",\"bolivia\":\"玻利维亚\",\"burundi\":\"布隆迪\",\"comment\":\"备注\",\"comoros\":\"科摩罗\",\"company\":\"公司：*\",\"complex\":\"复杂\",\"country\":\"国家/地区：*\",\"croatia\":\"克罗地亚\",\"denmark\":\"丹麦\",\"ecuador\":\"厄瓜多尔\",\"eritrea\":\"厄立特里亚\",\"estonia\":\"爱沙尼亚\",\"filters\":\"过滤器\",\"finland\":\"芬兰\",\"georgia\":\"格鲁吉亚\",\"germany\":\"德国\",\"grenada\":\"格林纳达\",\"hungary\":\"匈牙利\",\"iceland\":\"冰岛\",\"ireland\":\"爱尔兰\",\"jamaica\":\"牙买加\",\"lebanon\":\"黎巴嫩\",\"lesotho\":\"莱索托\",\"liberia\":\"利比里亚\",\"mayotte\":\"马约特\",\"morocco\":\"摩洛哥\",\"myanmar\":\"缅甸\",\"namibia\":\"纳米比亚\",\"nigeria\":\"尼日利亚\",\"oceania\":\"大洋洲\",\"offices\":\"办公室\",\"peering\":\"对等互连\",\"privacy\":\"隐私\",\"reunion\":\"留尼旺\",\"romania\":\"罗马尼亚\",\"senegal\":\"塞内加尔\",\"sign up\":\"公司*\",\"somalia\":\"索马里\",\"support\":\"支持\",\"tokelau\":\"托克劳\",\"tune in\":\"敬请收看精彩节目\",\"tunisia\":\"突尼斯\",\"ukraine\":\"乌克兰\",\"uruguay\":\"乌拉圭\",\"vanuatu\":\"瓦努阿图\",\"virtual\":\"虚拟 DNS\",\"webinar\":\"网络研讨会\",\"website\":\"网站：*\",\"activity\":\"活动\",\"air date\":\"播放日期\",\"anguilla\":\"安圭拉\",\"archives\":\"存档\",\"barbados\":\"巴巴多斯\",\"botswana\":\"博茨瓦纳\",\"bulgaria\":\"保加利亚\",\"cambodia\":\"柬埔寨\",\"cameroon\":\"喀麦隆\",\"colombia\":\"哥伦比亚\",\"comments\":\"评论：*\",\"curaçao\":\"库拉索\",\"djibouti\":\"吉布提\",\"domain\":\"域名 *\",\"dominica\":\"多米尼加\",\"download\":\"下载\",\"ethiopia\":\"埃塞俄比亚\",\"featured\":\"精选\",\"get help\":\"获得帮助\",\"guernsey\":\"格恩西岛\",\"honduras\":\"洪都拉斯\",\"industry\":\"行业\",\"innovate\":\"创新\",\"kiribati\":\"基里巴斯\",\"language\":\"语言\",\"location\":\"地点\",\"malaysia\":\"马来西亚\",\"maldives\":\"马尔代夫\",\"mongolia\":\"蒙古\",\"our team\":\"我们的团队\",\"pakistan\":\"巴基斯坦\",\"paraguay\":\"巴拉圭\",\"password\":\"密码\",\"physical\":\"物理\",\"pitcairn\":\"皮特凯恩\",\"portugal\":\"葡萄牙\",\"register\":\"注册\",\"reseller\":\"经销商\",\"security\":\"安全\",\"slovakia\":\"斯洛伐克\",\"slovenia\":\"斯洛文尼亚\",\"speakers\":\"演讲嘉宾\",\"stagnate\":\"停滞\",\"suriname\":\"苏里南\",\"tanzania\":\"坦桑尼亚\",\"thailand\":\"泰国\",\"upcoming\":\"即将开始\",\"viet nam\":\"越南\",\"view all\":\"查看全部\",\"webinars\":\"网络研讨会\",\"zimbabwe\":\"津巴布韦\",\"argentina\":\"阿根廷\",\"australia\":\"澳大利亚\",\"gibraltar\":\"直布罗陀\",\"greenland\":\"格陵兰\",\"guatemala\":\"危地马拉\",\"hong kong\":\"香港\",\"indonesia\":\"印度尼西亚\",\"job title\":\"职位...*\",\"last name\":\"姓氏：*\",\"lithuania\":\"立陶宛\",\"load more\":\"加载更多\",\"mauritius\":\"毛里求斯\",\"nicaragua\":\"尼加拉瓜\",\"our board\":\"我们的董事会\",\"palestine\":\"巴勒斯坦\",\"plan type\":\"计划类型\",\"resilient\":\"坚韧\",\"saas apps\":\"SaaS 应用程序\",\"select\":\"选择...\",\"show more\":\"显示更多\",\"singapore\":\"新加坡\",\"sponsored\":\"赞助\",\"sri lanka\":\"斯里兰卡\",\"subscribe\":\"订阅\",\"swaziland\":\"斯威士兰\",\"thank you\":\"谢谢\",\"use case\":\"使用案例：\",\"venezuela\":\"委内瑞拉\",\"watch now\":\"立即观看\",\"whatsapp\":\"WhatsApp：\",\"your api\":\"您的 API。\",\"your app\":\"您的应用。\",\"almoststat\":\"接近 %{value} Tbps\",\"antarctica\":\"南极洲\",\"azerbaijan\":\"阿塞拜疆\",\"bangladesh\":\"孟加拉国\",\"bot attack\":\"自动程序攻击\",\"cache node\":\"高速缓存节点\",\"cape verde\":\"佛得角\",\"click here\":\"单击此处\",\"contact me\":\"联系我\",\"contact us\":\"联系我们\",\"costa rica\":\"哥斯达黎加\",\"first name\":\"名字：*\",\"guadeloupe\":\"瓜德罗普岛\",\"it - staff\":\"IT - 职员\",\"interests\":\"兴趣：\",\"kazakhstan\":\"哈萨克斯坦\",\"kyrgyzstan\":\"吉尔吉斯斯坦\",\"learn more\":\"了解更多\",\"luxembourg\":\"卢森堡\",\"madagascar\":\"马达加斯加\",\"martinique\":\"马提尼克\",\"mauritania\":\"毛里塔尼亚\",\"micronesia\":\"密克罗尼西亚\",\"montenegro\":\"黑山\",\"montserrat\":\"蒙特塞拉特\",\"mozambique\":\"莫桑比克\",\"press page\":\"新闻页面\",\"san marino\":\"圣马力诺\",\"serverless\":\"无服务器\",\"seychelles\":\"塞舌尔\",\"tajikistan\":\"塔吉克斯坦\",\"uzbekistan\":\"乌兹别克斯坦\",\"vegetarian\":\"素食者\",\"vulnerable\":\"脆弱\",\"whitepaper\":\"白皮书\",\"work email\":\"工作电子邮件：*\",\"yc batch\":\"YC 批次*\",\"afghanistan\":\"阿富汗\",\"campaign\":\"竞选团队：*\",\"communities\":\"社区\",\"ddos attack\":\"DDoS 攻击\",\"description\":\"描述\",\"distributor\":\"分销商\",\"el salvador\":\"萨尔瓦多\",\"full name\":\"全名*\",\"get started\":\"开始使用\",\"isle of man\":\"马恩岛\",\"key results\":\"主要成果\",\"link copied\":\"链接已复制\",\"middle east\":\"中东\",\"most recent\":\"最近\",\"netherlands\":\"荷兰\",\"new zealand\":\"新西兰\",\"north korea\":\"朝鲜\",\"performance\":\"性能\",\"philippines\":\"菲律宾\",\"please wait\":\"请稍候\",\"postal code\":\"邮编：*\",\"press/media\":\"新闻/媒体\",\"puerto rico\":\"波多黎各\",\"reliability\":\"可靠性\",\"saint lucia\":\"圣卢西亚\",\"search tips\":\"搜索提示\",\"select plan\":\"选择计划\",\"set up your\":\"设置您的\",\"south korea\":\"韩国\",\"south sudan\":\"南苏丹\",\"switzerland\":\"瑞士\",\"timor-leste\":\"东帝汶\",\"watch video\":\"观看视频\",\"website url\":\"网站 URL\",\"all features\":\"所有功能\",\"batch year\":\"批次年份*\",\"burkina faso\":\"布基纳法索\",\"chad (tchad\":\"乍得\",\"clear filter\":\"清除过滤器\",\"close window\":\"关闭窗口\",\"cook islands\":\"库克群岛\",\"data centers\":\"数据中心\",\"download pdf\":\"下载 PDF\",\"get in touch\":\"保持联系\",\"it - c-level\":\"IT - 高管\",\"it - manager\":\"IT - 经理\",\"infographics\":\"信息图\",\"peru (per\":\"秘鲁\",\"remote users\":\"远程用户\",\"request demo\":\"请求演示\",\"saint helena\":\"圣赫勒拿\",\"saudi arabia\":\"沙特阿拉伯\",\"sierra leone\":\"塞拉利昂\",\"sint maarten\":\"圣马丁\",\"south africa\":\"南非\",\"turkmenistan\":\"土库曼斯坦\",\"form.privacy\":\"提交此表格，即表示您同意接收关于 Cloudflare 产品、活动和特惠的信息。您可以随时退订此类消息。我们重视您的隐私选择，绝不会出售您的数据。请参阅我们的<a href='%{PRIVACY_POLICY_URL}' target='_blank'>隐私政策</a>以了解相关信息。\",\"aland islands\":\"阿兰群岛\",\"bouvet island\":\"布维岛\",\"call sales at\":\"请致电销售人员：\",\"contact sales\":\"过去\",\"cote d'ivoire\":\"科特迪瓦\",\"email address\":\"电子邮件地址 *\",\"faroe islands\":\"法罗群岛\",\"french guiana\":\"法属圭亚那\",\"ghana (gaana\":\"加纳\",\"guinea-bissau\":\"几内亚比绍\",\"internet apps\":\"互联网应用程序\",\"liechtenstein\":\"列支敦士登\",\"network layer\":\"网络层\",\"new caledonia\":\"新喀里多尼亚\",\"niger (nijar\":\"尼日尔\",\"north america\":\"北美\",\"organization\":\"组织：*\",\"plans/pricing\":\"计划/价格\",\"published on\":\"发布于：\",\"register now\":\"立即注册！\",\"sub-processor\":\"子处理器\",\"under attack\":\"遭到攻击？\",\"united states\":\"美国\",\"webinars type\":\"网络研讨会类型\",\"your network\":\"您的网络。\",\"your website\":\"请稍后\",\"american samoa\":\"美属萨摩亚\",\"benin (bénin\":\"贝宁\",\"cayman islands\":\"开曼群岛\",\"cloudflare inc\":\"Cloudflare 公司\",\"czech republic\":\"捷克共和国\",\"download image\":\"下载图片\",\"featured count\":\"精选计数\",\"italy (italia\":\"意大利\",\"macau\":\"澳门\",\"mainland china\":\"中国大陆\",\"meeting reward\":\"会议奖励\",\"must be a url\":\"必须是 URL。\",\"norfolk island\":\"诺福克岛\",\"norway (norge\":\"挪威\",\"press releases\":\"新闻稿\",\"student/intern\":\"学生/实习\",\"type of attack\":\"攻击类型 *\",\"united kingdom\":\"英国\",\"wechat number\":\"微信号：*\",\"western sahara\":\"西撒哈拉\",\"collapse-facet\":\"折叠 %{label} 面\",\"åland islands\":\"奥兰群岛\",\"add to calendar\":\"添加至日历\",\"brazil (brasil\":\"巴西\",\"console connect\":\"控制台连接\",\"estonia (eesti\":\"爱沙尼亚\",\"finland (suomi\":\"芬兰\",\"have questions\":\"有问题吗？\",\"interested in\":\"感兴趣的产品:*\",\"learning center\":\"学习中心\",\"link from video\":\"视频链接\",\"more than 100mb\":\"超过 100 MB\",\"poland (polska\":\"波兰\",\"previous events\":\"先前的事件\",\"related content\":\"相关内容\",\"resource center\":\"资源中心\",\"solomon islands\":\"所罗门群岛\",\"source/location\":\"来源/位置\",\"spain (españa\":\"西班牙\",\"upcoming events\":\"即将开始的事件\",\"video streaming\":\"Video Streaming\",\"date_with_colon\":\"日期：\",\"contact us today\":\"立即联系我们\",\"christmas island\":\"圣诞岛\",\"contact email\":\"电子邮箱：\",\"côte d’ivoire\":\"科特迪瓦\",\"featured stories\":\"专题故事\",\"featured webinar\":\"精选网络研讨会\",\"french polynesia\":\"法属波利尼西亚\",\"guinea (guinée\":\"几内亚\",\"it - vp/director\":\"IT - 副总裁/总监\",\"keynote speakers\":\"主题演讲嘉宾\",\"laos\":\"老挝\",\"latvia (latvija\":\"拉脱维亚\",\"marshall islands\":\"马绍尔群岛\",\"mexico (méxico\":\"墨西哥\",\"num employees\":\"员工人数：*\",\"organization url\":\"组织 URL：*\",\"panama (panam\":\"巴拿马\",\"papua new guinea\":\"巴布亚新几内亚\",\"preferred city\":\"首选城市*\",\"related products\":\"相关产品\",\"related blogpost\":\"相关博客文章\",\"results per page\":\"每页结果\",\"security - staff\":\"安全 - 职员\",\"self-hosted apps\":\"自托管应用\",\"services partner\":\"服务合作伙伴\",\"support response\":\"支持响应\",\"sweden (sverige\":\"瑞典\",\"to be determined\":\"待定\",\"sales_with_colon\":\"销售：\",\"accelerator name\":\"加速器名称：\",\"access management\":\"访问管理\",\"belgium (belgi\":\"比利时\",\"brunei darussalam\":\"文莱达鲁萨兰国\",\"copy article link\":\"复制文章链接\",\"denmark (danmark\":\"丹麦\",\"equatorial guinea\":\"赤道几内亚\",\"iceland (ísland\":\"冰岛\",\"mauritius (moris\":\"毛里求斯\",\"must be a number\":\"必须是数字。\",\"preferred country\":\"首选国家/地区*\",\"ransomware attack\":\"勒索软件攻击\",\"saint barthélemy\":\"圣巴泰勒米\",\"schema validation\":\"模式验证\",\"search cloudflare\":\"搜索 Cloudflare\",\"talk to an expert\":\"与专家讨论\",\"turkey (türkiye\":\"土耳其\",\"url for peeringdb\":\"对等数据库的 URL\",\"view in dashboard\":\"在仪表板中查看\",\"wallis and futuna\":\"瓦利斯和富图纳\",\"webinar slidedeck\":\"网络研讨会幻灯片组\",\"form.privacy.gdpr\":\"您提供给 Cloudflare 的信息受我们的<a href='%{PRIVACY_POLICY_URL}' target='_blank'>隐私政策</a>条款保护。\",\"burundi (uburundi\":\"布隆迪\",\"croatia (hrvatska\":\"克罗地亚\",\"dominican republic\":\"多米尼加共和国\",\"eng/devops - staff\":\"工程/开发运维 - 职员\",\"existing customer\":\"现有客户？\",\"korea, republic of\":\"韩国\",\"namibia (namibi\":\"纳米比亚\",\"on-demand webinars\":\"按需网络研讨会\",\"organization name\":\"组织名称：\",\"romania (românia\":\"罗马尼亚\",\"russian federation\":\"俄罗斯联邦\",\"security - c-level\":\"安全 - 高管\",\"security - manager\":\"安全 - 经理\",\"submitting form\":\"正在提交表单...\",\"technology partner\":\"技术合作伙伴\",\"type of connection\":\"连接类型\",\"albania (shqipëri\":\"阿尔巴尼亚\",\"antigua and barbuda\":\"安提瓜和巴布达\",\"cameroon (cameroun\":\"喀麦隆\",\"durationbadgelevels\":{\"pro\":{\"time\":\"25 分钟\",\"level\":\"初级\"},\"free\":{\"time\":\"20 分钟\",\"level\":\"初级\"},\"business\":{\"time\":\"35 分钟\",\"level\":\"初级\"}},\"in partnership with\":\"合作伙伴：\",\"learning objectives\":\"学习目标\",\"lithuania (lietuva\":\"立陶宛\",\"preferred address\":\"首选地址*\",\"read the case study\":\"阅读案例研究\",\"scroll to view more\":\"滚动查看更多\",\"senegal (sénégal\":\"塞内加尔\",\"telegram messaging\":\"Telegram Messaging：\",\"trinidad and tobago\":\"特立尼达和多巴哥\",\"u.s. virgin islands\":\"美属维尔京群岛\",\"want to learn more\":\"想要了解更多？\",\"you are registered\":\"您已注册。\",\"zero trust security\":\"零信任安全\",\"additionaltermstext\":\"* 可能适用其他条款和条件。\",\"data loss prevention\":\"数据丢失防护\",\"dietary restrictions\":\"饮食限制：\",\"email recommendation\":\"通过电子邮件发送推荐\",\"email_recommendation\":\"通过电子邮件发送推荐\",\"eng/devops - c-level\":\"工程/开发运维 - 高管\",\"eng/devops - manager\":\"工程/开发运维 - 经理\",\"looking for support\":\"需要支持？\",\"moldova, republic of\":\"摩尔多瓦共和国\",\"must be valid email\":\"必须是有效电子邮件。\",\"network as a service\":\"网络即服务\",\"private chat/support\":\"私聊/支持\",\"related case studies\":\"相关案例研究\",\"set up your pro plan\":\"设置您的 Pro 计划\",\"slovakia (slovensko\":\"斯洛伐克\",\"slovenia (slovenija\":\"斯洛文尼亚\",\"somalia (soomaaliya\":\"索马里\",\"syrian arab republic\":\"叙利亚\",\"united arab emirates\":\"阿拉伯联合酋长国\",\"vietnam (việt nam\":\"越南\",\"form.privacy.partner\":\"提交表格即表示，您请求接收有关 Cloudflare 以及 %{PARTNER} 产品、活动和特别优惠的信息，并且您同意Cloudflare 按照 <a href='%{PRIVACY_POLICY_URL}' target='_blank'>Cloudflare 隐私政策</a>中的规定处理您的个人数据，并同意 %{PARTNER} 按照 %{PARTNER} 隐私政策中的规定处理您的个人数据。您还授权 Cloudflare 与 %{PARTNER} 共享您的个人数据。\",\"accelerator program\":\"加速计划*\",\"austria (österreich\":\"奥地利\",\"caribbean netherlands\":\"荷兰加勒比区\",\"germany (deutschland\":\"德国\",\"gluten free / coeliac\":\"不含麸质/乳糜泻\",\"must be a valid date\":\"必须是有效日期。\",\"no credit card needed\":\"无需提供信用卡\",\"russia\":\"俄罗斯\",\"saint kitts and nevis\":\"圣基茨和尼维斯\",\"sao tome and principe\":\"圣多美和普林西比\",\"set up your free plan\":\"设置您的 Free 计划\",\"switzerland (schweiz\":\"瑞士\",\"view all case studies\":\"查看所有案例研究\",\"bosnia and herzegovina\":\"波斯尼亚和黑塞哥维那\",\"british virgin islands\":\"英属维尔京群岛\",\"cloud resources attack\":\"云资源攻击\",\"current ddos vendor\":\"当前 DDoS 防护提供商...\",\"montenegro (crna gora\":\"黑山\",\"other (please specify\":\"其他（请注明）\",\"other - please specify\":\"其他 —— 请注明\",\"réunion (la réunion\":\"留尼汪\",\"security - vp/director\":\"安全 - 副总裁/总监\",\"select your country\":\"选择您的国家/地区...\",\"svalbard and jan mayen\":\"斯瓦尔巴岛和扬马延岛\",\"terabitspersecondshort\":\"%{value} Tbps\",\"upcoming live webinars\":\"即将举行的实时网络研讨会\",\"want to keep learning\":\"想要继续学习吗？\",\"a server error occured\":\"发生服务器错误。\",\"cape verde (kabu verdi\":\"佛得角\",\"cocos (keeling) islands\":\"科科斯（基林）群岛\",\"ddos protection hotline\":\"DDoS 防护热线\",\"hungary (magyarország\":\"匈牙利\",\"interconnection partner\":\"互连合作伙伴\",\"must be a phone number\":\"必须为电话号码。\",\"netherlands (nederland\":\"荷兰\",\"preferred postal code\":\"首选邮编*\",\"this field is required\":\"此字段为必填。\",\"virgin islands, british\":\"英属维尔京群岛\",\"azerbaijan (azərbaycan\":\"阿塞拜疆\",\"central african republic\":\"中非共和国\",\"early access to features\":\"功能提前体验\",\"eng/devops - vp/director\":\"工程/开发运维 - 副总裁/总监\",\"example \\\"cloudflare.com\":\"例如“cloudflare.com”\",\"faroe islands (føroyar\":\"法罗群岛\",\"infrastructure - c-level\":\"基础设施 - 高管\",\"infrastructure - manager\":\"基础设施 - 经理\",\"mozambique (moçambique\":\"莫桑比克\",\"northern mariana islands\":\"北马里亚纳群岛\",\"please select an option\":\"请选择一个选项。\",\"turks and caicos islands\":\"特克斯和凯科斯群岛\",\"after_reading_with_colon\":\"阅读本文后，您将能够：\",\"supportresponsetitletext\":\"支持响应：\",\"cloudflare account email\":\"Cloudflare 帐户电子邮件：\",\"dairy free / lactose free\":\"不含乳制品/乳糖\",\"identity or access attack\":\"身份或访问攻击\",\"iran, islamic republic of\":\"伊朗\",\"kv and/or durable objects\":\"KV 和/或 Durable Object\",\"madagascar (madagasikara\":\"马达加斯加\",\"product - product manager\":\"产品 - 产品经理\",\"saint pierre and miquelon\":\"圣皮埃尔和密克隆群岛\",\"sales/marketing - c-level\":\"销售/营销 - 高管\",\"set up your business plan\":\"设置您的 Business 计划\",\"sint maarten (dutch part\":\"圣马丁（荷属）\",\"solution & product guides\":\"解决方案和产品指南\",\"uzbekistan (oʻzbekiston\":\"乌兹别克斯坦\",\"web or application attack\":\"Web 或应用程序攻击\",\"marketo_blocked_countries\":\"我们目前无法为您所选国家/地区的企业或组织提供服务。如需其他帮助，请发送电子邮件至 legal@cloudflare.com。\",\"consulting integrator (ci\":\"咨询集成商（CI）\",\"fish / shellfish allergies\":\"鱼类/贝类过敏\",\"infrastructure - architect\":\"基础设施 - 架构师\",\"learn how cloudflare works\":\"了解 Cloudflare 如何工作\",\"network or firewall attack\":\"网络或防火墙攻击\",\"saint martin (french part\":\"圣马丁（法属）\",\"falkland islands (malvinas\":\"福克兰群岛（马尔维纳斯）\",\"finance/procurement - staff\":\"财务/采购 - 职员\",\"french southern territories\":\"法属南部领土\",\"moldova (republica moldova\":\"摩尔多瓦\",\"tree nut / peanut allergies\":\"坚果/花生过敏\",\"form.privacy.newsletterform\":\"参阅 Cloudflare 的<a class='alternate-link--blue3' href='%{PRIVACY_POLICY_URL}' target='_blank'>隐私政策</a>，了解我们如何收集和处理您的个人数据。\",\"expected storage size in tb\":\"预期存储大小（TB）：\",\"greenland (kalaallit nunaat\":\"格陵兰\",\"infrastructure - vp/director\":\"基础设施 - 副总裁/总监\",\"physical data center partner\":\"物理数据中心合作伙伴\",\"tanzania, united republic of\":\"坦桑尼亚联合共和国\",\"what interests you the most\":\"您最感兴趣的是什么? \",\"finance/procurement - c-level\":\"财务/采购 - 高管\",\"finance/procurement - manager\":\"财务/采购 - 经理\",\"guinea-bissau (guiné bissau\":\"几内亚比绍\",\"holy see (vatican city state\":\"梵蒂冈（教区）\",\"latin america & the caribbean\":\"拉丁美洲与加勒比地区\",\"please refresh and try again\":\"请刷新并重试。\",\"proof of concept (poc) reward\":\"概念验证（PoC）奖励\",\"sales/marketing - vp/director\":\"销售/营销 - 副总裁/总监\",\"select accelerator program\":\"选择加速器计划……\",\"subscribe to trending stories\":\"订阅热门新闻\",\"technical presentation reward\":\"技术宣讲奖励\",\"web security (cdn, ddos, waf\":\"Web 安全（CDN、DDoS 和 WAF）\",\"autonomous system number (asn\":\"自治系统编号（ASN）\",\"british indian ocean territory\":\"英属印度洋领地\",\"must be an amount of currency\":\"必须是货币金额。\",\"are you currently under attack\":\"您是否正受到攻击？\",\"bolivia, plurinational state of\":\"玻利维亚多民族国\",\"dns hijacking or on path attack\":\"DNS 劫持或路径攻击\",\"global systems integrator (gsi\":\"全球系统集成商（GSI）\",\"bonaire, sint eustatius and saba\":\"博内尔岛、圣尤斯特歇斯和萨巴岛\",\"lao people's democratic republic\":\"老挝人民民主共和国\",\"no results. try removing filters\":\"无结果。尝试删除筛选条件\",\"saint vincent and the grenadines\":\"圣文森特和格林纳丁斯\",\"your privacy is important to us\":\"您的隐私对我们很重要。\",\"welcome_center_recommended_steps\":\"按照本指南中的建议步骤操作，设置您的帐户并激活您使用 Cloudflare 的第一个网站。如果您已拥有 Cloudflare 帐户，请登录并按照仪表板中的每个步骤进行操作。还没有 Cloudflare 帐户？\",\"falkland islands (islas malvinas\":\"福克兰群岛（马尔维纳斯群岛）\",\"finance/procurement - vp/director\":\"财务/采购 - 副总裁/总监\",\"french guiana (guyane française\":\"法属圭亚那\",\"heard island and mcdonald islands\":\"赫德和麦克唐纳群岛\",\"how large a script will you need\":\"您需要多大的脚本？ *\",\"not sure? we’ll help you assess\":\"没有把握？我们会协助您进行评估\",\"try exploring these helpful areas\":\"尝试探索这些有用的内容\",\"venezuela, bolivarian republic of\":\"委内瑞拉玻利瓦尔共和国\",\"czech republic (česká republika\":\"捷克共和国\",\"data center location (city, state\":\"数据中心位置（城市、州）\",\"incorrect email. please try again\":\"电子邮件不正确。请重试。\",\"vatican city (città del vaticano\":\"梵蒂冈城\",\"check the spelling of your keywords\":\"检查关键字的拼写\",\"new caledonia (nouvelle-calédonie\":\"新喀里多尼亚\",\"other saas applications not listed\":\"其他未列出的 Saas 应用：\",\"which events will you be attending\":\"您将参加哪些活动？\",\"congo (republic) (congo-brazzaville\":\"刚果（共和国）\",\"myanmar (burma\":\"缅甸\",\"please select which products you use\":\"请选择您使用的产品：\",\"wallis and futuna (wallis-et-futuna\":\"瓦利斯和富图纳\",\"congo, the democratic republic of the\":\"刚果民主共和国\",\"equatorial guinea (guinea ecuatorial\":\"赤道几内瓦\",\"tell us a bit about your business\":\"请简单介绍下贵公司业务：*\",\"title required. please enter a title\":\"网络研讨会\",\"why do you need a larger script size\":\"您为什么需要更大的脚本？\",\"korea, democratic people's republic of\":\"朝鲜\",\"staying in touch with product managers\":\"与产品经理保持联系\",\"are you a covid-19 vaccine distributor\":\"您是 COVID-19 疫苗分销商吗？*\",\"mqtt (mosquitto, aws/gcp iot core, etc\":\"MQTT （Mosquitto、AWS/GCP IoT Core 等）\",\"next day testing and deployment needed\":\"需要次日测试和部署吗？*\",\"what is the title of the prospect(s\":\"潜在客户的职位是什么？*\",\"french polynesia (polynésie française\":\"法属波利尼西亚\",\"location where you are seeking a partner\":\"寻找合作伙伴的地点\",\"macedonia (fyrom\":\"马其顿（前南斯拉夫马其顿共和国）\",\"postgres or other rdb (notify or similar\":\"Postgres 或其他关系数据库（NOTIFY 或类似）\",\"what type of partner are you looking for\":\"您在寻找什么类型的合作伙伴？\",\"dominican republic (república dominicana\":\"多米尼加共和国\",\"macedonia, the former yugoslav republic of\":\"前南斯拉夫马其顿共和国\",\"full name is required. please enter a name\":\"网站*\",\"last name is required. please enter a name\":\"网站 URL 是必填项。请输入类似于 http://www.example.com 的网站。\",\"first name is required. please enter a name\":\"您将参加哪些活动？\",\"saint helena, ascension and tristan da cunha\":\"圣赫勒拿、阿森松和特里斯坦达昆哈\",\"south georgia and the south sandwich islands\":\"南乔治亚和南德桑威奇群岛\",\"describe the problem you are looking to solve\":\"请描述您想要解决的问题\",\"how many employees does your company have\":\"贵公司有多少员工？*\",\"congo (drc) (jamhuri ya kidemokrasia ya kongo\":\"刚果（民主共和国）\",\"what have you built using cloudflare products\":\"您使用 Cloudflare 产品构建了什么?\",\"after reading this article you will be able to\":\"阅读本文后，您将能够：\",\"saint martin (saint-martin (partie française\":\"圣马丁\",\"sorry, no search results matched with your term\":\"抱歉，没有搜索结果匹配您输入的关键字\",\"what messaging services have you used before\":\"您以前使用过什么消息服务？*\",\"do you meet the requirements for project pangea\":\"您是否符合 Pangea 项目的要求？\",\"if your guide does not download, enable pop-ups\":\"如果您的指南未下载，请启用弹出窗口。\",\"são tomé and príncipe (são tomé e príncipe\":\"圣多美和普林西比\",\"brief description on your role in covid-19 relief\":\"简要说明您在 COVID-19 防疫工作中的角色：*\",\"email (of cloudflare account to receive upgrade\":\"电子邮件地址 （Cloudflare 账号，用于接收升级）*\",\"company name required. please enter a company name\":\"公司名称是必填项。请输入公司名称。\",\"phone number required. please enter a phone number\":\"电话号码是必填项。请输入一个电话号码。\",\"try using fewer, different or more general keywords\":\"尝试使用更少、不同或更通用的关键字\",\"saint pierre and miquelon (saint-pierre-et-miquelon\":\"圣皮埃尔与密克隆群岛\",\"central african republic (république centrafricaine\":\"中非共和国\",\"get started in just 5 minutes. join cloudflare today\":\"启动只需 5 分钟， 立即加入 Cloudflare。\",\"name of company or organization of the prospect(s\":\"潜在客户所属公司或组织的名称是什么？*\",\"unable to submit form. check field input and try again\":\"您已注册。\",\"there are no on-demand webinars that meet your criteria\":\"没有符合您条件的按需网络研讨会。\",\"what existing cloudflare products are you using today\":\"您正在使用哪些 Cloudflare 产品？*\",\"someone from cloudflare will be in touch with you shortly\":\"Cloudflare 的人员很快便会与您联系。\",\"do you currently have a working integration with cloudflare\":\"您目前是否已经拥有与 Cloudflare 之间的集成？\",\"sign up to receive curated learning articles from cloudflare\":\"注册以获得 Cloudflare 经过精心编排的学习文章\",\"there are no upcoming live webinars that meet your criteria\":\"没有符合您条件的即将举行的实时网络研讨会。\",\"first and last name of prospect or prospects participating\":\"潜在客户的姓名是什么？*\",\"website url of the company or organization of the prospect(s\":\"潜在客户所属公司或组织的网站 URL 是什么？*\",\"please elaborate on the circumstances of current or past attacks\":\"请详细说明当前或过去攻击的情况：\",\"what was the date of your meeting, technical presentation or poc\":\"您的会议、技术宣讲或 PoC 的日期是什么？*\",\"what have you built using cloudflare’s products before, if anything\":\"您已经使用 Cloudflare 产品构建了什么？\",\"which saas applications do you want to secure? (check all that apply\":\"您希望保护哪些 SaaS 应用？（勾选所有适用项）*\",\"must be a phone number. <span class='mktoerrordetail'>503-555-1212</span\":\"必须为电话号码。<span class='mktoErrorDetail'>503-555-1212</span>\",\"what support do you need from cloudflare to advance this sales opportunity\":\"您需要 Cloudflare 提供什么支持来推进这一销售机会？*\",\"are there any mutual customers interested in or already using this integration\":\"是否有任何共同客户对该集成感兴趣或已在使用该集成？\",\"if you are an existing cloudflare stream user, what are your primary use cases\":\"如果您现为 Cloudflare Stream 用户，您的主要用例是什么？\",\"website url required. please enter a website similar to http://www.example.com\":\"网站 URL 是必填项。请输入类似于 http://www.example.com. 的网站。\",\"what type of insights or data are you looking for from the cloudforce one team\":\"您希望从 Cloudforce One 团队获得何种类型的见解或数据？\",\"must be valid email. <span class='mktoerrordetail'>example@yourdomain.com</span\":\"必须是有效的电子邮箱地址。<span class='mktoErrorDetail'>example@yourdomain.com</span>\",\"please provide an overview of the proposed partnership. (in less than 300 words\":\"请概述所提议的合作关系（不超过 300 字）\",\"what existing cloudflare products are your customers most interested in today\":\"您的客户现在对 Cloudflare 的哪些现有产品最感兴趣？*\",\"how much do you spend monthly on cloudflare across all your customers currently\":\"目前您所有客户在 Cloudflare 服务上每月支出是多少？*\",\"which reward are you claiming? please submit a separate claim form for each reward\":\"您申请的奖励是什么？请为每项奖励单独提交申请*\",\"leave a note about why you believe your organization is a good fit for project galileo\":\"请说明您为什么认为自己的组织适合加入 Project Galileo：\",\"what was the prospect's articulated need for a cloudflare one product? please describe\":\"潜在客户对 Cloudflare One 产品提出的明确需求是什么？请说明 *\",\"name of cloudflare representative attending the meeting, technical presentation or poc\":\"参加会议、技术宣讲或 PoC 的 Cloudflare 代表姓名？\",\"the information you provide to cloudflare is governed by the terms of our privacy policy\":\"您提供给 Cloudflare 的信息受我们的隐私政策条款保护。\",\"please complete this form to send our personalized cloudflare product recommendation to your inbox\":\"请填写此表，以便我们将个性化 Cloudflare 产品推荐发送到您的收件箱。\",\"please_complete_this_form_to_send_our_personalized_cloudflare_product_recommendation_to_your_inbox_\":\"请填写此表，以便我们将个性化 Cloudflare 产品推荐发送到您的收件箱：\",\"are there specific cloudflare products or functionality you would like in an enterprise sandbox account\":\"您是否希望在企业沙箱账户中使用 Cloudflare 的特定产品或功能？\",\"asn required. your as number uniquely identifies your network and helps us identify the validity of your request\":\"您的网络。\",\"please enter a url similar to https://www.peeringdb.com/asn/13335. this will speed up validation of your account\":\"请输入类似于 https://www.peeringdb.com/asn/13335 的 URL。这样可以加快帐户验证速度。\",\"yes - i want to stay in touch with cloudflare to receive valuable content such as product news, blog updates, and more\":\"是的 - 我希望与 Cloudflare 保持联系，以获得产品新闻、博客更新等有价值的内容。\",\"how many domains/zones/applications (for your clients) do you think you would be able to onboard on average every month\":\"您认为自己平均每月能（为客户）启用多少个域/区域/应用？*\",\"which cloudflare one product or products were discussed at the meeting, technical presentation or were involved in the poc\":\"会议或技术宣讲中讨论或 PoC 中涉及的 Cloudflare One 产品是什么？\",\"yes - i want to stay in touch with cloudflare to receive other valuable content such as product news, blog updates, and more\":\"是的 - 我希望与 Cloudflare 保持联系，以获得产品新闻、博客更新等其他有价值的内容。\",\"we host a variety of webinars that showcase how to use cloudflare and how our customers get the most of our services and products\":\"我们举办各种网络研讨会，展示如何使用 Cloudflare 以及我们的客户如何从服务和产品中充分受益。\",\"how many domains/zones/applications (for your clients) do you think you would be able to onboard on average every month? (select only one\":\"您认为自己平均每月能（为客户）启用多少个域/区域/应用？（请仅选择一项）*\",\"by clicking 'get started', i agree to <a class='blue-alternate-link' target='_blank' href='/website-terms/'>cloudflare's terms and conditions</a> and <a class='blue-alternate-link' href='/privacypolicy/' target='_blank'>privacy policy</a\":\"点击“开始使用”，即表示本人同意 <a class='blue-alternate-link' target='_blank' href='/website-terms/'>Cloudflare 的条款和条件</a>以及<a class='blue-alternate-link' href='/privacypolicy/' target='_blank'>隐私策略</a>。\",\"in submitting this form, you agree to receive information from cloudflare related to our products, events, and special offers. you can unsubscribe from such messages at any time. we never sell your data, and we value your privacy choices. please see our privacy policy for information\":\"提交此表格，即表示您同意接收关于 Cloudflare 产品、活动和特惠的信息。您可以随时退订此类消息。我们重视您的隐私选择，绝不会出售您的数据。请参阅我们的隐私策略以了解相关信息。\",\"by submitting the form, you request to receive information about cloudflare and %{partner} products, events, and special offers, and you agree to the processing of your personal data by cloudflare as described in the cloudflare privacy policy, and by %{partner} as described in the %{partner}privacy policy. you also authorize cloudflare to share your personal data with %{partner\":\"提交表格即表示，您请求接收有关 Cloudflare 以及 %{PARTNER} 产品、活动和特别优惠的信息，并且您同意Cloudflare 按照 Cloudflare 隐私政策中的规定处理您的个人数据，并同意 %{PARTNER} 按照 %{PARTNER} 隐私政策中的规定处理您的个人数据。您还授权 Cloudflare 与 %{PARTNER} 共享您的个人数据。\"}",
+        marketo1346dropdownData: "{\"infrastructure - c-level\":\"基础设施 - 高管\",\"infrastructure - vp/director\":\"基础设施 - 副总裁/总监\",\"infrastructure - manager\":\"基础设施 - 经理\",\"infrastructure - architect\":\"基础设施 - 架构师\",\"eng/devops - c-level\":\"工程/DevOps - 高管\",\"eng/devops - vp/director\":\"工程/DevOps - 副总裁/总监\",\"eng/devops - manager\":\"工程/DevOps - 经理\",\"eng/devops - staff\":\"工程/DevOps - 职员\",\"it - c-level\":\"IT - 高管\",\"it - vp/director\":\"IT - 副总裁/总监\",\"it - manager\":\"IT - 经理\",\"it - staff\":\"IT - 职员\",\"security - c-level\":\"安全 - 高管\",\"security - vp/director\":\"安全 - 副总裁/总监\",\"security - manager\":\"安全 - 经理\",\"security - staff\":\"安全 - 职员\",\"finance/procurement - c-level\":\"财务/采购 - 高管\",\"finance/procurement - vp/director\":\"财务/采购 - 副总裁/总监\",\"finance/procurement - manager\":\"财务/采购 - 经理\",\"finance/procurement - staff\":\"财务/采购 - 职员\",\"sales/marketing - c-level\":\"销售/营销 - 高管\",\"sales/marketing - vp/director\":\"销售/营销 - 副总裁/总监\",\"product - product manager\":\"产品 - 产品经理\",\"press/media\":\"新闻/媒体\",\"student/intern\":\"学生/实习\",\"other\":\"其他\"}",
+      gtm: {
+        containerId: "GTM-PKQFGQB",
+        disabled: false,
+        uaCookieDomain: ".cloudflare.com",
+        uaCodeMarketing_29: "UA-10218544-29",
+        optimize: "GTM-N4JSZJ8",
+        uaCodeAdWords: "AW-819572718",
+        uaCodeAdWordsBI: "DC-8921596",
+        adWordsConversionCode: "AW-972248548",
+        adWordsConversionCodeForm: "AW-836330296",
+        adWordsConversionLabel: "caqvCO3e32EQ5KvNzwM",
+        adWordsConversionLabelForm: "-l5JCJnczYgBELjG5Y4D",
+      }
+    }
+  }
+</script>
+<script src="https://assets.www.cloudflare.com/js/runtime-6a16446847617098e330.js" nonce="dd43683d-9ce4-482c-b83e-c1623fce0e83"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-a9b7aa963cde85dc9611.js" nonce="dd43683d-9ce4-482c-b83e-c1623fce0e83"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-9ed4ae964e711458f84f.js" nonce="dd43683d-9ce4-482c-b83e-c1623fce0e83"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-5fd37836d64725aae99f.js" nonce="dd43683d-9ce4-482c-b83e-c1623fce0e83"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-10223bd69693130e8a70.js" nonce="dd43683d-9ce4-482c-b83e-c1623fce0e83"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-7c5a2fc67352533f763c.js" nonce="dd43683d-9ce4-482c-b83e-c1623fce0e83"></script>
+<script src="../js/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="e34df59b-4a48-4bf9-b2b5-7a4bb09cd231"></script>
+</head>
+<body class="marketing-nojs ">
+<script src="https://assets.www.cloudflare.com/js/chunk-98f956b9756523a10775.js" nonce="dd43683d-9ce4-482c-b83e-c1623fce0e83"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-c8181d31e37c857686bd.js" nonce="dd43683d-9ce4-482c-b83e-c1623fce0e83"></script>
+<header class="cms-topnav topnav top-nav js-top-nav ">
+<nav class="top-nav__items top-nav__items--align-content ">
+<div> <img style="" class="top-nav__logo top-nav__logo--dark top-nav__logo--localized " src="/img/logo-cloudflare-dark.svg" alt="Cloudflare">
+<img class="top-nav__logo top-nav__logo--light top-nav__logo--localized " src="/img/logo-cloudflare.svg" alt="Cloudflare">
+</div>
+</nav>
+</header>
+<div class="site-content  ">
+<section class="tile" id="error-page-content">
+<div class="tile__content tile__content--fixed">
+<div class="grid">
+<div class="grid__item grid__item--four-fifths">
+<div class="grid grid--vertical-center">
+<div class="grid__item grid__item--half grid__item--no-padding">
+<img class="responsive-image" title="404" alt="404" src="/img/error-page/404-image.png" style="width: 285px; max-width: 100%;">
+</div>
+<div class="grid__item grid__item grid__item--half grid__item--no-padding">
+<p class="error-page-text text--orange text--no-pad-no-margin-bottom text--no-pad-no-margin-top">Oops! You appear to be lost.</p>
+</div>
+</div>
+<div class="grid">
+<div class="grid__item grid__item--no-margins grid__item--no-padding">
+<p class="error-page-text text--no-pad-no-margin-bottom">Handy links:</p>
+</div>
+</div>
+<div class="grid">
+<div class="grid__item grid__item--fifth" style="padding-left:0">
+<div class="grid--center grid--vertical-center grid--left-mobile-tablet">
+<a href="../index_1.html" style="display:inherit;"><img class="error-icon" title="Home" alt="Home" src="/img/error-page/404-home.png"></a>
+<p class="text--24px text--28px-mobile-tablet"><a href="../index_1.html" class="orange-alternate-link anchor text--bolder">Home</a></p></div>
+</div>
+<div class="grid__item grid__item--fifth" style="padding-left:0">
+<div class="grid--center grid--vertical-center grid--left-mobile-tablet">
+<a href="../resource-hub_1.html" style="display:inherit;"><img class="error-icon" title="Resources" alt="Resources" src="/img/error-page/404-resources.png"></a>
+<p class="text--24px text--28px-mobile-tablet"><a href="../resource-hub_1.html" class="orange-alternate-link anchor text--bolder">Resources</a></p></div>
+</div>
+<div class="grid__item grid__item--fifth" style="padding-left:0">
+<div class="grid--center grid--vertical-center grid--left-mobile-tablet">
+<a href="../plans.html" style="display:inherit;"><img class="error-icon" title="Plans" alt="Plans" src="/img/error-page/404-plans.png"></a>
+<p class="text--24px text--28px-mobile-tablet"><a href="../plans.html" class="orange-alternate-link anchor text--bolder">Plans</a></p></div>
+</div>
+<div class="grid__item grid__item--fifth" style="padding-left:0">
+<div class="grid--center grid--vertical-center grid--left-mobile-tablet">
+<a href="../index_2.html" style="display:inherit;"><img class="error-icon" title="Blog" alt="Blog" src="/img/error-page/404-blog.png"></a>
+<p class="text--24px text--28px-mobile-tablet"><a href="../index_2.html" class="orange-alternate-link anchor text--bolder">Blog</a></p></div>
+</div>
+<div class="grid__item grid__item--fifth" style="padding-left:0">
+<div class="grid--center grid--vertical-center grid--left-mobile-tablet">
+<a href="../careers.html" style="display:inherit;"><img class="error-icon" title="Careers" alt="Careers" src="/img/error-page/404-careers.png"></a>
+<p class="text--24px text--28px-mobile-tablet"><a href="../careers.html" class="orange-alternate-link anchor text--bolder">Careers</a></p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<a href="/cdn-cgi/beacon/hp-link?source=help&amp;req_id=1" target"_blank"="" class="hidden-element"></a>
+</div>
+<footer class="cms-mainfooter main-footer">
+<div class="main-footer__container main-footer__container--fill-space">
+<div class="main-footer__menu_bottom">
+<div class="main-footer__menu_bottom__container">
+<div class="main-footer__menu_bottom__social"></div>
+<div class="main-footer__menu_bottom__copyright ">
+<span>� 2022 Cloudflare, Inc.</span>
+<div>
+<a href="/zh-cn/privacypolicy/">隐私政策</a>
+<a href="/zh-cn/website-terms/">使用条款</a>
+<a href="/zh-cn/disclosure/">报告安全问题</a>
+<a href="/zh-cn/abuse/">信任与安全</a>
+<a href="#">Cookie 首选项</a>
+<a href="/zh-cn/trademark/">商�&nbsp;�</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<div class="eu-cookie-banner js-eu-cookie-banner">
+<div class="eu-cookie-banner__content text--white text--center">
+<p>为了在我们的网站上为您提供所能达到的最佳体验，我们可能使用 cookie，如<a href="/cookie-policy/">此处</a>所述。<br>通过单击“接受”、关闭此横幅或继续浏览我们的网站，即表示您同意使用此类 cookie。</p>
+<div class="grid grid--center">
+<div class="grid__item grid__item--fourth-half">
+<button style="max-width: 150px;" class="button button--white button--inline js-accept-eu-cookie">我接受</button>
+</div>
+</div>
+<div class="close_x js-accept-eu-cookie"></div>
+</div>
+</div>
+<script src="https://assets.www.cloudflare.com/js/chunk-d1d241eda36aa08700f5.js" nonce="dd43683d-9ce4-482c-b83e-c1623fce0e83"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-50c2888dc9fc9d219699.js" nonce="dd43683d-9ce4-482c-b83e-c1623fce0e83"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-ad048942265b0bf93d6c.js" nonce="dd43683d-9ce4-482c-b83e-c1623fce0e83"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-ed2cdfc0465e7134a1ed.js" nonce="dd43683d-9ce4-482c-b83e-c1623fce0e83"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-d0f1f4ebd38c39f7095a.js" nonce="dd43683d-9ce4-482c-b83e-c1623fce0e83"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-6cb50819ee379c1477b0.js" nonce="dd43683d-9ce4-482c-b83e-c1623fce0e83"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-fe08601582edb624164b.js" nonce="dd43683d-9ce4-482c-b83e-c1623fce0e83"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-2998cc3b7d6bdd8fefa3.js" nonce="dd43683d-9ce4-482c-b83e-c1623fce0e83"></script>
+<script nonce="dd43683d-9ce4-482c-b83e-c1623fce0e83">
+        $(document).ready(function() {
+          var NavMiniBanner = new CFJS.FlashBanner('not-localized');
+        });
+      </script>
+<script async="" src="https://assets.www.cloudflare.com/js/chunk-a15957a83aa617098672.js" nonce="dd43683d-9ce4-482c-b83e-c1623fce0e83"></script>
+<script async="" src="https://assets.www.cloudflare.com/js/chunk-eaa36412b9cad4cd7179.js" nonce="dd43683d-9ce4-482c-b83e-c1623fce0e83"></script>
+<script type="application/ld+json" nonce="dd43683d-9ce4-482c-b83e-c1623fce0e83">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "cloudflare.com",
+        "url": "http://www.cloudflare.com",
+        "sameAs": [
+          "http://www.facebook.com/cloudflare",
+          "http://www.twitter.com/cloudflare",
+          "http://plus.google.com/+cloudflare",
+          "https://www.linkedin.com/company/cloudflare",
+          "http://www.youtube.com/user/CloudflareTeam"
+        ]
+      }
+    </script>
+<script type="application/ld+json" nonce="dd43683d-9ce4-482c-b83e-c1623fce0e83">
+      {
+        "@context": "http://schema.org",
+        "@type": "Corporation",
+        "name": "Cloudflare",
+        "url": "http://www.cloudflare.com",
+        "description": "Cloudflare is a free global CDN and DNS provider that can speed up and protect any site online."
+      }
+    </script>
+<script>
+      function renderNav () {
+        document.querySelectorAll('.cms-topnav').forEach(function(el) {
+          if (window.renderModalNav) {
+            window.renderModalNav(el);
+            el.classList.add('br-refresh')
+          }
+        })
+      }
+    </script>
+<script src="/compiledNav/navigation.js" onload="renderNav()"></script>
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" data-cf-beacon="{&quot;rayId&quot;:&quot;74490baa6dfad418&quot;,&quot;token&quot;:&quot;6f9a2202213848f5bff934592489e351&quot;,&quot;version&quot;:&quot;2022.8.1&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+
+</body></html>

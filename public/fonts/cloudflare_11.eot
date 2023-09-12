@@ -1,0 +1,2032 @@
+<!DOCTYPE html><html lang="ko-kr" itemscope="" itemtype="http://schema.org/Article"><head><script async="" src="../js/optimize.js"></script><script>window.redwood={"consentGroups":{"C0001":true,"C0002":true,"C0003":true,"C0004":true},"country":"NG","colo":"LOS","user":null,"locale":"ko-KR"}</script>
+    <script type="text/javascript">
+      var OneTrust={"geolocationResponse":{"countryCode":"NG"}}
+    </script>
+    <script>
+     const acceptedLocales = [
+      'en-au',
+      'en-ca',
+      'en-gb',
+      'en-in',
+      'en-us',
+      'de-de',
+      'es-es',
+      'fr-fr',
+      'it-it',
+      'ja-jp',
+      'ko-kr',
+      'pt-br',
+      'zh-tw',
+      'zh-cn',
+      'zh-Hans-CN',
+    ];
+    const orphanLocales = [
+      'ru-ru',
+      'sv-se',
+      'nl-nl',
+      'vi-vn',
+      'th-th',
+      'id-id',
+      'tr-tr',
+    ];
+    const ignoreList = [
+      'apps',
+      'docs',
+      'rate-limit-test',
+      'rss',
+    ]
+    function getPathFromLocale(locale, code, pathString) {
+      if ( locale === code || !acceptedLocales.includes(code) || acceptedLocales.includes(locale) || orphanLocales.includes(locale) ) {
+        return null;
+      } else {
+        return [code, locale ? locale : '', pathString].filter(part => part !== '').join('/');
+      }
+    };
+    if(window.location.host !== 'staging.cloudflare-cn.com' && window.location.host !== 'cloudflare-cn.com' && window.location.host !== 'www.cloudflare-cn.com') {
+      if (localStorage.getItem('langPreference')) {
+        if (localStorage.getItem('langPreference').toLowerCase() != 'en-us') {
+            const langPreference = localStorage.getItem('langPreference').toLowerCase();
+            const splitPath = window.location.pathname.split('/').filter(part => part !== '');
+            const currentLang = splitPath[0];
+            if (!acceptedLocales.includes(currentLang) && !orphanLocales.includes(currentLang) && !ignoreList.includes(splitPath[0])) {
+              splitPath.splice(0, 0, langPreference.toLowerCase());
+              const newUrl = 'https://' + window.location.hostname + '/' + splitPath.join('/') + '/' + window.location.search;
+              window.location.replace(newUrl);
+            }
+          }
+      } else if (!window.navigator.userAgent.toLowerCase().includes('googlebot')) {
+          const requestedLang = window.navigator.language;
+          const splitPath = window.location.pathname.split('/').filter(part => part !== '');
+          const maybeLocale = splitPath.shift();
+          const splitPathString = splitPath.join('/');
+
+          if (requestedLang && requestedLang.toLowerCase() != "en-us") {
+            const requestedLangCode = requestedLang
+              .toLowerCase()
+              .replace('_', '-');
+            const redirectPath = getPathFromLocale(maybeLocale, requestedLangCode, splitPathString);
+            if (redirectPath && !ignoreList.includes(maybeLocale)) {
+              window.location.replace('https://' + window.location.hostname + '/' + redirectPath + '/' + window.location.search);
+            }
+          }
+      }
+    }
+    </script>
+<meta charset="UTF-8">
+<title>This page is missing | Cloudflare </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://www.cloudflare.com/fonts/cloudflare.eot/">
+<meta itemprop="name" content="This page is missing | Cloudflare ">
+<meta itemprop="description" content="Cloudflare is a free global CDN and DNS provider that can speed up and protect any site online">
+<meta itemprop="image" content="https://www.cloudflare.com/img/cf-facebook-card.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="This page is missing | Cloudflare ">
+<meta name="twitter:description" content="Cloudflare is a free global CDN and DNS provider that can speed up and protect any site online">
+<meta name="twitter:site" content="@cloudflare">
+<meta name="twitter:creator" content="@cloudflare">
+<meta name="twitter:image" content="https://www.cloudflare.com/img/cf-twitter-card.png">
+<meta property="og:title" content="This page is missing | Cloudflare ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.cloudflare.com/ko-kr/fonts/cloudflare.eot/">
+<meta property="og:image" content="https://www.cloudflare.com/img/cf-facebook-card.png">
+<meta property="og:description" content="Cloudflare is a free global CDN and DNS provider that can speed up and protect any site online">
+<meta property="og:site_name" content="Cloudflare">
+<meta class="swiftype" name="language" data-type="string" content="ko-kr">
+<meta class="swiftype" name="title" data-type="string" content="This page is missing">
+<meta class="swiftype" name="description" data-type="string" content="Cloudflare is a free global CDN and DNS provider that can speed up and protect any site online">
+<meta class="swiftype" name="url" data-type="enum" content="https://www.cloudflare.com/ko-kr/fonts/cloudflare.eot/">
+<meta name="baidu-site-verification" content="N0CNJSCAk5">
+<meta name="baidu-site-verification" content="Kj9FQ1BEWh">
+<meta name="baidu-site-verification" content="OEDgbws38Y">
+<meta name="baidu-site-verification" content="code-LHd7bZjChM">
+<link rel="icon" type="image/x-icon" href="../favicon_1.ico">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-128.png" sizes="128x128">
+<meta name="application-name" content="Cloudflare">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="msapplication-square70x70logo" content="/mstile-70x70.png">
+<meta name="msapplication-square150x150logo" content="/mstile-150x150.png">
+<meta name="msapplication-wide310x150logo" content="/mstile-310x150.png">
+<meta name="msapplication-square310x310logo" content="/mstile-310x310.png">
+<noscript><style>.nojs-hide{display: none;}</style></noscript>
+<style>.async-hide {opacity: 0 !important}</style>
+<link rel="stylesheet" href="https://assets.www.cloudflare.com/css/application-7d1e9e47f6.min.css">
+<script nonce="b9bf3811-fa7f-4fa3-80c1-a9187542feab">
+  window.CFJS = {
+    config: {
+      rumEnabled: true,
+      env: '/marketing-api',
+      availableLanguages: ''.split(','),
+      excludeMarketo: false,
+      marketoEnabled: true,
+      bizibleEnabled: true,
+      excludeHeapAnalytics: false,
+      asyncHide: false,
+      remarketingEnabled: false,
+      sentryDSN: 'https://bd9df81d859641f39ce626ce2a2cc90d@sentry.io/229513',
+      serverLang: "ko-kr",
+      isEnglish: false,
+      isLocalized: false,
+      intlTelInputUtils: '/js/chunk-ed207c16f1337d207f80.js',
+      cookieDomain: "cloudflare.com",
+      techtargetEnabled: true,
+      googleOptimizeEnabled: true,
+        marketoFormEmbedTranslations: "{\"50\":\"50명 이상\",\"mb\":\"MB\",\"no\":\"아니오\",\"or\":\"업로드하거나,\",\"all\":\"모두\",\"cdn\":\"CDN\",\"dns\":\"DNS\",\"ssl\":\"SSL\",\"yes\":\"예\",\"5 mb\":\"5MB\",\"asia\":\"아시아\",\"back\":\"뒤로\",\"blog\":\"블로그\",\"both\":\"둘 다\",\"bots\":\"봇\",\"chad\":\"차드\",\"city\":\"시: *\",\"cuba\":\"쿠바\",\"ddos\":\"DDoS\",\"date\":\"날짜\",\"fiji\":\"피지\",\"guam\":\"괌\",\"iran\":\"이란\",\"iraq\":\"이라크\",\"link\":\"링크\",\"mali\":\"말리\",\"niue\":\"니우에\",\"none\":\"없음\",\"oman\":\"오만\",\"past\":\"이전\",\"peru\":\"페루\",\"plan\":\"요금제\",\"rsvp\":\"RSVP\",\"send\":\"발송\",\"time\":\"시간\",\"togo\":\"토고\",\"year\":\"년\",\"10 mb\":\"10MB\",\"apply\":\"신청\",\"asn\":\"ASN *\",\"aruba\":\"아루바\",\"benin\":\"베냉\",\"chile\":\"칠레\",\"china\":\"중국\",\"cloud\":\"클라우드\",\"congo\":\"콩고\",\"ebook\":\"전자책\",\"egypt\":\"이집트\",\"gabon\":\"가봉\",\"ghana\":\"가나\",\"haiti\":\"아이티\",\"india\":\"인도\",\"italy\":\"이탈리아\",\"japan\":\"일본\",\"kenya\":\"케냐\",\"level\":\"레벨\",\"libya\":\"리비아\",\"macao\":\"마카오\",\"malta\":\"몰타\",\"nauru\":\"나우루\",\"nepal\":\"네팔\",\"niger\":\"니제르\",\"other\":\"기타\",\"palau\":\"팔라우\",\"phone\":\"전화 번호: *\",\"qatar\":\"카타르\",\"sales\":\"영업\",\"samoa\":\"사모아\",\"spain\":\"스페인\",\"state\":\"주\",\"sudan\":\"수단\",\"syria\":\"시리아\",\"title\":\"제목\",\"tonga\":\"통가\",\"vegan\":\"비건\",\"video\":\"동영상\",\"watch\":\"보기\",\"yemen\":\"예멘\",\"plans\":{\"pro\":{\"id\":\"pro\",\"displayName\":\"Pro 요금제\"},\"free\":{\"id\":\"free\",\"displayName\":\"Free 요금제\"},\"business\":{\"id\":\"business\",\"displayName\":\"Business 요금제\"}},\"$3000\":\"$3000 이상\",\"100 mb\":\"100MB\",\"africa\":\"아프리카\",\"agenda\":\"안건\",\"angola\":\"앙골라\",\"belize\":\"벨리즈\",\"bhutan\":\"부탄\",\"brazil\":\"브라질\",\"brunei\":\"브루나이\",\"canada\":\"캐나다\",\"cyprus\":\"키프로스\",\"email\":\"이메일: *\",\"europe\":\"유럽\",\"filter\":\"필터\",\"france\":\"프랑스\",\"gambia\":\"감비아\",\"greece\":\"그리스\",\"guinea\":\"기니\",\"guyana\":\"가이아나\",\"israel\":\"이스라엘\",\"jersey\":\"저지\",\"jordan\":\"요르단\",\"kosovo\":\"코소보\",\"kuwait\":\"쿠웨이트\",\"latvia\":\"라트비아\",\"length\":\"길이\",\"malawi\":\"말라위\",\"mexico\":\"멕시코\",\"monaco\":\"모나코\",\"norway\":\"노르웨이\",\"panama\":\"파나마\",\"poland\":\"폴란드\",\"rwanda\":\"르완다\",\"serbia\":\"세르비아\",\"simple\":\"간단함\",\"source\":\"소스\",\"submit\":\"제출\",\"sweden\":\"스웨덴\",\"taiwan\":\"대만\",\"turkey\":\"터키\",\"tuvalu\":\"투발루\",\"uganda\":\"우간다\",\"zambia\":\"잠비아\",\"address\":\"주소: *\",\"albania\":\"알바니아\",\"algeria\":\"알제리\",\"analyst\":\"분석가\",\"andorra\":\"안도라\",\"archive\":\"아카이브\",\"armenia\":\"아르메니아\",\"austria\":\"오스트리아\",\"bahamas\":\"바하마\",\"bahrain\":\"바레인\",\"belarus\":\"벨라루스\",\"belgium\":\"벨기에\",\"bermuda\":\"버뮤다\",\"bolivia\":\"볼리비아\",\"burundi\":\"부룬디\",\"comment\":\"의견\",\"comoros\":\"코모로\",\"company\":\"회사: *\",\"complex\":\"복잡함\",\"country\":\"국가: *\",\"croatia\":\"크로아티아\",\"denmark\":\"덴마크\",\"ecuador\":\"에콰도르\",\"eritrea\":\"에리트레아\",\"estonia\":\"에스토니아\",\"filters\":\"필터\",\"finland\":\"핀란드\",\"georgia\":\"조지아\",\"germany\":\"독일\",\"grenada\":\"그레나다\",\"hungary\":\"헝가리\",\"iceland\":\"아이슬란드\",\"ireland\":\"아일랜드\",\"jamaica\":\"자메이카\",\"lebanon\":\"레바논\",\"lesotho\":\"레소토\",\"liberia\":\"라이베리아\",\"mayotte\":\"마요트\",\"morocco\":\"모로코\",\"myanmar\":\"미얀마\",\"namibia\":\"나미비아\",\"nigeria\":\"나이지리아\",\"oceania\":\"오세아니아\",\"offices\":\"사무실\",\"peering\":\"피어링\",\"privacy\":\"개인정보\",\"reunion\":\"레위니옹\",\"romania\":\"루마니아\",\"senegal\":\"세네갈\",\"sign up\":\"가입\",\"somalia\":\"소말리아\",\"support\":\"지원\",\"tokelau\":\"토켈라우\",\"tune in\":\"시청\",\"tunisia\":\"튀니지\",\"ukraine\":\"우크라이나\",\"uruguay\":\"우루과이\",\"vanuatu\":\"바누아투\",\"virtual\":\"가상\",\"webinar\":\"웹 세미나\",\"website\":\"웹사이트: *\",\"activity\":\"활동\",\"air date\":\"방송 날짜\",\"anguilla\":\"앙귈라\",\"archives\":\"아카이브\",\"barbados\":\"바베이도스\",\"botswana\":\"보츠와나\",\"bulgaria\":\"불가리아\",\"cambodia\":\"캄보디아\",\"cameroon\":\"카메룬\",\"colombia\":\"콜롬비아\",\"comments\":\"의견: *\",\"curaçao\":\"퀴라소\",\"djibouti\":\"지부티\",\"domain\":\"도메인 *\",\"dominica\":\"도미니카\",\"download\":\"다운로드\",\"ethiopia\":\"에티오피아\",\"featured\":\"기능\",\"get help\":\"지원 받기\",\"guernsey\":\"건지\",\"honduras\":\"온두라스\",\"industry\":\"산업\",\"innovate\":\"혁신\",\"kiribati\":\"키리바시\",\"language\":\"언어\",\"location\":\"위치\",\"malaysia\":\"말레이시아\",\"maldives\":\"몰디브\",\"mongolia\":\"몽골\",\"our team\":\"Cloudflare 팀\",\"pakistan\":\"파키스탄\",\"paraguay\":\"파라과이\",\"password\":\"비밀번호\",\"physical\":\"물리적\",\"pitcairn\":\"피트케언\",\"portugal\":\"포르투갈\",\"register\":\"등록\",\"reseller\":\"리셀러\",\"security\":\"보안\",\"slovakia\":\"슬로바키아\",\"slovenia\":\"슬로베니아\",\"speakers\":\"연사\",\"stagnate\":\"침체\",\"suriname\":\"수리남\",\"tanzania\":\"탄자니아\",\"thailand\":\"태국\",\"upcoming\":\"일정\",\"viet nam\":\"베트남\",\"view all\":\"모두 보기\",\"webinars\":\"웨비나\",\"zimbabwe\":\"짐바브웨\",\"argentina\":\"아르헨티나\",\"australia\":\"호주\",\"gibraltar\":\"지브롤터\",\"greenland\":\"그린란드\",\"guatemala\":\"과테말라\",\"hong kong\":\"홍콩\",\"indonesia\":\"인도네시아\",\"job title\":\"직위...*\",\"last name\":\"성: *\",\"lithuania\":\"리투아니아\",\"load more\":\"더 보기\",\"mauritius\":\"모리셔스\",\"nicaragua\":\"니카라과\",\"our board\":\"Cloudflare 보드\",\"palestine\":\"팔레스타인\",\"plan type\":\"요금제 유형:\",\"resilient\":\"복원력이 있음\",\"saas apps\":\"SaaS 앱\",\"select\":\"선택...\",\"show more\":\"자세히 보기\",\"singapore\":\"싱가포르\",\"sponsored\":\"후원\",\"sri lanka\":\"스리랑카\",\"subscribe\":\"구독\",\"swaziland\":\"스와질란드\",\"thank you\":\"감사합니다\",\"use case\":\"사용 사례:\",\"venezuela\":\"베네수엘라\",\"watch now\":\"지금 보기\",\"whatsapp\":\"WhatsApp:\",\"your api\":\"귀하의 API.\",\"your app\":\"귀하의 앱.\",\"almoststat\":\"약 %{value}Tbps\",\"antarctica\":\"남극\",\"azerbaijan\":\"아제르바이잔\",\"bangladesh\":\"방글라데시\",\"bot attack\":\"봇 공격\",\"cache node\":\"캐시 노드\",\"cape verde\":\"카보베르데\",\"click here\":\"여기를 클릭하십시오\",\"contact me\":\"문의\",\"contact us\":\"문의\",\"costa rica\":\"코스타리카\",\"first name\":\"이름: *\",\"guadeloupe\":\"과들루프\",\"it - staff\":\"IT - 스태프\",\"interests\":\"관심사:\",\"kazakhstan\":\"카자흐스탄\",\"kyrgyzstan\":\"키르기스스탄\",\"learn more\":\"자세한 정보\",\"luxembourg\":\"룩셈부르크\",\"madagascar\":\"마다가스카르\",\"martinique\":\"마르티니크\",\"mauritania\":\"모리타니아\",\"micronesia\":\"미크로네시아\",\"montenegro\":\"몬테네그로\",\"montserrat\":\"몬트세라트\",\"mozambique\":\"모잠비크\",\"press page\":\"보도 자료 페이지\",\"san marino\":\"산마리노\",\"serverless\":\"서버리스\",\"seychelles\":\"세이셸\",\"tajikistan\":\"타지키스탄\",\"uzbekistan\":\"우즈베키스탄\",\"vegetarian\":\"베지테리언\",\"vulnerable\":\"취약함\",\"whitepaper\":\"백서\",\"work email\":\"업무용 이메일: *\",\"yc batch\":\"YC 배치 *\",\"afghanistan\":\"아프가니스탄\",\"campaign\":\"유세: *\",\"communities\":\"커뮤니티\",\"ddos attack\":\"DDoS 공격\",\"description\":\"설명\",\"distributor\":\"유통업체\",\"el salvador\":\"엘살바도르\",\"full name\":\"성명 *\",\"get started\":\"시작하기\",\"isle of man\":\"맨섬\",\"key results\":\"주요 결과\",\"link copied\":\"링크 복사됨\",\"middle east\":\"중동\",\"most recent\":\"최근\",\"netherlands\":\"네덜란드\",\"new zealand\":\"뉴질랜드\",\"north korea\":\"북한(조선 민주주의 인민 공화국)\",\"performance\":\"성능\",\"philippines\":\"필리핀\",\"please wait\":\"기다려 주십시오.\",\"postal code\":\"우편 번호: *\",\"press/media\":\"언론/미디어\",\"puerto rico\":\"푸에르토리코\",\"reliability\":\"신뢰성\",\"saint lucia\":\"세인트루시아\",\"search tips\":\"검색 팁\",\"select plan\":\"Select 요금제\",\"set up your\":\"설정하기\",\"south korea\":\"한국(대한민국)\",\"south sudan\":\"남수단\",\"switzerland\":\"스위스\",\"timor-leste\":\"동티모르\",\"watch video\":\"비디오 보기\",\"website url\":\"웹 사이트 URL\",\"all features\":\"모든 기능\",\"batch year\":\"배치 연도 *\",\"burkina faso\":\"부르키나파소\",\"chad (tchad\":\"차드(Tchad)\",\"clear filter\":\"필터 지우기\",\"close window\":\"창 닫기\",\"cook islands\":\"쿡제도\",\"data centers\":\"데이터 센터\",\"download pdf\":\"PDF 다운로드\",\"get in touch\":\"문의하기\",\"it - c-level\":\"IT - C-레벨\",\"it - manager\":\"IT - 관리자\",\"infographics\":\"인포그래픽\",\"peru (per\":\"페루(Perú)\",\"remote users\":\"원격 사용자\",\"request demo\":\"데모 요청\",\"saint helena\":\"세인트헬레나\",\"saudi arabia\":\"사우디 아라비아\",\"sierra leone\":\"시에라리온\",\"sint maarten\":\"신트마르턴\",\"south africa\":\"남아프리카 공화국\",\"turkmenistan\":\"투르크메니스탄\",\"form.privacy\":\"이 양식을 제출하면 Cloudflare 제품, 이벤트, 특별 제안과 관련된 정보를 받는 데 동의한 것으로 간주됩니다. 언제든 이러한 정보를 받지 않도록 구독을 취소할 수 있습니다. Cloudflare는 고객의 데이터를 판매하지 않으며 고객의 개인 정보 관련 선택 사항을 중시합니다. Cloudflare의 <a href='%{PRIVACY_POLICY_URL}' target='_blank'>개인정보 취급방침</a>을 참고하시기 바랍니다.\",\"aland islands\":\"올란드제도\",\"bouvet island\":\"부베섬\",\"call sales at\":\"영업 담당자에게 전화\",\"contact sales\":\"영업팀에 문의\",\"cote d'ivoire\":\"코트디부아르\",\"email address\":\"이메일 주소 *\",\"faroe islands\":\"페로 제도\",\"french guiana\":\"프랑스령 기아나\",\"ghana (gaana\":\"가나\",\"guinea-bissau\":\"기니비사우\",\"internet apps\":\"인터넷 앱\",\"liechtenstein\":\"리히텐슈타인\",\"network layer\":\"네트워크 계층\",\"new caledonia\":\"뉴칼레도니아\",\"niger (nijar\":\"니제르(Nijar)\",\"north america\":\"북미\",\"organization\":\"조직: *\",\"plans/pricing\":\"요금제/가격\",\"published on\":\"게시 일자:\",\"register now\":\"지금 등록하십시오!\",\"sub-processor\":\"하위 프로세서\",\"under attack\":\"공격을 받고 계신가요?\",\"united states\":\"미국\",\"webinars type\":\"웨비나 유형\",\"your network\":\"귀하의 네트워크.\",\"your website\":\"귀하의 웹사이트.\",\"american samoa\":\"미국령 사모아\",\"benin (bénin\":\"베냉(Bénin)\",\"cayman islands\":\"케이맨제도\",\"cloudflare inc\":\"Cloudflare, Inc.\",\"czech republic\":\"체코 공화국\",\"download image\":\"이미지 다운로드\",\"featured count\":\"주요 카운트\",\"italy (italia\":\"이탈리아(Italia)\",\"macau\":\"마카오(澳門)\",\"mainland china\":\"중국 본토\",\"meeting reward\":\"미팅 보상\",\"must be a url\":\"URL이어야 합니다.\",\"norfolk island\":\"노퍽섬\",\"norway (norge\":\"노르웨이(Norge)\",\"press releases\":\"보도 자료\",\"student/intern\":\"학생/인턴\",\"type of attack\":\"공격 유형 *\",\"united kingdom\":\"영국\",\"wechat number\":\"WeChat 전화번호: *\",\"western sahara\":\"서사하라\",\"collapse-facet\":\"%{label} 패싯 축소하기\",\"åland islands\":\"올란드제도\",\"add to calendar\":\"일정에 추가\",\"brazil (brasil\":\"브라질(Brasil)\",\"console connect\":\"콘솔 연결\",\"estonia (eesti\":\"에스토니아(Eesti)\",\"finland (suomi\":\"핀란드(Suomi)\",\"have questions\":\"질문이 있으신가요?\",\"interested in\":\"관심 대상:*\",\"learning center\":\"학습 센터\",\"link from video\":\"동영상 링크\",\"more than 100mb\":\"100MB 이상\",\"poland (polska\":\"폴란드(Polska)\",\"previous events\":\"이전 이벤트\",\"related content\":\"관련 콘텐츠\",\"resource center\":\"리소스 센터\",\"solomon islands\":\"솔로몬제도\",\"source/location\":\"소스/위치\",\"spain (españa\":\"스페인(España)\",\"upcoming events\":\"예정된 이벤트\",\"video streaming\":\"동영상 스트리밍\",\"date_with_colon\":\"날짜:\",\"contact us today\":\"지금 문의\",\"christmas island\":\"크리스마스섬\",\"contact email\":\"연락처 이메일 주소: *\",\"côte d’ivoire\":\"코트디부아르\",\"featured stories\":\"특집 기사\",\"featured webinar\":\"주요 웨비나\",\"french polynesia\":\"프랑스령 폴리네시아\",\"guinea (guinée\":\"기니(Guinée)\",\"it - vp/director\":\"IT - VP/이사\",\"keynote speakers\":\"기조 연사\",\"laos\":\"라오스(ລາວ)\",\"latvia (latvija\":\"라트비아(Latvija)\",\"marshall islands\":\"마샬 제도\",\"mexico (méxico\":\"멕시코(México)\",\"num employees\":\"직원 수: *\",\"organization url\":\"조직 URL: *\",\"panama (panam\":\"파나마(Panamá)\",\"papua new guinea\":\"파푸아뉴기니\",\"preferred city\":\"선호하는 도시*\",\"related products\":\"관련 제품\",\"related blogpost\":\"관련 블로그 게시물\",\"results per page\":\"페이지당 결과\",\"security - staff\":\"보안 - 스태프\",\"self-hosted apps\":\"자체 호스팅 앱\",\"services partner\":\"서비스 파트너\",\"support response\":\"지원 응답\",\"sweden (sverige\":\"스웨덴(Sverige)\",\"to be determined\":\"추후 결정\",\"sales_with_colon\":\"영업:\",\"accelerator name\":\"Accelerator 이름:\",\"access management\":\"액세스 관리\",\"belgium (belgi\":\"벨기에(België)\",\"brunei darussalam\":\"브루나이 다루살람\",\"copy article link\":\"글 링크 복사\",\"denmark (danmark\":\"덴마크(Danmark)\",\"equatorial guinea\":\"적도 기니\",\"iceland (ísland\":\"아이슬란드(Ísland)\",\"mauritius (moris\":\"모리셔스(Moris)\",\"must be a number\":\"숫자여야 합니다.\",\"preferred country\":\"선호하는 국가 *\",\"ransomware attack\":\"랜섬웨어 공격\",\"saint barthélemy\":\"생바르텔레미\",\"schema validation\":\"스키마 검증\",\"search cloudflare\":\"Cloudflare 검색\",\"talk to an expert\":\"전문가 상담\",\"turkey (türkiye\":\"터키(Türkiye)\",\"url for peeringdb\":\"PeeringDB의 URL\",\"view in dashboard\":\"대시보드에서 보기\",\"wallis and futuna\":\"월리스푸투나제도\",\"webinar slidedeck\":\"웨비나 슬라이드 덱\",\"form.privacy.gdpr\":\"Cloudflare에 제공하는 정보는 Cloudflare <a href='%{PRIVACY_POLICY_URL}' target='_blank'>개인정보 취급방침</a> 조건에 따라 관리됩니다.\",\"burundi (uburundi\":\"부룬디(Uburundi)\",\"croatia (hrvatska\":\"크로아티아(Hrvatska)\",\"dominican republic\":\"도미니카공화국\",\"eng/devops - staff\":\"엔지니어링/개발 - 스태프\",\"existing customer\":\"기존 고객이십니까?\",\"korea, republic of\":\"대한민국\",\"namibia (namibi\":\"나미비아(Namibië)\",\"on-demand webinars\":\"온디맨드 웨비나\",\"organization name\":\"조직 이름:\",\"romania (românia\":\"루마니아(România)\",\"russian federation\":\"러시아 연방\",\"security - c-level\":\"보안 - C-레벨\",\"security - manager\":\"보안 - 관리자\",\"submitting form\":\"양식 제출 중...\",\"technology partner\":\"기술 파트너\",\"type of connection\":\"연결 유형\",\"albania (shqipëri\":\"알바니아(Shqipëri)\",\"antigua and barbuda\":\"앤티가 바부다\",\"cameroon (cameroun\":\"카메룬(Cameroun)\",\"durationbadgelevels\":{\"pro\":{\"time\":\"25분\",\"level\":\"초급\"},\"free\":{\"time\":\"20분\",\"level\":\"초급\"},\"business\":{\"time\":\"35분\",\"level\":\"초급\"}},\"in partnership with\":\"파트너:\",\"learning objectives\":\"학습 목표\",\"lithuania (lietuva\":\"리투아니아(Lietuva)\",\"preferred address\":\"선호하는 주소*\",\"read the case study\":\"사례 연구 읽어보기\",\"scroll to view more\":\"스크롤하여 자세히 보기\",\"senegal (sénégal\":\"세네갈(Sénégal)\",\"telegram messaging\":\"Telegram 메시징:\",\"trinidad and tobago\":\"트리니다드토바고\",\"u.s. virgin islands\":\"미국령 버진 아일랜드\",\"want to learn more\":\"자세한 정보가 필요하십니까?\",\"you are registered\":\"등록되었습니다.\",\"zero trust security\":\"제로 트러스트 보안\",\"additionaltermstext\":\"* 추가 이용 약관이 적용될 수 있습니다.\",\"data loss prevention\":\"데이터 손실 방지\",\"dietary restrictions\":\"식사 제한:\",\"email recommendation\":\"권장 사항 이메일\",\"email_recommendation\":\"권장 사항 이메일\",\"eng/devops - c-level\":\"엔지니어링/개발 - C-레벨\",\"eng/devops - manager\":\"엔지니어링/개발 - 관리자\",\"looking for support\":\"지원을 찾으시나요?\",\"moldova, republic of\":\"몰도바공화국\",\"must be valid email\":\"유효한 이메일이어야 합니다.\",\"network as a service\":\"서비스로서의 네트워크\",\"private chat/support\":\"비공개 채팅/지원\",\"related case studies\":\"관련 사례 연구\",\"set up your pro plan\":\"Pro 요금제 설정\",\"slovakia (slovensko\":\"슬로바키아(Slovensko)\",\"slovenia (slovenija\":\"슬로베니아(Slovenija)\",\"somalia (soomaaliya\":\"소말리아(Soomaaliya)\",\"syrian arab republic\":\"시리아\",\"united arab emirates\":\"아랍에미리트\",\"vietnam (việt nam\":\"베트남(Việt Nam)\",\"form.privacy.partner\":\"아래 양식을 제출하면 Cloudflare와 %{PARTNER}의 제품, 이벤트, 특별 제안 등에 대한 정보 수신을 요청하는 것으로 간주되며 Cloudflare가 <a href='%{PRIVACY_POLICY_URL}' target='_blank'>Cloudflare 개인정보 취급방침</a>과 이(가) %{PARTNER}의 개인정보 취급방침에 설명된 바에 따라 귀하의 개인 데이터를 프로세싱하는 데 동의한 것으로 간주됩니다. 또한, Cloudflare가 귀하의 개인 데이터를 %{PARTNER}와(과) 공유하는 데 동의한 것으로 간주됩니다.\",\"accelerator program\":\"Accelerator 프로그램 *\",\"austria (österreich\":\"오스트리아(Österreich)\",\"caribbean netherlands\":\"네덜란드령 카리브\",\"germany (deutschland\":\"독일(Deutschland)\",\"gluten free / coeliac\":\"글루텐프리/소화 쉬움\",\"must be a valid date\":\"유효한 날짜여야 합니다.\",\"no credit card needed\":\"신용카드 필요 없음\",\"russia\":\"러시아(Россия)\",\"saint kitts and nevis\":\"세인트키츠네비스\",\"sao tome and principe\":\"상투메 프린시페\",\"set up your free plan\":\"Free 요금제 설정\",\"switzerland (schweiz\":\"스위스(Schweiz)\",\"view all case studies\":\"모든 사례 연구 보기\",\"bosnia and herzegovina\":\"보스니아 헤르체코비나\",\"british virgin islands\":\"영국령 버진 아일랜드\",\"cloud resources attack\":\"클라우드 자원 공격\",\"current ddos vendor\":\"현재 DDoS 벤더...\",\"montenegro (crna gora\":\"몬테네그로(Crna Gora)\",\"other (please specify\":\"기타(자세한 내용)\",\"other - please specify\":\"기타 - 구체적으로 적어주세요\",\"réunion (la réunion\":\"레위니옹(La Réunion)\",\"security - vp/director\":\"보안 - VP/이사\",\"select your country\":\"국가를 선택하세요...\",\"svalbard and jan mayen\":\"스발바르 얀마옌 제도\",\"terabitspersecondshort\":\"%{value} Tbps\",\"upcoming live webinars\":\"예정된 라이브 웨비나\",\"want to keep learning\":\"계속 알아보시겠어요?\",\"a server error occured\":\"서버 오류가 발생했습니다.\",\"cape verde (kabu verdi\":\"카보베르데(Kabu Verdi)\",\"cocos (keeling) islands\":\"코코스(킬링) 제도\",\"ddos protection hotline\":\"DDoS 방어 핫라인\",\"hungary (magyarország\":\"헝가리(Magyarország)\",\"interconnection partner\":\"상호 연결 파트너\",\"must be a phone number\":\"전화 번호여야 합니다.\",\"netherlands (nederland\":\"네덜란드(Nederland)\",\"preferred postal code\":\"선호하는 우편번호*\",\"this field is required\":\"이 필드는 필수입니다.\",\"virgin islands, british\":\"영국령 버진 제도\",\"azerbaijan (azərbaycan\":\"아제르바이잔(Azərbaycan)\",\"central african republic\":\"중앙아프리카 공화국\",\"early access to features\":\"주요 기능 초기 액세스\",\"eng/devops - vp/director\":\"엔지니어링/개발 - VP/이사\",\"example \\\"cloudflare.com\":\"예 'cloudflare.com'\",\"faroe islands (føroyar\":\"페로 제도(Føroyar)\",\"infrastructure - c-level\":\"인프라 - C-레벨\",\"infrastructure - manager\":\"인프라 - 관리자\",\"mozambique (moçambique\":\"모잠비크(Moçambique)\",\"northern mariana islands\":\"북마리아나제도\",\"please select an option\":\"옵션을 선택하십시오.\",\"turks and caicos islands\":\"터크스카이코스 제도\",\"after_reading_with_colon\":\"이 글을 읽은 후에 다음을 할 수 있습니다:\",\"supportresponsetitletext\":\"지원 응답\",\"cloudflare account email\":\"Cloudflare 계정 이메일:\",\"dairy free / lactose free\":\"유제품 미사용/락토프리\",\"identity or access attack\":\"ID 또는 액세스 공격\",\"iran, islamic republic of\":\"이란\",\"kv and/or durable objects\":\"KV 및/또는 Durable Objects\",\"madagascar (madagasikara\":\"마다가스카르(Madagasikara)\",\"product - product manager\":\"제품 - 제품 관리자\",\"saint pierre and miquelon\":\"생피에르 미클롱\",\"sales/marketing - c-level\":\"영업/마케팅 - C-레벨\",\"set up your business plan\":\"Business 요금제 설정\",\"sint maarten (dutch part\":\"신트마르턴(네덜란드령)\",\"solution & product guides\":\"솔루션 및 제품 안내서\",\"uzbekistan (oʻzbekiston\":\"우즈베키스탄(Oʻzbekiston)\",\"web or application attack\":\"웹 또는 응용 프로그램 공격\",\"marketo_blocked_countries\":\"현재 선택한 국가에 위치한 기업 또는 조직에는 서비스를 제공해드릴 수 없습니다. 추가적인 도움이 필요하시면 legal@cloudflare.com으로 문의해 주시기 바랍니다.\",\"consulting integrator (ci\":\"컨설팅 통합업체(CI)\",\"fish / shellfish allergies\":\"생선/갑각류 알러지\",\"infrastructure - architect\":\"인프라 - 아키텍트\",\"learn how cloudflare works\":\"Cloudflare의 작동 원리 알아보기\",\"network or firewall attack\":\"네트워크 또는 방화벽 공격\",\"saint martin (french part\":\"생마르탱(프랑스령)\",\"falkland islands (malvinas\":\"포클랜드제도(말비나스)\",\"finance/procurement - staff\":\"재무/조달 - 스태프\",\"french southern territories\":\"프랑스령 남방 영토\",\"moldova (republica moldova\":\"몰도바(Republica Moldova)\",\"tree nut / peanut allergies\":\"견과류/땅콩 알러지\",\"form.privacy.newsletterform\":\"Cloudflare가 개인 데이터를 수집하고 처리하는 방법은 Cloudflare의 <a class='alternate-link--blue3' href='%{PRIVACY_POLICY_URL}' target='_blank'>개인정보 취급방침</a>을 참조하세요.\",\"expected storage size in tb\":\"예상되는 스토리지 크기(단위: TB):\",\"greenland (kalaallit nunaat\":\"그린란드(Kalaallit Nunaat)\",\"infrastructure - vp/director\":\"인프라 - VP/이사\",\"physical data center partner\":\"물리적 데이터 센터 파트너\",\"tanzania, united republic of\":\"탄자니아 연방공화국\",\"what interests you the most\":\"무엇에 가장 관심이 있으십니까? \",\"finance/procurement - c-level\":\"재무/조달 - C-레벨\",\"finance/procurement - manager\":\"재무/조달 - 관리자\",\"guinea-bissau (guiné bissau\":\"기니비사우(Guiné Bissau)\",\"holy see (vatican city state\":\"교황청(바티칸 시국)\",\"latin america & the caribbean\":\"라틴 아메리카 및 카리브해\",\"please refresh and try again\":\"새로 고치고 다시 시도하십시오.\",\"proof of concept (poc) reward\":\"개념 증명(POC) 보상\",\"sales/marketing - vp/director\":\"영업/마케팅 - VP/이사\",\"select accelerator program\":\"Accelerator 프로그램 선택...\",\"subscribe to trending stories\":\"인기 스토리 구독하기\",\"technical presentation reward\":\"기술 프레젠테이션 보상\",\"web security (cdn, ddos, waf\":\"웹 보안(CDN, DDoS, WAF)\",\"autonomous system number (asn\":\"자율 시스템 번호(ASN)\",\"british indian ocean territory\":\"영국령 인도양 식민지\",\"must be an amount of currency\":\"금액이어야 합니다.\",\"are you currently under attack\":\"현재 공격을 받고 계신가요?\",\"bolivia, plurinational state of\":\"볼리비아다민족국\",\"dns hijacking or on path attack\":\"DNS 하이재킹 또는 경로 상 공격\",\"global systems integrator (gsi\":\"글로벌 시스템 통합업체(GSI)\",\"bonaire, sint eustatius and saba\":\"보네르, 신트외스타티위스 사바\",\"lao people's democratic republic\":\"라오 인민민주공화국\",\"no results. try removing filters\":\"결과 없음. 필터를 제거해보세요\",\"saint vincent and the grenadines\":\"세인트빈센트 그레나딘\",\"your privacy is important to us\":\"귀하의 개인정보는 저희에게 매우 중요합니다.\",\"welcome_center_recommended_steps\":\"본 안내의 권장 단계에 따라 Cloudflare에서 계정을 설정하고 사이트를 활성화하세요. 이미 Cloudflare 계정이 있는 경우 로그인한 후 대시보드의 각 단계를 따르시면 됩니다. 아직 Cloudflare 계정이 없습니까?\",\"falkland islands (islas malvinas\":\"포클랜드제도(Islas Malvinas)\",\"finance/procurement - vp/director\":\"재무/조달 - VP/이사\",\"french guiana (guyane française\":\"프랑스령 기아나(Guyane française)\",\"heard island and mcdonald islands\":\"허드 맥도널드 제도\",\"how large a script will you need\":\"얼마나 큰 스크립트가 필요하신가요? *\",\"not sure? we’ll help you assess\":\"잘 모르시겠습니까? 평가를 도와드리겠습니다.\",\"try exploring these helpful areas\":\"다음과 같은 유용한 내용을 탐색해보세요\",\"venezuela, bolivarian republic of\":\"베네수엘라 볼리바리안 공화국\",\"czech republic (česká republika\":\"체코 공화국(Česká republika)\",\"data center location (city, state\":\"데이터 센터 위치(도시, 주)\",\"incorrect email. please try again\":\"올바르지 않은 이메일입니다. 다시 시도하세요.\",\"vatican city (città del vaticano\":\"바티칸 시티(Città del Vaticano)\",\"check the spelling of your keywords\":\"키워드의 철자를 확인하세요\",\"new caledonia (nouvelle-calédonie\":\"뉴칼레도니아(Nouvelle-Calédonie)\",\"other saas applications not listed\":\"목록에 없는 기타 SaaS 응용 프로그램:\",\"which events will you be attending\":\"어느 이벤트에 참여하시나요?\",\"congo (republic) (congo-brazzaville\":\"콩고 공화국(Congo-Brazzaville)\",\"myanmar (burma\":\"미얀마(버마)(မြန်မာ)\",\"please select which products you use\":\"사용하고 있는 제품을 선택해 주세요.\",\"wallis and futuna (wallis-et-futuna\":\"월리스푸투나제도(Wallis-et-Futuna)\",\"congo, the democratic republic of the\":\"콩고민주공화국\",\"equatorial guinea (guinea ecuatorial\":\"적도 기니(Guinea Ecuatorial)\",\"tell us a bit about your business\":\"귀사의 비즈니스에 관한 추가 정보:  *\",\"title required. please enter a title\":\"제목은 필수입니다. 제목을 입력하십시오.\",\"why do you need a larger script size\":\"왜 더 커진 스크립트 크기가 필요하신가요?\",\"korea, democratic people's republic of\":\"북한\",\"staying in touch with product managers\":\"제품 관리자를 통해 연락을 유지하세요\",\"are you a covid-19 vaccine distributor\":\"COVID-19 백신 배포자이신가요? *\",\"mqtt (mosquitto, aws/gcp iot core, etc\":\"MQTT(Mosquitto, AWS/GCP IoT Core 등)\",\"next day testing and deployment needed\":\"다음 날 테스팅 및 배포가 필요하신가요? *\",\"what is the title of the prospect(s\":\"잠재 고객의 직함은 무엇입니까? *\",\"french polynesia (polynésie française\":\"프랑스령 폴리네시아(Polynésie française)\",\"location where you are seeking a partner\":\"파트너를 찾고 있는 위치\",\"macedonia (fyrom\":\"마케도니아(FYROM)(Македонија)\",\"postgres or other rdb (notify or similar\":\"Postgres 또는 기타 RDB(NOTIFY 또는 유사한 것)\",\"what type of partner are you looking for\":\"어떤 유형의 파트너를 찾으시나요?\",\"dominican republic (república dominicana\":\"도미니카 공화국(República Dominicana)\",\"macedonia, the former yugoslav republic of\":\"마케도니아, 구 유고슬라비아 공화국\",\"full name is required. please enter a name\":\"성명은 필수입니다. 이름을 입력하십시오.\",\"last name is required. please enter a name\":\"성은 필수입니다. 이름을 입력해 주십시오.\",\"first name is required. please enter a name\":\"이름은 필수입니다. 이름을 입력하십시오.\",\"saint helena, ascension and tristan da cunha\":\"세인트헬레나 어센션 트리스탄다쿠냐\",\"south georgia and the south sandwich islands\":\"사우스조지아 사우스샌드위치 제도\",\"describe the problem you are looking to solve\":\"해결하고자 하는 문제를 설명해 주세요.\",\"how many employees does your company have\":\"귀사의 직원 수는 몇 명인가요?  *\",\"congo (drc) (jamhuri ya kidemokrasia ya kongo\":\"콩고 민주공화국(Jamhuri ya Kidemokrasia ya Kongo)\",\"what have you built using cloudflare products\":\"Cloudflare 제품을 사용하여 무엇을 구축하십니까?\",\"after reading this article you will be able to\":\"이 글을 읽은 후에 다음을 할 수 있습니다:\",\"saint martin (saint-martin (partie française\":\"세인트 마틴(Saint-Martin (partie française))\",\"sorry, no search results matched with your term\":\"죄송합니다. 입력하신 용어와 일치하는 검색 결과가 없습니다\",\"what messaging services have you used before\":\"이전에 어떤 메시징 서비스를 사용하셨나요? *\",\"do you meet the requirements for project pangea\":\"Pangea 프로젝트의 요건을 충족합니까?\",\"if your guide does not download, enable pop-ups\":\"가이드가 다운로드되지 않는 경우 팝업을 활성화하십시오.\",\"são tomé and príncipe (são tomé e príncipe\":\"상투메 프린시페(São Tomé e Príncipe)\",\"brief description on your role in covid-19 relief\":\"COVID-19 구호 계획에서 귀 조직의 역할에 대한 간단한 설명: *\",\"email (of cloudflare account to receive upgrade\":\"이메일(업그레이드를 받을 Cloudflare 계정의 이메일) *\",\"company name required. please enter a company name\":\"회사명은 필수입니다. 회사명을 입력하십시오.\",\"phone number required. please enter a phone number\":\"전화번호는 필수입니다. 전화번호를 입력하십시오.\",\"try using fewer, different or more general keywords\":\"더 적은 수의 키워드나 다른 키워드나 더 일반적인 키워드로 시도하세요\",\"saint pierre and miquelon (saint-pierre-et-miquelon\":\"생피에르 미클롱(Saint-Pierre-et-Miquelon)\",\"central african republic (république centrafricaine\":\"중앙아프리카 공화국(République centrafricaine)\",\"get started in just 5 minutes. join cloudflare today\":\"단 5분이면 시작할 수 있습니다. 바로 지금 Cloudflare에 가입하십시오.\",\"name of company or organization of the prospect(s\":\"잠재 고객의 회사 이름 또는 조직 이름은 무엇입니까? *\",\"unable to submit form. check field input and try again\":\"양식을 제출할 수 없습니다. 필드 입력을 확인하고 다시 시도하십시오.\",\"there are no on-demand webinars that meet your criteria\":\"기준에 맞는 온디맨드 웨비나가 없습니다.\",\"what existing cloudflare products are you using today\":\"기존의 어떤 Cloudflare 제품을 현재 사용하고 계신가요? *\",\"someone from cloudflare will be in touch with you shortly\":\"Cloudflare에서 곧 연락드릴 것입니다.\",\"do you currently have a working integration with cloudflare\":\"현재 Cloudflare와 통합되어 하고 있는 업무가 있나요?\",\"sign up to receive curated learning articles from cloudflare\":\"Cloudflare에 가입해서 엄선된 학습 문서를 받아 보세요\",\"there are no upcoming live webinars that meet your criteria\":\"기준에 맞는 예정 라이브 웨비나가 없습니다.\",\"first and last name of prospect or prospects participating\":\"참가하는 잠재 고객의 이름과 성은 무엇입니까? *\",\"website url of the company or organization of the prospect(s\":\"잠재 고객의 회사 또는 조직이 사용하는 웹사이트 URL은 무엇입니까? *\",\"please elaborate on the circumstances of current or past attacks\":\"현재의 공격 상황이나 이전의 공격 상황을 자세히 설명해 주세요.\",\"what was the date of your meeting, technical presentation or poc\":\"미팅, 기술 프레젠테이션 또는 POC 날짜는 언제였습니까? *\",\"what have you built using cloudflare’s products before, if anything\":\"구축한 적이 있는 경우, Cloudflare의 제품을 사용하여 이전에 무엇을 구축하셨나요?\",\"which saas applications do you want to secure? (check all that apply\":\"어떤 SaaS 응용 프로그램을 보호하고 싶으신가요? (해당하는 사항 모두 선택) *\",\"must be a phone number. <span class='mktoerrordetail'>503-555-1212</span\":\"전화 번호여야 합니다. <span class='mktoErrorDetail'>503-555-1212</span>\",\"what support do you need from cloudflare to advance this sales opportunity\":\"이 영업 기회를 살리려면 Cloudflare에서 어떤 지원을 받아야 합니까? *\",\"are there any mutual customers interested in or already using this integration\":\"이러한 통합에 관심이 있거나 이미 통합을 이용하고 있는 공통 고객이 있나요?\",\"if you are an existing cloudflare stream user, what are your primary use cases\":\"현재 Cloudflare Stream을 이용하는 고객인 경우, 주요 사용 사례는 무엇입니까?\",\"website url required. please enter a website similar to http://www.example.com\":\"웹 사이트 URL은 필수입니다. http://www.example.com 같은 웹 사이트를 입력하세요.\",\"what type of insights or data are you looking for from the cloudforce one team\":\"Cloudforce One 팀에서 어떤 유형의 인사이트나 데이터를 찾고 있나요?\",\"must be valid email. <span class='mktoerrordetail'>example@yourdomain.com</span\":\"유효한 이메일이어야 합니다. <span class='mktoErrorDetail'>example@yourdomain.com</span>\",\"please provide an overview of the proposed partnership. (in less than 300 words\":\"제안하는 파트너십의 개요를 설명해주세요. (300단어 미만)\",\"what existing cloudflare products are your customers most interested in today\":\"기존 Cloudflare 제품 중 여러분의 고객이 현재 가장 관심을 보이는 제품은 무엇인가요?  *\",\"how much do you spend monthly on cloudflare across all your customers currently\":\"모든 고객을 총합하여, 지금 월마다 Cloudflare에 지출하는 비용이 얼마나 되나요? *\",\"which reward are you claiming? please submit a separate claim form for each reward\":\"요청하려는 보상은 무엇입니까? 각 보상마다 별도의 요청 양식을 제출해 주십시오. *\",\"leave a note about why you believe your organization is a good fit for project galileo\":\"여러분의 조직이 Galileo 프로젝트에 적합한 이유를 간략히 설명해 주세요.\",\"what was the prospect's articulated need for a cloudflare one product? please describe\":\"잠재 고객이 Cloudflare One 제품과 관련해 필요하다고 설명했던 사항은 무엇입니까? 구체적으로 설명해 주십시오 *\",\"name of cloudflare representative attending the meeting, technical presentation or poc\":\"미팅, 기술 프레젠테이션 또는 POC에 참가한 Cloudflare 담당자의 이름은 무엇입니까? *\",\"the information you provide to cloudflare is governed by the terms of our privacy policy\":\"Cloudflare에 제공하는 정보는 Cloudflare 개인정보 취급방침 조항에 따라 관리됩니다.\",\"please complete this form to send our personalized cloudflare product recommendation to your inbox\":\"아래 양식을 작성하시면 맞춤형 Cloudflare 제품 권장 사항을 이메일로 보내드립니다.\",\"please_complete_this_form_to_send_our_personalized_cloudflare_product_recommendation_to_your_inbox_\":\"아래 양식을 작성하시면 맞춤형 Cloudflare 제품 권장 사항을 이메일로 보내드립니다.\",\"are there specific cloudflare products or functionality you would like in an enterprise sandbox account\":\"기업 샌드박스 계정에 포함하고 싶은 특정한 Cloudflare 제품이나 기능이 있나요?\",\"asn required. your as number uniquely identifies your network and helps us identify the validity of your request\":\"ASN은 필수입니다. AS 번호는 네트워크를 고유하게 식별하고 요청의 유효성을 파악하는 데 도움을 줍니다.\",\"please enter a url similar to https://www.peeringdb.com/asn/13335. this will speed up validation of your account\":\"https://www.peeringdb.com/asn/13335와 유사한 URL을 입력하십시오. 이것은 계정의 검증 속도를 빠르게 합니다.\",\"yes - i want to stay in touch with cloudflare to receive valuable content such as product news, blog updates, and more\":\"예- 저는 제품 뉴스, 블로그 업데이트 등과 같은 중요한 콘텐츠를 받기 위해 Cloudflare와의 연락을 유지하고 싶습니다.\",\"how many domains/zones/applications (for your clients) do you think you would be able to onboard on average every month\":\"매달 평균 몇 개의 도메인/영역/응용 프로그램을 온보딩할 수 있을 것으로 생각하시나요(클라이언트용으로)? *\",\"which cloudflare one product or products were discussed at the meeting, technical presentation or were involved in the poc\":\"미팅 또는 기술 프레젠테이션에서 논의되었거나 POC에 포함되었던 Cloudflare One 제품은 무엇입니까? *\",\"yes - i want to stay in touch with cloudflare to receive other valuable content such as product news, blog updates, and more\":\"예- 저는 제품 뉴스, 블로그 업데이트 등과 같은 중요한 콘텐츠를 받기 위해 Cloudflare와의 연락을 유지하고 싶습니다.\",\"we host a variety of webinars that showcase how to use cloudflare and how our customers get the most of our services and products\":\"Cloudflare 사용법과 고객이 서비스와 제품을 최대한 활용하는 방법을 보여주는 다양한 웨비나를 개최합니다.\",\"how many domains/zones/applications (for your clients) do you think you would be able to onboard on average every month? (select only one\":\"매달 평균 몇 개의 도메인/영역/응용 프로그램을 온보딩할 수 있을 것으로 생각하시나요(클라이언트용으로)? (하나만 선택) *\",\"by clicking 'get started', i agree to <a class='blue-alternate-link' target='_blank' href='/website-terms/'>cloudflare's terms and conditions</a> and <a class='blue-alternate-link' href='/privacypolicy/' target='_blank'>privacy policy</a\":\"'시작하기'를 클릭함으로써 <a class='blue-alternate-link' target='_blank' href='/website-terms/'>Cloudflare의 이용 약관</a>과 <a class='blue-alternate-link' href='/privacypolicy/' target='_blank'>개인정보처리방침</a>에 동의합니다.\",\"in submitting this form, you agree to receive information from cloudflare related to our products, events, and special offers. you can unsubscribe from such messages at any time. we never sell your data, and we value your privacy choices. please see our privacy policy for information\":\"이 양식을 제출하면, Cloudflare 제품, 이벤트, 특별 제안과 관련된 정보를 받는 데 동의한 것으로 간주됩니다. 언제든 이러한 정보를 받지 않도록 구독을 취소할 수 있습니다. Cloudflare는 고객의 데이터를 판매하지 않으며, 고객의 개인 정보 관련 선택 사항을 중시합니다. Cloudflare의 개인정보처리방침을 참고하시기 바랍니다.\",\"by submitting the form, you request to receive information about cloudflare and %{partner} products, events, and special offers, and you agree to the processing of your personal data by cloudflare as described in the cloudflare privacy policy, and by %{partner} as described in the %{partner}privacy policy. you also authorize cloudflare to share your personal data with %{partner\":\"아래 양식을 제출하면 Cloudflare와 %{PARTNER}의 제품, 이벤트, 특별 제안 등에 대한 정보 수신을 요청하는 것으로 간주되며 Cloudflare가 Cloudflare 개인정보 취급방침과 %{PARTNER}이(가) %{PARTNER}의 개인정보 취급방침에 설명된 바에 따라 귀하의 개인 데이터를 프로세싱하는 데 동의한 것으로 간주됩니다. 또한, Cloudflare가 귀하의 개인 데이터를 %{PARTNER}와 공유하는 데 동의한 것으로 간주됩니다.\"}",
+        marketo1346dropdownData: "{\"infrastructure - c-level\":\"인프라 - C-레벨\",\"infrastructure - vp/director\":\"인프라 - VP/이사\",\"infrastructure - manager\":\"인프라 - 관리자\",\"infrastructure - architect\":\"인프라 - 아키텍트\",\"eng/devops - c-level\":\"엔지니어링/개발 - C-레벨\",\"eng/devops - vp/director\":\"엔지니어링/개발 - VP/이사\",\"eng/devops - manager\":\"엔지니어링/개발 - 관리자\",\"eng/devops - staff\":\"엔지니어링/개발 - 스태프\",\"it - c-level\":\"IT - C-레벨\",\"it - vp/director\":\"IT - VP/이사\",\"it - manager\":\"IT - 관리자\",\"it - staff\":\"IT - 스태프\",\"security - c-level\":\"보안 - C-레벨\",\"security - vp/director\":\"보안 - VP/이사\",\"security - manager\":\"보안 - 관리자\",\"security - staff\":\"보안 - 스태프\",\"finance/procurement - c-level\":\"재무/조달 - C-레벨\",\"finance/procurement - vp/director\":\"재무/조달 - VP/이사\",\"finance/procurement - manager\":\"재무/조달 - 관리자\",\"finance/procurement - staff\":\"재무/조달 - 스태프\",\"sales/marketing - c-level\":\"영업/마케팅 - C-레벨\",\"sales/marketing - vp/director\":\"영업/마케팅 - VP/이사\",\"product - product manager\":\"제품 - 제품 관리자\",\"press/media\":\"언론/미디어\",\"student/intern\":\"학생/인턴\",\"other\":\"기타\"}",
+      gtm: {
+        containerId: "GTM-PKQFGQB",
+        disabled: false,
+        uaCookieDomain: ".cloudflare.com",
+        uaCodeMarketing_29: "UA-10218544-29",
+        optimize: "GTM-N4JSZJ8",
+        uaCodeAdWords: "AW-819572718",
+        uaCodeAdWordsBI: "DC-8921596",
+        adWordsConversionCode: "AW-972248548",
+        adWordsConversionCodeForm: "AW-836330296",
+        adWordsConversionLabel: "caqvCO3e32EQ5KvNzwM",
+        adWordsConversionLabelForm: "-l5JCJnczYgBELjG5Y4D",
+      }
+    }
+  }
+</script>
+<script src="https://assets.www.cloudflare.com/js/runtime-6a16446847617098e330.js" nonce="b9bf3811-fa7f-4fa3-80c1-a9187542feab"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-a9b7aa963cde85dc9611.js" nonce="b9bf3811-fa7f-4fa3-80c1-a9187542feab"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-9ed4ae964e711458f84f.js" nonce="b9bf3811-fa7f-4fa3-80c1-a9187542feab"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-5fd37836d64725aae99f.js" nonce="b9bf3811-fa7f-4fa3-80c1-a9187542feab"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-10223bd69693130e8a70.js" nonce="b9bf3811-fa7f-4fa3-80c1-a9187542feab"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-7c5a2fc67352533f763c.js" nonce="b9bf3811-fa7f-4fa3-80c1-a9187542feab"></script>
+<script src="../js/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="e34df59b-4a48-4bf9-b2b5-7a4bb09cd231"></script>
+</head>
+<body class="marketing-nojs ">
+<header style="display:none" class="flash-banner flash-banner--gray flash-banner--not-localized" data-name="not-localized">
+<section class="tile tile--mini-banner hide-mobile">
+<div class="tile__content--1200px">
+<div class="grid--center grid--vertical-center">
+<h4 class="text--white">이 콘텐�&nbsp;는 현재 �&nbsp;택한 언어로 �&nbsp;�공되지 않습니다. Cloudflare는 이 언어를 포함하여 다양한 언어로 더 많은 콘텐�&nbsp;를 �&nbsp;�공하기 위해 지속�&nbsp;�으로 노�&nbsp;�하�&nbsp; 있습니다. 양해해 주셔서 감사합니다.</h4>
+</div>
+<div class="flash-banner__close_x js-accept-top-nav-mini-flash-banner"></div>
+</div>
+</section>
+</header>
+<script src="https://assets.www.cloudflare.com/js/chunk-98f956b9756523a10775.js" nonce="b9bf3811-fa7f-4fa3-80c1-a9187542feab"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-c8181d31e37c857686bd.js" nonce="b9bf3811-fa7f-4fa3-80c1-a9187542feab"></script>
+<header class="cms-topnav topnav top-nav js-top-nav ">
+<nav class="top-nav__upper-bar top-nav__items test-utility-menu">
+<div class="top-nav__item-list top-nav__item-list--right">
+<span>
+<a href="/ko-kr/plans/enterprise/contact/">영업:</a>
+</span>
+<a data-i18n-phonenumber="" href="tel:+16503198930" style="display:none">+1 650 319 8930</a>
+<noscript>
+      <a href="tel:+16503198930">+1 650 319 8930</a>
+    </noscript>
+<span class="header-section-divider">|</span>
+<a class="header-language-picker js-header-support-picker bold" role="link">
+Support
+<span>
+<svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1.15819L6.84183 2.21065e-05L4.00053 2.84207L1.15816 0L0 1.1576L4.00053 5.15783L8 1.15819Z" fill="#747474"></path>
+</svg>
+</span>
+</a>
+<div id="js-header-support-picker-dropdown" class="js-header-support-picker-dropdown" style="display: none;">
+<ul class="marketing-ul marketing-ul--no-bullets marketing-ul--no-margins-li header-language-picker-dropdown">
+<li>
+<a href="https://dash.cloudflare.com/?to=/:account/support" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="">지원팀 문의</a>
+</li>
+<li>
+<a href="../index_3.html" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="">지원 센터</a>
+</li>
+<li>
+<a href="../index_8.html" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="">Cloudflare 커뮤니티</a>
+</li>
+</ul>
+</div>
+<span class="header-section-divider">|</span>
+<a class="header-language-picker js-header-account-picker bold">
+My Account
+<span>
+<svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1.15819L6.84183 2.21065e-05L4.00053 2.84207L1.15816 0L0 1.1576L4.00053 5.15783L8 1.15819Z" fill="#747474"></path>
+</svg>
+</span>
+</a>
+<div id="js-header-account-picker-dropdown" class="js-header-account-picker-dropdown" style="display: none;">
+<ul class="marketing-ul marketing-ul--no-bullets marketing-ul--no-margins-li header-language-picker-dropdown">
+<li>
+<a href="https://dash.cloudflare.com/login" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="">Log In</a>
+</li>
+<li>
+<a href="https://dash.cloudflare.com/profile" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="">내 프로필</a>
+</li>
+<li>
+<a href="https://dash.cloudflare.com/?to=/:account/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="">계�&nbsp;� 홈</a>
+</li>
+<li>
+<a href="https://dash.cloudflare.com/?to=/:account/billing" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="">요금 청구</a>
+</li>
+<li class="merchandise">
+<a href="/teams/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="">Cloudflare를 사용한 원격 근무자 보안</a>
+</li>
+</ul>
+</div>
+<span class="header-section-divider">|</span>
+<a class="header-language-picker js-header-language-picker">
+<span class="header-language-picker__globe-icon"></span>한국어
+<svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1.15819L6.84183 2.21065e-05L4.00053 2.84207L1.15816 0L0 1.1576L4.00053 5.15783L8 1.15819Z" fill="#747474"></path>
+</svg>
+</a><div id="js-header-language-picker-dropdown" class="js-header-language-picker-dropdown" style="display: none;"><a class="header-language-picker js-header-language-picker">
+</a><ul class="marketing-ul marketing-ul--no-bullets marketing-ul--no-margins-li header-language-picker-dropdown"><a class="header-language-picker js-header-language-picker">
+</a><li><a class="header-language-picker js-header-language-picker">
+</a><a href="cloudflare.eot" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="en-us">English</a>
+</li>
+<li>
+<a href="cloudflare_6.eot">English (United Kingdom)</a>
+</li>
+<li>
+<a href="cloudflare_7.eot">English (Canada)</a>
+</li>
+<li>
+<a href="cloudflare_3.eot">English (Australia)</a>
+</li>
+<li>
+<a href="cloudflare_10.eot">English (India)</a>
+</li>
+<li>
+<a href="cloudflare_4.eot">Deutsch</a>
+</li>
+<li>
+<a href="cloudflare_8.eot">Español</a>
+</li>
+<li>
+<a href="cloudflare_5.eot">Français</a>
+</li>
+<li>
+<a href="cloudflare_12.eot">Italiano</a>
+</li>
+<li>
+<a href="cloudflare_9.eot">日本語</a>
+</li>
+<li class="header-language-picker-dropdown__active">
+<a href="cloudflare_11.eot">한국어</a>
+ </li>
+<li>
+<a href="cloudflare_13.eot">Português</a>
+</li>
+<li>
+<a href="cloudflare_1.eot">繁體中文</a>
+</li>
+<li>
+<a href="cloudflare_2.eot">简体中文</a>
+</li>
+</ul>
+</div>
+</div></nav>
+<nav class="top-nav__upper-bar top-nav__items ab-test">
+<div class="top-nav__item-list top-nav__item-list--right">
+<a href="/searchresults/" class="top-nav__link-search" data-tracking-category="mainnav" data-tracking-action="click" data-tracking-label="Search">
+<svg width="15" height="13.96" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M44.8538 40.1325L29.5838 26.25C31.6534 23.4122 32.5569 19.8892 32.1085 16.4057C31.6602 12.9221 29.8941 9.74271 27.1735 7.52135C24.4529 5.29999 20.9845 4.20551 17.4816 4.463C13.9788 4.72049 10.7077 6.31036 8.34115 8.90567C5.97458 11.501 4.6924 14.9044 4.75828 18.4161C4.82416 21.9278 6.23309 25.2808 8.69533 27.7855C11.1576 30.2902 14.486 31.7563 17.996 31.8822C21.506 32.0081 24.9309 30.7844 27.5663 28.4625L42.8288 42.345L44.8538 40.1325ZM18.5288 28.8825C16.4148 28.8825 14.3483 28.256 12.5901 27.0822C10.832 25.9083 9.4612 24.2397 8.65085 22.2872C7.84049 20.3347 7.62695 18.1858 8.0372 16.112C8.44744 14.0382 9.46306 12.1325 10.9558 10.6356C12.4485 9.13871 14.3514 8.11775 16.424 7.7017C18.4967 7.28565 20.6461 7.49317 22.6009 8.29805C24.5557 9.10293 26.2281 10.4691 27.4068 12.2239C28.5856 13.9787 29.2179 16.0435 29.2238 18.1575C29.2199 20.9928 28.0918 23.7108 26.087 25.7157C24.0821 27.7205 21.3641 28.8486 18.5288 28.8525V28.8825Z" fill="#222222"></path>
+</svg>
+</a>
+<span class="header-section-divider">|</span>
+<span>
+<a class="bold" href="../index_3.html" data-tracking-category="mainnav" data-tracking-action="click" data-tracking-label="Support">지원</a>
+</span>
+<span class="header-section-divider">|</span>
+<span>
+<a href="/ko-kr/plans/enterprise/contact/">영업:</a>
+</span>
+<a data-i18n-phonenumber="" href="tel:+16503198930" style="display:none">+1 650 319 8930</a>
+<noscript>
+          <a href="tel:+16503198930">+1 650 319 8930</a>
+        </noscript>
+<span class="header-section-divider">|</span>
+<a class="header-language-picker js-header-language-picker">
+<span class="header-language-picker__globe-icon"></span>한국어
+<span class="header-language-picker__caret-icon">▶</span>
+<span class="header-language-picker__caret-icon hidden-element">▼</span></a>
+<div id="js-header-language-picker-dropdown" class="js-header-language-picker-dropdown" style="display: none;">
+<ul class="marketing-ul marketing-ul--no-bullets marketing-ul--no-margins-li header-language-picker-dropdown">
+<li>
+<a href="cloudflare.eot" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="en-us">English</a>
+</li>
+<li>
+<a href="cloudflare_6.eot">English (United Kingdom)</a>
+</li>
+<li>
+<a href="cloudflare_7.eot">English (Canada)</a>
+</li>
+<li>
+<a href="cloudflare_3.eot">English (Australia)</a>
+</li>
+<li>
+<a href="cloudflare_10.eot">English (India)</a>
+</li>
+<li>
+<a href="cloudflare_4.eot">Deutsch</a>
+</li>
+<li>
+<a href="cloudflare_8.eot">Español</a>
+</li>
+<li>
+<a href="cloudflare_5.eot">Français</a>
+</li>
+<li>
+<a href="cloudflare_12.eot">Italiano</a>
+</li>
+<li>
+<a href="cloudflare_9.eot">日本語</a>
+</li>
+<li class="header-language-picker-dropdown__active">
+<a href="cloudflare_11.eot">한국어</a>
+</li>
+<li>
+<a href="cloudflare_13.eot">Português</a>
+</li>
+<li>
+<a href="cloudflare_1.eot">繁體中文</a>
+</li>
+<li>
+<a href="cloudflare_2.eot">简体中文</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<nav class="top-nav__items top-nav__items--align-content ">
+<a href="/ko-kr/"> <img style="" class="top-nav__logo top-nav__logo--dark top-nav__logo--localized " src="/img/logo-cloudflare-dark.svg" alt="Cloudflare">
+<img class="top-nav__logo top-nav__logo--light top-nav__logo--localized " src="/img/logo-cloudflare.svg" alt="Cloudflare">
+</a>
+<ul class="top-nav__item-list top-nav__item-list--left">
+<li class="top-nav__item-list__link top-nav__item-list__link--localized top-nav__items__desktop nojs-hide" data-submenu="솔루션" data-tracking-category="mainnav" data-tracking-action="click" data-tracking-label="솔루션" tabindex="0">
+솔루션
+</li>
+<li class="top-nav__item-list__link top-nav__item-list__link--localized top-nav__items__desktop nojs-hide" data-submenu="�&nbsp;�품" data-tracking-category="mainnav" data-tracking-action="click" data-tracking-label="�&nbsp;�품" tabindex="0">
+�&nbsp;�품
+</li>
+<li class="top-nav__item-list__link top-nav__item-list__link--localized top-nav__items__desktop nojs-hide" data-submenu="문서" data-tracking-category="mainnav" data-tracking-action="click" data-tracking-label="문서" tabindex="0">
+문서
+</li>
+<li class="top-nav__item-list__link top-nav__item-list__link--localized top-nav__items__desktop nojs-hide" data-submenu="리소스" data-tracking-category="mainnav" data-tracking-action="click" data-tracking-label="리소스" tabindex="0">
+리소스
+</li>
+<li class="top-nav__item-list__link top-nav__item-list__link--localized top-nav__items__desktop nojs-hide" data-submenu="파트너" data-tracking-category="mainnav" data-tracking-action="click" data-tracking-label="파트너" tabindex="0">
+파트너
+</li>
+<li class="top-nav__item-list__link top-nav__item-list__link--localized top-nav__items__desktop">
+<a href="/ko-kr/enterprise/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="for-enterprise" tabindex="0">
+기업용
+</a>
+</li>
+<li class="top-nav__item-list__link top-nav__item-list__link--localized top-nav__items__desktop nojs-hide" data-submenu="요금�&nbsp;�" data-tracking-category="mainnav" data-tracking-action="click" data-tracking-label="요금�&nbsp;�" tabindex="0">
+요금�&nbsp;�
+</li>
+</ul>
+<ul class="top-nav__item-list top-nav__item-list--right">
+<li class="top-nav__item-list__link top-nav__item-list__link--localized top-nav__items__desktop">
+<a href="https://dash.cloudflare.com/login" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="login" tabindex="0">
+로그인
+</a>
+</li>
+<li class="top-nav__item-list__link top-nav__item-list__link--localized top-nav__items__desktop">
+<a href="../sign-up.html" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="signup" tabindex="0">
+가입
+</a>
+</li>
+<li class="top-nav__item-list__link top-nav__item-list__link--localized top-nav__items__desktop top-nav__item-list__link--no-ul">
+<a class="button button--new-orange" href="/ko-kr/under-attack-hotline/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="under_attack" tabindex="0">공격을 받�&nbsp; 계�&nbsp;가요?</a>
+</li>
+</ul>
+<button class="js-mobilenav-toggle toggle">
+<span class="icon"></span>
+</button>
+</nav>
+<div class="desktop-nav top-nav-container nav-dropdown">
+<div class="desktop-nav__솔루션 desktop-nav__container">
+<div class="nav-dropdown-container">
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">솔루션</div>
+<div class="nav-dropdown-header header-black">뛰어난 온라인 경험 �&nbsp;�공</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/ddos/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="ddos">DDoS 공격 완화</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/products/bot-management/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="malicious-bot-abuse">악의�&nbsp;�인 봇 남용 차단</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/performance/accelerate-internet-applications/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="accelerate-internet-applications">인터넷 �&nbsp;플리케이션 가속화</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/performance/ensure-application-availability/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="ensure-application-availability">�&nbsp;플리케이션 가용성 보장</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/website-optimization/">웹 경험 최�&nbsp;�화</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/products/cloudflare-stream/">온디맨드 동영상 스트리밍</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/china-network/">중국 사용자를 위한 탁월한 온라인 경험</a>
+</span>
+<div class="nav-dropdown-header header-black">직원 �&nbsp;플리케이션 및 장치 보안</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/teams-access/">�&nbsp;플리케이션에 대한 �&nbsp;�로 트러스트 액세스 �&nbsp;�달</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/teams-sase/">SASE(Secure Access Service Edge) 실행</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/teams-gateway/">사용자의 인터넷 액세스 보호</a>
+ </span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/teams/">기업 네트워크 보호</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/teams/third-party-access/">안�&nbsp;�한 계약자 액세스 관리</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/teams/vpn-replacement/">가상 사설 네트워크(VPN) 대체</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/teams/remote-workforces/">원격 인�&nbsp;�을 보호하세요</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/teams/browser-isolation/">브라우�&nbsp;� 분리를 통해 �&nbsp;�로 데이 공격 차단</a>
+</span>
+</div>
+<div class="dropdown-column">
+<div class="nav-dropdown-header">&nbsp;</div>
+<div class="nav-dropdown-header header-black">네트워크 보호 및 가속화</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/network-services/">Cloudflare 네트워크 서비스</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/magic-transit/">L3 DDoS 공격 완화</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/network-interconnect/">네트워크 인프라와 Cloudflare 연결</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/cloudflare-one/">기업 네트워크 변환</a>
+</span>
+<div class="nav-dropdown-header header-black">네트워크 에지 상의 코드</div>
+<span class="nav-dropdown-link">
+<a href="../index_7.html">서버리스 �&nbsp;플리케이션 구축</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://workers.cloudflare.com/sites">�&nbsp;��&nbsp;� 웹사이트 배포</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/tutorials/configure-your-cdn">CDN 구성</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/templates/pages/conditional_response/">조건부 요청 라우팅 �&nbsp;�의</a>
+</span>
+<div class="nav-dropdown-header header-black">안�&nbsp;�한 클라우드 관리</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/multi-cloud/">안�&nbsp;�한 하이브리드, 클라우드, SaaS Platforms</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/ssl-for-saas-providers/">SaaS �&nbsp;플리케이션용 SSL 사용</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/bandwidth-alliance/">클라우드 데이터 �&nbsp;�송 비용 �&nbsp;�감</a>
+</span>
+<div class="nav-dropdown-header header-black">웹사이트 등록</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/products/registrar/">웹사이트 등록 또는 �&nbsp;�송</a>
+</span>
+</div>
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">산업 분야</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/ecommerce/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="industries_ecommerce">�&nbsp;�자 상거래</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/financial-services/">금융 서비스</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/gaming/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="industries_gaming">게임</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/healthcare/">의료 및 생명 과학</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/media-and-entertainment/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="industries_media-and-entertainment">미디어 및 엔터테인먼트</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/public-sector/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="industries_publicsector">공공 부문</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/saas/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="industries_saas">SaaS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/education/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="education - /education">교육</a>
+</span>
+<div class="nav-dropdown-header header-orange">공공의 이익</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/campaigns/">�&nbsp;거 �&nbsp;페인</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/athenian/">아테네 프로�&nbsp;�트</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/galileo/">갈릴�&nbsp;�오 프로�&nbsp;�트</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/fair-shot/">Fair Shot 프로�&nbsp;�트</a>
+</span>
+</div>
+</div>
+</div>
+<div class="desktop-nav__�&nbsp;�품 desktop-nav__container">
+<div class="nav-dropdown-container">
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">인프라용</div>
+<div class="nav-dropdown-header header-black">�&nbsp;플리케이션 및 네트워크 보안</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/apishield/">API Shield</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/products/bot-management/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="bot_management">봇 관리(Bot Management)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/ddos/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="ddos">DDoS 방어</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/magic-transit/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="magic-transit">Magic Transit</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/magic-wan/">Magic WAN</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/network-interconnect/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="network-interconnect">네트워크 상호 연결</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/rate-limiting/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="rate_limiting">Rate Limiting</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/products/cloudflare-spectrum/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="spectrum">TCP/UDP 응용 프로그램</a>
+</span>
+ <span class="nav-dropdown-link">
+<a href="/ko-kr/ssl/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="ssl">SSL/TLS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/ssl-for-saas-providers/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="SSL/TLS for SaaS Providers">SaaS 공급자를 위한 SSL/TLS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/waf/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="waf">WAF</a>
+</span>
+<div class="nav-dropdown-header header-black">성능 및 �&nbsp;뢰성</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/products/argo-smart-routing/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="argo_smart_routing">Argo Smart Routing</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/cdn/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="cdn">CDN</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/network/china/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_cloudflare_china">중국 네트워크</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/dns/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="dns">DNS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/load-balancing/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="load_balancing">부하 분산</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/products/stream-delivery/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="stream-delivery-homepage">스트림 �&nbsp;�송</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/waiting-room/">대기실</a>
+</span>
+</div>
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">팀용</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/teams-home/">Cloudflare for Teams</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/teams-access/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="teams-access">Access</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/teams-gateway/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="teams-gateway">Gateway</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/teams/browser-isolation/">브라우�&nbsp;� 격리</a>
+</span>
+<div class="nav-dropdown-header header-orange">개발자용</div>
+<div class="nav-dropdown-header header-black">서버리스 �&nbsp;플리케이션</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/products/cloudflare-workers/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="cloudflare-workers">Cloudflare Workers</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/products/workers-kv/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="workers-kv">Cloudflare Workers KV</a>
+</span>
+<div class="nav-dropdown-header header-black">도메인 등록</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/products/registrar/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="registrar">Cloudflare Registrar</a>
+</span>
+<div class="nav-dropdown-header header-black">웹 사이트 개발</div>
+<span class="nav-dropdown-link">
+<a href="https://pages.cloudflare.com/">Cloudflare 페이지</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/products/cloudflare-stream/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="cloudflare-stream">Cloudflare Stream</a>
+</span>
+<div class="nav-dropdown-header header-black">SaaS 개발자</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/saas/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="saas">Cloudflare for SaaS</a>
+</span>
+</div>
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">�&nbsp;�체</div>
+<span class="nav-dropdown-link">
+<a href="https://1.1.1.1" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="1111-homepage">1.1.1.1</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://blog.cloudflare.com/1111-warp-better-vpn/">WARP(앱) 포함 1.1.1.1</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://blog.cloudflare.com/introducing-1-1-1-1-for-families/">가�&nbsp;�용 1.1.1.1</a>
+</span>
+<div class="nav-dropdown-header header-orange">통찰�&nbsp;�</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/analytics/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="analytics">Analytics</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/products/cloudflare-logs/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="cloudflare_logs">Cloudflare Logs</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/web-analytics/">웹 Analytics</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://radar.cloudflare.com/">Cloudflare Radar</a>
+</span>
+<div class="nav-dropdown-header header-orange">개인�&nbsp;�보 보호�&nbsp;�책</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/data-localization/">데이터 현지화</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/privacy-and-compliance/">규�&nbsp;� 준수</a>
+</span>
+</div>
+</div>
+</div>
+<div class="desktop-nav__문서 desktop-nav__container">
+<div class="nav-dropdown-container">
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">인프라용</div>
+<div class="nav-dropdown-header header-black">�&nbsp;급 보안</div>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/bots/">봇 관리(Bot Management)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/firewall/">방화벽 규칙</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/magic-transit/">Magic Transit</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/spectrum/">Spectrum(TCP/UDP)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/ssl/">SSL</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/waf/">WAF</a>
+</span>
+<div class="nav-dropdown-header">성능 및 �&nbsp;뢰성</div>
+<span class="nav-dropdown-link">
+<a href="https://support.cloudflare.com/hc/en-us/articles/200172516-Understanding-Cloudflare-s-CDN" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="cdn-documentation">CDN</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/dns/">DNS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/images/">Image Resizing</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/load-balancing">부하 분산</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/stream/">스트림(동영상)</a>
+</span>
+</div>
+<div class="dropdown-column">
+<div class="nav-dropdown-header">&nbsp;</div>
+<div class="nav-dropdown-header header-black">통찰�&nbsp;�</div>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/analytics/">Analytics</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/logs/"></a>
+</span>
+<div class="nav-dropdown-header header-black">도메인 등록</div>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/registrar/">등록 </a>
+</span>
+<div class="nav-dropdown-header header-orange">서버리스 �&nbsp;플리케이션용</div>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/quickstart">Workers �&nbsp;른 시작</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/pages/">Cloudflare 페이지</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/templates/">샘플 Workers 프로�&nbsp;�트</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/tutorials">Workers 튜�&nbsp;리얼</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/tooling/wrangler">명�&nbsp;�줄(Wrangler)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/reference/apis">런타임</a>
+</span>
+</div>
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">팀용</div>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/cloudflare-one/">Cloudflare for Teams</a>
+</span>
+<div class="nav-dropdown-header header-orange">CLOUDFLARE API 탐색</div>
+<span class="nav-dropdown-link">
+<a href="https://api.cloudflare.com/">Cloudflare API</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/api/">API Authentication</a>
+</span>
+<div class="nav-dropdown-header header-orange">문서 허브</div>
+<span class="nav-dropdown-link">
+<a href="../index_4.html">개발자 문서 허브</a>
+</span>
+</div>
+</div>
+</div>
+<div class="desktop-nav__리소스 desktop-nav__container">
+<div class="nav-dropdown-container">
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">리소스</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/resource-hub/">리소스 허브</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/resource-hub/?resourcetype=Whitepaper">백서</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/webinars/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_webinars">웨비나</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/resource-hub/?resourcetype=Solution+%26+Product+Guides">솔루션 및 �&nbsp;�품 안내서</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/case-studies/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_case_studies">사례 연구</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/analysts/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_analysts">Analysts</a>
+</span>
+<div class="nav-dropdown-header header-orange">탐색</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/whats-new/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="whats_new">새로운 기능?</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/network/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_network_map">네트워크 지도</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/network/china/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_cloudflare_china">중국의 Cloudflare</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/trust-hub/gdpr/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > GDPR">GDPR</a>
+</span>
+</div>
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">시작하기</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/products/registrar/">웹사이트 등록</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/welcome-center/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_welcome_center">환영 센터</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="../index_3.html">도움 받기</a>
+</span>
+<div class="nav-dropdown-header header-orange">알아보기</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/learning/">학습 센터</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/learning/security/what-is-web-application-security/">보안</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/learning/ddos/what-is-a-ddos-attack/">DDoS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/learning/bots/what-is-a-bot/">봇 관리(Bot Management)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/learning/ssl/what-is-ssl/">SSL</a>
+</span>
+
+<span class="nav-dropdown-link">
+<a href="/ko-kr/learning/access-management/what-is-identity-and-access-management/">ID 및 액세스 관리</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/learning/performance/why-site-speed-matters/">성능</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/learning/cdn/what-is-a-cdn/">CDN</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/learning/dns/what-is-dns/">DNS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/learning/cloud/what-is-the-cloud/">클라우드</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/learning/serverless/what-is-serverless/">서버리스</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/learning/network-layer/what-is-the-network-layer/">네트워크 계층</a>
+</span>
+</div>
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">연결</div>
+<span class="nav-dropdown-link">
+<a href="../index_2.html" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="blog">블로그</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="../index_8.html" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="community">커뮤니티</a>
+</span>
+<div class="nav-dropdown-header header-orange">�&nbsp;뢰</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/trust-hub/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > Trust Hub">Trust Hub</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/trust-hub/privacy-and-data-protection/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust  > Privacy &amp; Data Protection">개인 �&nbsp;�보 및 데이터 보호</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/trust-hub/compliance-resources/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > Certifications">인증</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/trust-hub/trust-and-safety/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > Trust &amp; Safety">�&nbsp;뢰 및 안�&nbsp;�</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/trust-hub/gdpr/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > GDPR">GDPR</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/privacypolicy/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > Legal Documentation">법�&nbsp;� 문서</a>
+</span>
+<div class="nav-dropdown-header header-orange">연락처</div>
+<a data-i18n-phonenumber="" href="tel:+16503198930" style="display:none">+1 650 319 8930</a>
+</div>
+</div>
+</div>
+<div class="desktop-nav__파트너 desktop-nav__container">
+<div class="nav-dropdown-container">
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">채널 및 연합 파트너</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/partners/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="partnerships">파트너 네트워크</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://portal.cloudflarepartners.com">파트너 포털</a>
+</span>
+</div>
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">기�&nbsp; 파트너</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/partners/technology-partners/">개요</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/partners/analytics/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="partners-analytics">Analytics 파트너</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/bandwidth-alliance/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="partnerships_bandwidth_alliance">대역폭 연합</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/endpoint-partners/">Endpoint Security Partnerships</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/network-interconnect-partnerships/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="network-interconnect-partnerships">파트너십 상호 연결</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/network-onramp-partners/">Network On-ramp Partnerships</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/partners/peering-portal/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="partnerships_peering_portal">피어링 포털</a>
+</span>
+</div>
+</div>
+</div>
+<div class="desktop-nav__요금�&nbsp;� desktop-nav__container">
+<div class="nav-dropdown-container">
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">요금�&nbsp;�별 가격</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/plans/">무료</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/plans/pro/">프로</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/plans/business/">비즈니스</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/plans/enterprise/">Enterprise</a>
+</span>
+</div>
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">비교 및 탐색</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/about-your-website/">요금�&nbsp;� �&nbsp;택에 도움이 필요하�&nbsp;가요?</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/plans/#addons">추가 옵션</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/plans/">모�&nbsp; 요금�&nbsp;� 비교</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mobile-nav nav-dropdown">
+<ul class="mobile-nav__list">
+<li class="mobile-nav__list__item">
+<div class="mobile-sub-nav__title" data-submenu="솔루션">
+<span class="mobile-sub-nav__title__text">솔루션</span>
+<span class="icon icon-plus icon-plus-솔루션"></span>
+</div>
+</li>
+<div class="mobile-submenu-솔루션 mobile-sub">
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">솔루션</div>
+<div class="nav-dropdown-header header-black">뛰어난 온라인 경험 �&nbsp;�공</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/ddos/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="ddos">DDoS 공격 완화</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/products/bot-management/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="malicious-bot-abuse">악의�&nbsp;�인 봇 남용 차단</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/performance/accelerate-internet-applications/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="accelerate-internet-applications">인터넷 �&nbsp;플리케이션 가속화</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/performance/ensure-application-availability/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="ensure-application-availability">�&nbsp;플리케이션 가용성 보장</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/website-optimization/">웹 경험 최�&nbsp;�화</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/products/cloudflare-stream/">온디맨드 동영상 스트리밍</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/china-network/">중국 사용자를 위한 탁월한 온라인 경험</a>
+</span>
+<div class="nav-dropdown-header header-black">직원 �&nbsp;플리케이션 및 장치 보안</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/teams-access/">�&nbsp;플리케이션에 대한 �&nbsp;�로 트러스트 액세스 �&nbsp;�달</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/teams-sase/">SASE(Secure Access Service Edge) 실행</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/teams-gateway/">사용자의 인터넷 액세스 보호</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/teams/">기업 네트워크 보호</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/teams/third-party-access/">안�&nbsp;�한 계약자 액세스 관리</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/teams/vpn-replacement/">가상 사설 네트워크(VPN) 대체</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/teams/remote-workforces/">원격 인�&nbsp;�을 보호하세요</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/teams/browser-isolation/">브라우�&nbsp;� 분리를 통해 �&nbsp;�로 데이 공격 차단</a>
+</span>
+</div>
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header">&nbsp;</div>
+<div class="nav-dropdown-header header-black">네트워크 보호 및 가속화</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/network-services/">Cloudflare 네트워크 서비스</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/magic-transit/">L3 DDoS 공격 완화</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/network-interconnect/">네트워크 인프라와 Cloudflare 연결</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/cloudflare-one/">기업 네트워크 변환</a>
+</span>
+<div class="nav-dropdown-header header-black">네트워크 에지 상의 코드</div>
+<span class="nav-dropdown-link">
+<a href="../index_7.html">서버리스 �&nbsp;플리케이션 구축</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://workers.cloudflare.com/sites">�&nbsp;��&nbsp;� 웹사이트 배포</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/tutorials/configure-your-cdn">CDN 구성</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/templates/pages/conditional_response/">조건부 요청 라우팅 �&nbsp;�의</a>
+</span>
+<div class="nav-dropdown-header header-black">안�&nbsp;�한 클라우드 관리</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/multi-cloud/">안�&nbsp;�한 하이브리드, 클라우드, SaaS Platforms</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/ssl-for-saas-providers/">SaaS �&nbsp;플리케이션용 SSL 사용</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/bandwidth-alliance/">클라우드 데이터 �&nbsp;�송 비용 �&nbsp;�감</a>
+</span>
+<div class="nav-dropdown-header header-black">웹사이트 등록</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/products/registrar/">웹사이트 등록 또는 �&nbsp;�송</a>
+</span>
+</div>
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">산업 분야</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/ecommerce/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="industries_ecommerce">�&nbsp;�자 상거래</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/financial-services/">금융 서비스</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/gaming/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="industries_gaming">게임</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/healthcare/">의료 및 생명 과학</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/media-and-entertainment/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="industries_media-and-entertainment">미디어 및 엔터테인먼트</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/public-sector/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="industries_publicsector">공공 부문</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/saas/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="industries_saas">SaaS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/education/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="education - /education">교육</a>
+</span>
+<div class="nav-dropdown-header header-orange">공공의 이익</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/campaigns/">�&nbsp;거 �&nbsp;페인</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/athenian/">아테네 프로�&nbsp;�트</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/galileo/">갈릴�&nbsp;�오 프로�&nbsp;�트</a>
+</span>
+<span class="nav-dropdown-link">
+ <a href="/ko-kr/fair-shot/">Fair Shot 프로�&nbsp;�트</a>
+</span>
+</div>
+</div>
+<li class="mobile-nav__list__item">
+<div class="mobile-sub-nav__title" data-submenu="�&nbsp;�품">
+<span class="mobile-sub-nav__title__text">�&nbsp;�품</span>
+<span class="icon icon-plus icon-plus-�&nbsp;�품"></span>
+</div>
+</li>
+<div class="mobile-submenu-�&nbsp;�품 mobile-sub">
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">인프라용</div>
+<div class="nav-dropdown-header header-black">�&nbsp;플리케이션 및 네트워크 보안</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/apishield/">API Shield</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/products/bot-management/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="bot_management">봇 관리(Bot Management)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/ddos/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="ddos">DDoS 방어</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/magic-transit/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="magic-transit">Magic Transit</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/magic-wan/">Magic WAN</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/network-interconnect/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="network-interconnect">네트워크 상호 연결</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/rate-limiting/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="rate_limiting">Rate Limiting</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/products/cloudflare-spectrum/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="spectrum">TCP/UDP 응용 프로그램</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/ssl/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="ssl">SSL/TLS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/ssl-for-saas-providers/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="SSL/TLS for SaaS Providers">SaaS 공급자를 위한 SSL/TLS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/waf/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="waf">WAF</a>
+</span>
+<div class="nav-dropdown-header header-black">성능 및 �&nbsp;뢰성</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/products/argo-smart-routing/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="argo_smart_routing">Argo Smart Routing</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/cdn/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="cdn">CDN</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/network/china/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_cloudflare_china">중국 네트워크</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/dns/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="dns">DNS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/load-balancing/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="load_balancing">부하 분산</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/products/stream-delivery/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="stream-delivery-homepage">스트림 �&nbsp;�송</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/waiting-room/">대기실</a>
+</span>
+</div>
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">팀용</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/teams-home/">Cloudflare for Teams</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/teams-access/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="teams-access">Access</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/teams-gateway/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="teams-gateway">Gateway</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/teams/browser-isolation/">브라우�&nbsp;� 격리</a>
+</span>
+<div class="nav-dropdown-header header-orange">개발자용</div>
+<div class="nav-dropdown-header header-black">서버리스 �&nbsp;플리케이션</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/products/cloudflare-workers/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="cloudflare-workers">Cloudflare Workers</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/products/workers-kv/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="workers-kv">Cloudflare Workers KV</a>
+</span>
+<div class="nav-dropdown-header header-black">도메인 등록</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/products/registrar/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="registrar">Cloudflare Registrar</a>
+</span>
+<div class="nav-dropdown-header header-black">웹 사이트 개발</div>
+<span class="nav-dropdown-link">
+<a href="https://pages.cloudflare.com/">Cloudflare 페이지</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/products/cloudflare-stream/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="cloudflare-stream">Cloudflare Stream</a>
+</span>
+<div class="nav-dropdown-header header-black">SaaS 개발자</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/saas/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="saas">Cloudflare for SaaS</a>
+</span>
+</div>
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">�&nbsp;�체</div>
+<span class="nav-dropdown-link">
+<a href="https://1.1.1.1" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="1111-homepage">1.1.1.1</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://blog.cloudflare.com/1111-warp-better-vpn/">WARP(앱) 포함 1.1.1.1</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://blog.cloudflare.com/introducing-1-1-1-1-for-families/">가�&nbsp;�용 1.1.1.1</a>
+</span>
+<div class="nav-dropdown-header header-orange">통찰�&nbsp;�</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/analytics/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="analytics">Analytics</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/products/cloudflare-logs/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="cloudflare_logs">Cloudflare Logs</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/web-analytics/">웹 Analytics</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://radar.cloudflare.com/">Cloudflare Radar</a>
+</span>
+<div class="nav-dropdown-header header-orange">개인�&nbsp;�보 보호�&nbsp;�책</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/data-localization/">데이터 현지화</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/privacy-and-compliance/">규�&nbsp;� 준수</a>
+</span>
+</div>
+</div>
+<li class="mobile-nav__list__item">
+<div class="mobile-sub-nav__title" data-submenu="문서">
+<span class="mobile-sub-nav__title__text">문서</span>
+<span class="icon icon-plus icon-plus-문서"></span>
+</div>
+</li>
+<div class="mobile-submenu-문서 mobile-sub">
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">인프라용</div>
+<div class="nav-dropdown-header header-black">�&nbsp;급 보안</div>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/bots/">봇 관리(Bot Management)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/firewall/">방화벽 규칙</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/magic-transit/">Magic Transit</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/spectrum/">Spectrum(TCP/UDP)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/ssl/">SSL</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/waf/">WAF</a>
+</span>
+<div class="nav-dropdown-header">성능 및 �&nbsp;뢰성</div>
+<span class="nav-dropdown-link">
+<a href="https://support.cloudflare.com/hc/en-us/articles/200172516-Understanding-Cloudflare-s-CDN" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="cdn-documentation">CDN</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/dns/">DNS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/images/">Image Resizing</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/load-balancing">부하 분산</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/stream/">스트림(동영상)</a>
+</span>
+</div>
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header">&nbsp;</div>
+<div class="nav-dropdown-header header-black">통찰�&nbsp;�</div>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/analytics/">Analytics</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/logs/"></a>
+</span>
+<div class="nav-dropdown-header header-black">도메인 등록</div>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/registrar/">등록 </a>
+</span>
+<div class="nav-dropdown-header header-orange">서버리스 �&nbsp;플리케이션용</div>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/quickstart">Workers �&nbsp;른 시작</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/pages/">Cloudflare 페이지</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/templates/">샘플 Workers 프로�&nbsp;�트</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/tutorials">Workers 튜�&nbsp;리얼</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/tooling/wrangler">명�&nbsp;�줄(Wrangler)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/reference/apis">런타임</a>
+</span>
+</div>
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">팀용</div>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/cloudflare-one/">Cloudflare for Teams</a>
+</span>
+<div class="nav-dropdown-header header-orange">CLOUDFLARE API 탐색</div>
+<span class="nav-dropdown-link">
+<a href="https://api.cloudflare.com/">Cloudflare API</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/api/">API Authentication</a>
+</span>
+<div class="nav-dropdown-header header-orange">문서 허브</div>
+<span class="nav-dropdown-link">
+<a href="../index_4.html">개발자 문서 허브</a>
+</span>
+</div>
+</div>
+<li class="mobile-nav__list__item">
+<div class="mobile-sub-nav__title" data-submenu="리소스">
+<span class="mobile-sub-nav__title__text">리소스</span>
+<span class="icon icon-plus icon-plus-리소스"></span>
+</div>
+</li>
+<div class="mobile-submenu-리소스 mobile-sub">
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">리소스</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/resource-hub/">리소스 허브</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/resource-hub/?resourcetype=Whitepaper">백서</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/webinars/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_webinars">웨비나</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/resource-hub/?resourcetype=Solution+%26+Product+Guides">솔루션 및 �&nbsp;�품 안내서</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/case-studies/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_case_studies">사례 연구</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/analysts/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_analysts">Analysts</a>
+</span>
+<div class="nav-dropdown-header header-orange">탐색</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/whats-new/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="whats_new">새로운 기능?</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/network/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_network_map">네트워크 지도</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/network/china/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_cloudflare_china">중국의 Cloudflare</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/trust-hub/gdpr/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > GDPR">GDPR</a>
+</span>
+</div>
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">시작하기</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/products/registrar/">웹사이트 등록</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/welcome-center/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_welcome_center">환영 센터</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="../index_3.html">도움 받기</a>
+</span>
+<div class="nav-dropdown-header header-orange">알아보기</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/learning/">학습 센터</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/learning/security/what-is-web-application-security/">보안</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/learning/ddos/what-is-a-ddos-attack/">DDoS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/learning/bots/what-is-a-bot/">봇 관리(Bot Management)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/learning/ssl/what-is-ssl/">SSL</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/learning/access-management/what-is-identity-and-access-management/">ID 및 액세스 관리</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/learning/performance/why-site-speed-matters/">성능</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/learning/cdn/what-is-a-cdn/">CDN</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/learning/dns/what-is-dns/">DNS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/learning/cloud/what-is-the-cloud/">클라우드</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/learning/serverless/what-is-serverless/">서버리스</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/learning/network-layer/what-is-the-network-layer/">네트워크 계층</a>
+</span>
+</div>
+<div class="mobile-sub-nav">
+
+<div class="nav-dropdown-header header-orange">연결</div>
+<span class="nav-dropdown-link">
+<a href="../index_2.html" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="blog">블로그</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="../index_8.html" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="community">커뮤니티</a>
+</span>
+<div class="nav-dropdown-header header-orange">�&nbsp;뢰</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/trust-hub/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > Trust Hub">Trust Hub</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/trust-hub/privacy-and-data-protection/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust  > Privacy &amp; Data Protection">개인 �&nbsp;�보 및 데이터 보호</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/trust-hub/compliance-resources/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > Certifications">인증</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/trust-hub/trust-and-safety/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > Trust &amp; Safety">�&nbsp;뢰 및 안�&nbsp;�</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/trust-hub/gdpr/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > GDPR">GDPR</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/privacypolicy/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > Legal Documentation">법�&nbsp;� 문서</a>
+</span>
+<div class="nav-dropdown-header header-orange">연락처</div>
+<a data-i18n-phonenumber="" href="tel:+16503198930" style="display:none">+1 650 319 8930</a>
+</div>
+</div>
+<li class="mobile-nav__list__item">
+<div class="mobile-sub-nav__title" data-submenu="파트너">
+<span class="mobile-sub-nav__title__text">파트너</span>
+<span class="icon icon-plus icon-plus-파트너"></span>
+</div>
+</li>
+<div class="mobile-submenu-파트너 mobile-sub">
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">채널 및 연합 파트너</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/partners/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="partnerships">파트너 네트워크</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://portal.cloudflarepartners.com">파트너 포털</a>
+</span>
+</div>
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">기�&nbsp; 파트너</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/partners/technology-partners/">개요</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/partners/analytics/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="partners-analytics">Analytics 파트너</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/bandwidth-alliance/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="partnerships_bandwidth_alliance">대역폭 연합</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/endpoint-partners/">Endpoint Security Partnerships</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/network-interconnect-partnerships/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="network-interconnect-partnerships">파트너십 상호 연결</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/network-onramp-partners/">Network On-ramp Partnerships</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/partners/peering-portal/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="partnerships_peering_portal">피어링 포털</a>
+</span>
+</div>
+</div>
+<li class="mobile-nav__list__item">
+<span class="nav-dropdown-link">
+<a href="/ko-kr/enterprise/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="for-enterprise">기업용</a>
+</span>
+</li>
+<li class="mobile-nav__list__item">
+<div class="mobile-sub-nav__title" data-submenu="요금�&nbsp;�">
+<span class="mobile-sub-nav__title__text">요금�&nbsp;�</span>
+<span class="icon icon-plus icon-plus-요금�&nbsp;�"></span>
+</div>
+</li>
+<div class="mobile-submenu-요금�&nbsp;� mobile-sub">
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">요금�&nbsp;�별 가격</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/plans/">무료</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/plans/pro/">프로</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/plans/business/">비즈니스</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/plans/enterprise/">Enterprise</a>
+</span>
+</div>
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">비교 및 탐색</div>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/about-your-website/">요금�&nbsp;� �&nbsp;택에 도움이 필요하�&nbsp;가요?</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/plans/#addons">추가 옵션</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/plans/">모�&nbsp; 요금�&nbsp;� 비교</a>
+</span>
+</div>
+</div>
+<li class="mobile-nav__list__item test-utility-menu">
+<div class="mobile-sub-nav__title" data-submenu="Support">
+<span class="mobile-sub-nav__title__text">Support</span>
+<span class="icon icon-plus icon-plus-Support"></span>
+</div>
+</li>
+<div class="mobile-submenu-Support mobile-sub">
+<div class="mobile-sub-nav">
+<span class="nav-dropdown-link">
+<a href="https://dash.cloudflare.com/?to=/:account/support">지원팀 문의</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="../index_3.html">지원 센터</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="../index_8.html">Cloudflare 커뮤니티</a>
+</span>
+</div>
+</div>
+<li class="mobile-nav__list__item test-utility-menu">
+<div class="mobile-sub-nav__title" data-submenu="My_Account">
+<span class="mobile-sub-nav__title__text">My Account</span>
+ <span class="icon icon-plus icon-plus-My Account"></span>
+</div>
+</li>
+<div class="mobile-submenu-My_Account mobile-sub">
+<div class="mobile-sub-nav">
+<span class="nav-dropdown-link">
+<a href="https://dash.cloudflare.com/login" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="utliity_nav-log_in">Log In</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://dash.cloudflare.com/profile" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="utililty-tab-profile">내 프로필</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://dash.cloudflare.com/?to=/:account/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Merchandise">계�&nbsp;� 홈</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://dash.cloudflare.com/?to=/:account/billing">요금 청구</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/ko-kr/teams/">Cloudflare를 사용한 원격 근무자 보안</a>
+</span>
+</div>
+</div>
+<li class="mobile-nav__list__item mobile-language-picker">
+<div class="mobile-sub-nav__title" data-submenu="languageMobile">
+<span class="mobile-sub-nav__title__text">
+한국어
+</span>
+<span class="icon icon-plus icon-plus-languageMobile"></span>
+</div>
+</li>
+<div class="mobile-submenu-languageMobile mobile-sub">
+<ul class="mobile-sub-nav">
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/en-us/">
+English
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/en-gb/">
+English (United Kingdom)
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/en-ca/">
+English (Canada)
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/en-au/">
+English (Australia)
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/en-in/">
+English (India)
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/de-de/">
+Deutsch
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/es-es/">
+Español
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/fr-fr/">
+Français
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/it-it/">
+Italiano
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/ja-jp/">
+日本語
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/pt-br/">
+Português
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/zh-tw/">
+繁體中文
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/zh-cn/">
+简体中文
+</a>
+</li>
+</ul>
+</div>
+</ul>
+</div>
+<div class="desktop-nav top-nav-container nav-dropdown">
+</div>
+</header>
+<div class="compact-nav-dropdown js-compact-nav-dropdown">
+<ul class="marketing-list">
+<li class="desktop-nav__sub-menu__list__item">Contact Us</li>
+<li class="desktop-nav__sub-menu__list__item"><a href="/under-attack-hotline/">Help! I'm Under Attack!</a></li>
+<li class="desktop-nav__sub-menu__list__item"><a href="../contact.html">Email Sales</a></li>
+<li class="desktop-nav__sub-menu__list__item"><a href="../index_3.html">Support</a></li>
+<li class="desktop-nav__sub-menu__list__item"><a href="tel:+18889935273">1-888-993-5273</a></li>
+</ul>
+</div>
+<div class="site-content  ">
+<section class="tile" id="error-page-content">
+<div class="tile__content tile__content--fixed">
+<div class="grid">
+<div class="grid__item grid__item--four-fifths">
+<div class="grid grid--vertical-center">
+<div class="grid__item grid__item--half grid__item--no-padding">
+<img class="responsive-image" title="404" alt="404" src="/img/error-page/404-image.png" style="width: 285px; max-width: 100%;">
+</div>
+<div class="grid__item grid__item grid__item--half grid__item--no-padding">
+<p class="error-page-text text--orange text--no-pad-no-margin-bottom text--no-pad-no-margin-top">Oops! You appear to be lost.</p>
+</div>
+</div>
+<div class="grid">
+<div class="grid__item grid__item--no-margins grid__item--no-padding">
+<p class="error-page-text text--no-pad-no-margin-bottom">Handy links:</p>
+</div>
+</div>
+<div class="grid">
+<div class="grid__item grid__item--fifth" style="padding-left:0">
+<div class="grid--center grid--vertical-center grid--left-mobile-tablet">
+<a href="../index_1.html" style="display:inherit;"><img class="error-icon" title="Home" alt="Home" src="/img/error-page/404-home.png"></a>
+<p class="text--24px text--28px-mobile-tablet"><a href="../index_1.html" class="orange-alternate-link anchor text--bolder">Home</a></p></div>
+</div>
+<div class="grid__item grid__item--fifth" style="padding-left:0">
+<div class="grid--center grid--vertical-center grid--left-mobile-tablet">
+<a href="../resource-hub_1.html" style="display:inherit;"><img class="error-icon" title="Resources" alt="Resources" src="/img/error-page/404-resources.png"></a>
+<p class="text--24px text--28px-mobile-tablet"><a href="../resource-hub_1.html" class="orange-alternate-link anchor text--bolder">Resources</a></p></div>
+</div>
+<div class="grid__item grid__item--fifth" style="padding-left:0">
+<div class="grid--center grid--vertical-center grid--left-mobile-tablet">
+<a href="../plans.html" style="display:inherit;"><img class="error-icon" title="Plans" alt="Plans" src="/img/error-page/404-plans.png"></a>
+<p class="text--24px text--28px-mobile-tablet"><a href="../plans.html" class="orange-alternate-link anchor text--bolder">Plans</a></p></div>
+</div>
+<div class="grid__item grid__item--fifth" style="padding-left:0">
+<div class="grid--center grid--vertical-center grid--left-mobile-tablet">
+<a href="../index_2.html" style="display:inherit;"><img class="error-icon" title="Blog" alt="Blog" src="/img/error-page/404-blog.png"></a>
+<p class="text--24px text--28px-mobile-tablet"><a href="../index_2.html" class="orange-alternate-link anchor text--bolder">Blog</a></p></div>
+</div>
+<div class="grid__item grid__item--fifth" style="padding-left:0">
+<div class="grid--center grid--vertical-center grid--left-mobile-tablet">
+<a href="../careers.html" style="display:inherit;"><img class="error-icon" title="Careers" alt="Careers" src="/img/error-page/404-careers.png"></a>
+<p class="text--24px text--28px-mobile-tablet"><a href="../careers.html" class="orange-alternate-link anchor text--bolder">Careers</a></p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<a href="/cdn-cgi/beacon/hp-link?source=help&amp;req_id=1" target"_blank"="" class="hidden-element"></a>
+</div>
+<footer class="cms-mainfooter main-footer">
+
+<div class="main-footer__container">
+<div class="main-footer__row">
+<div class="main-footer__menu-group">
+<ul id="--menu">
+<li data-submenu="--menu" class="main-footer__menu-group__header js-toggle-footer-group">
+영업
+<img src="/img/icons/gray/caret-down.svg" class="icon" alt="grey arrow pointing down" aria-hidden="true">
+</li>
+<li>
+<a href="/ko-kr/plans/enterprise/contact/">
+Enterprise 영업
+</a>
+</li>
+<li>
+<a href="/ko-kr/partners/">
+파트너 되기
+</a>
+</li>
+</ul>
+<p class="phone">
+영업 문의:<br><a data-i18n-phonenumber="" class="tel" href="tel:+16503198930" style="display:none">+1 650 319 8930</a>
+<noscript><a class="phone" href="tel:+16503198930">+1 650 319 8930</a></noscript>
+</p>
+</div>
+<div class="main-footer__menu-group">
+<ul id="--menu">
+<li data-submenu="--menu" class="main-footer__menu-group__header js-toggle-footer-group">
+시작하기
+<img src="/img/icons/gray/caret-down.svg" class="icon" alt="grey arrow pointing down" aria-hidden="true">
+</li>
+<li>
+<a href="/ko-kr/analysts/">
+업계 분석가
+</a>
+</li>
+<li>
+<a href="/ko-kr/plans/">
+요금�&nbsp;�
+</a>
+</li>
+<li>
+<a href="/ko-kr/case-studies/">
+사례 연구
+</a>
+</li>
+<li>
+<a href="/ko-kr/resources/">
+백서
+</a>
+</li>
+<li>
+<a href="/ko-kr/webinars/">
+웨비나
+</a>
+</li>
+<li>
+<a href="/ko-kr/learning/">
+학습 센터
+</a>
+</li>
+</ul>
+</div>
+<div class="main-footer__menu-group">
+<ul id="--menu">
+<li data-submenu="--menu" class="main-footer__menu-group__header js-toggle-footer-group">
+커뮤니티
+<img src="/img/icons/gray/caret-down.svg" class="icon" alt="grey arrow pointing down" aria-hidden="true">
+</li>
+<li>
+<a href="../index_8.html">
+커뮤니티 허브
+</a>
+</li>
+<li>
+<a href="../index_2.html">
+블로그
+</a>
+</li>
+<li>
+<a href="/ko-kr/galileo/">
+Galileo 프로�&nbsp;�트
+</a>
+</li>
+<li>
+<a href="/ko-kr/athenian/">
+아테네 프로�&nbsp;�트
+</a>
+</li>
+<li>
+<a href="/ko-kr/campaigns/">
+Cloudflare for Campaigns
+</a>
+</li>
+<li>
+<a href="../index_5.html">
+Cloudflare TV
+</a>
+</li>
+</ul>
+</div>
+<div class="main-footer__menu-group">
+<ul id="--menu">
+<li data-submenu="--menu" class="main-footer__menu-group__header js-toggle-footer-group">
+개발자
+<img src="/img/icons/gray/caret-down.svg" class="icon" alt="grey arrow pointing down" aria-hidden="true">
+</li>
+<li>
+<a href="../index_4.html">
+개발자 허브
+</a>
+</li>
+<li>
+<a href="/ko-kr/products/cloudflare-workers/">
+Cloudflare Workers
+</a>
+</li>
+<li>
+<a href="/ko-kr/integrations/">
+통합
+</a>
+</li>
+</ul>
+</div>
+<div class="main-footer__menu-group">
+<ul id="--menu">
+<li data-submenu="--menu" class="main-footer__menu-group__header js-toggle-footer-group">
+지원
+<img src="/img/icons/gray/caret-down.svg" class="icon" alt="grey arrow pointing down" aria-hidden="true">
+</li>
+<li>
+<a href="../index_3.html">
+지원 센터
+</a>
+</li>
+<li>
+<a href="../index_6.html">
+Cloudflare의 지위
+</a>
+</li>
+<li>
+<a href="/ko-kr/compliance/">
+규�&nbsp;� 준수
+</a>
+</li>
+<li>
+<a href="/ko-kr/gdpr/introduction/">
+GDPR
+</a>
+</li>
+<li>
+<a href="/ko-kr/abuse/">
+�&nbsp;뢰 및 안�&nbsp;�
+</a>
+</li>
+</ul>
+</div>
+<div class="main-footer__menu-group">
+<ul id="--menu">
+<li data-submenu="--menu" class="main-footer__menu-group__header js-toggle-footer-group">
+회사
+<img src="/img/icons/gray/caret-down.svg" class="icon" alt="grey arrow pointing down" aria-hidden="true">
+</li>
+<li>
+<a href="/ko-kr/about-overview/">
+Cloudflare 소개
+</a>
+</li>
+<li>
+<a href="/ko-kr/diversity-equity-and-inclusion/">
+다양성, 공�&nbsp;�성, 포용성
+</a>
+</li>
+<li>
+<a href="../default.aspx">
+투자자 관계
+</a>
+</li>
+<li>
+<a href="/ko-kr/people/">
+Cloudflare 팀
+</a>
+</li>
+<li>
+<a href="/ko-kr/press/">
+언�&nbsp;
+</a>
+</li>
+<li>
+<a href="/ko-kr/careers/">
+채용 �&nbsp;�보
+</a>
+</li>
+<li>
+<a href="/ko-kr/connect/">
+Cloudflare Connect
+</a>
+</li>
+<li>
+<a href="/ko-kr/logo/">
+로�&nbsp;
+</a>
+</li>
+<li>
+<a href="/ko-kr/network/">
+네트워크 지도
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="main-footer__menu_bottom">
+<div class="main-footer__menu_bottom__container">
+<div class="main-footer__menu_bottom__social">
+<a target="_blank" rel="noopener" href="https://www.facebook.com/Cloudflare/"><img class="" title="Facebook" alt="Facebook" src="/img/footer/facebook.svg"></a>
+<a target="_blank" rel="noopener" href="https://twitter.com/Cloudflare"><img class="" title="Twitter" alt="Twitter" src="/img/footer/twitter.svg"></a>
+<a target="_blank" rel="noopener" href="../cloudflare_1.html"><img class="" title="LinkedIn" alt="LinkedIn" src="/img/footer/linkedin.svg"></a>
+<a target="_blank" rel="noopener" href="../cloudflare.html"><img class="" title="Youtube" alt="Youtube" src="/img/footer/youtube.svg"></a>
+<a target="_blank" rel="noopener" href="https://www.instagram.com/cloudflare"><img class="" title="Instagram" alt="Instagram" src="/img/footer/instagram.svg"></a>
+</div>
+<div class="main-footer__menu_bottom__copyright">
+<span>� 2022 Cloudflare, Inc.</span>
+<div>
+<a href="/ko-kr/privacypolicy/">개인�&nbsp;�보처리방침</a>
+<a href="/ko-kr/website-terms/">사용 약관</a>
+<a href="/ko-kr/disclosure/">보안 문�&nbsp;� 보�&nbsp;</a>
+<a href="#" data-prevent-default="click" class="ot-sdk-show-settings">�&nbsp;키 기본</a>
+<a href="/ko-kr/trademark/">상표</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<div class="eu-cookie-banner js-eu-cookie-banner">
+<div class="eu-cookie-banner__content text--white text--center">
+<p>To provide you with the best possible experience on our website, we may use cookies, as described <a href="/cookie-policy/">here</a>.<br>By clicking accept, closing this banner, or continuing to browse our websites, you consent to the use of such cookies.</p>
+<div class="grid grid--center">
+<div class="grid__item grid__item--fourth-half">
+<button style="max-width: 150px;" class="button button--white button--inline js-accept-eu-cookie">I accept</button>
+</div>
+</div>
+<div class="close_x js-accept-eu-cookie"></div>
+</div>
+</div>
+<script src="https://assets.www.cloudflare.com/js/chunk-d1d241eda36aa08700f5.js" nonce="b9bf3811-fa7f-4fa3-80c1-a9187542feab"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-50c2888dc9fc9d219699.js" nonce="b9bf3811-fa7f-4fa3-80c1-a9187542feab"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-ad048942265b0bf93d6c.js" nonce="b9bf3811-fa7f-4fa3-80c1-a9187542feab"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-ed2cdfc0465e7134a1ed.js" nonce="b9bf3811-fa7f-4fa3-80c1-a9187542feab"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-d0f1f4ebd38c39f7095a.js" nonce="b9bf3811-fa7f-4fa3-80c1-a9187542feab"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-6cb50819ee379c1477b0.js" nonce="b9bf3811-fa7f-4fa3-80c1-a9187542feab"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-fe08601582edb624164b.js" nonce="b9bf3811-fa7f-4fa3-80c1-a9187542feab"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-2998cc3b7d6bdd8fefa3.js" nonce="b9bf3811-fa7f-4fa3-80c1-a9187542feab"></script>
+<script nonce="b9bf3811-fa7f-4fa3-80c1-a9187542feab">
+        $(document).ready(function() {
+          var NavMiniBanner = new CFJS.FlashBanner('not-localized');
+        });
+      </script>
+<script async="" src="https://assets.www.cloudflare.com/js/chunk-a15957a83aa617098672.js" nonce="b9bf3811-fa7f-4fa3-80c1-a9187542feab"></script>
+<script async="" src="https://assets.www.cloudflare.com/js/chunk-eaa36412b9cad4cd7179.js" nonce="b9bf3811-fa7f-4fa3-80c1-a9187542feab"></script>
+<script type="application/ld+json" nonce="b9bf3811-fa7f-4fa3-80c1-a9187542feab">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "cloudflare.com",
+        "url": "http://www.cloudflare.com",
+        "sameAs": [
+          "http://www.facebook.com/cloudflare",
+          "http://www.twitter.com/cloudflare",
+          "http://plus.google.com/+cloudflare",
+          "https://www.linkedin.com/company/cloudflare",
+          "http://www.youtube.com/user/CloudflareTeam"
+        ]
+      }
+    </script>
+<script type="application/ld+json" nonce="b9bf3811-fa7f-4fa3-80c1-a9187542feab">
+      {
+        "@context": "http://schema.org",
+        "@type": "Corporation",
+        "name": "Cloudflare",
+        "url": "http://www.cloudflare.com",
+        "description": "Cloudflare is a free global CDN and DNS provider that can speed up and protect any site online."
+      }
+    </script>
+<script>
+      function renderNav () {
+        document.querySelectorAll('.cms-topnav').forEach(function(el) {
+          if (window.renderModalNav) {
+            window.renderModalNav(el);
+            el.classList.add('br-refresh')
+          }
+        })
+      }
+    </script>
+<script src="/compiledNav/navigation.js" onload="renderNav()"></script>
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" data-cf-beacon="{&quot;rayId&quot;:&quot;74490bbfbf06d430&quot;,&quot;token&quot;:&quot;6f9a2202213848f5bff934592489e351&quot;,&quot;version&quot;:&quot;2022.8.1&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+
+</body></html>

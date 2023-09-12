@@ -1,0 +1,2031 @@
+<!DOCTYPE html><html lang="pt-br" itemscope="" itemtype="http://schema.org/Article"><head><script async="" src="../js/optimize.js"></script><script>window.redwood={"consentGroups":{"C0001":true,"C0002":true,"C0003":true,"C0004":true},"country":"NG","colo":"LOS","user":null,"locale":"pt-BR"}</script>
+    <script type="text/javascript">
+      var OneTrust={"geolocationResponse":{"countryCode":"NG"}}
+    </script>
+    <script>
+     const acceptedLocales = [
+      'en-au',
+      'en-ca',
+      'en-gb',
+      'en-in',
+      'en-us',
+      'de-de',
+      'es-es',
+      'fr-fr',
+      'it-it',
+      'ja-jp',
+      'ko-kr',
+      'pt-br',
+      'zh-tw',
+      'zh-cn',
+      'zh-Hans-CN',
+    ];
+    const orphanLocales = [
+      'ru-ru',
+      'sv-se',
+      'nl-nl',
+      'vi-vn',
+      'th-th',
+      'id-id',
+      'tr-tr',
+    ];
+    const ignoreList = [
+      'apps',
+      'docs',
+      'rate-limit-test',
+      'rss',
+    ]
+    function getPathFromLocale(locale, code, pathString) {
+      if ( locale === code || !acceptedLocales.includes(code) || acceptedLocales.includes(locale) || orphanLocales.includes(locale) ) {
+        return null;
+      } else {
+        return [code, locale ? locale : '', pathString].filter(part => part !== '').join('/');
+      }
+    };
+    if(window.location.host !== 'staging.cloudflare-cn.com' && window.location.host !== 'cloudflare-cn.com' && window.location.host !== 'www.cloudflare-cn.com') {
+      if (localStorage.getItem('langPreference')) {
+        if (localStorage.getItem('langPreference').toLowerCase() != 'en-us') {
+            const langPreference = localStorage.getItem('langPreference').toLowerCase();
+            const splitPath = window.location.pathname.split('/').filter(part => part !== '');
+            const currentLang = splitPath[0];
+            if (!acceptedLocales.includes(currentLang) && !orphanLocales.includes(currentLang) && !ignoreList.includes(splitPath[0])) {
+              splitPath.splice(0, 0, langPreference.toLowerCase());
+              const newUrl = 'https://' + window.location.hostname + '/' + splitPath.join('/') + '/' + window.location.search;
+              window.location.replace(newUrl);
+            }
+          }
+      } else if (!window.navigator.userAgent.toLowerCase().includes('googlebot')) {
+          const requestedLang = window.navigator.language;
+          const splitPath = window.location.pathname.split('/').filter(part => part !== '');
+          const maybeLocale = splitPath.shift();
+          const splitPathString = splitPath.join('/');
+
+          if (requestedLang && requestedLang.toLowerCase() != "en-us") {
+            const requestedLangCode = requestedLang
+              .toLowerCase()
+              .replace('_', '-');
+            const redirectPath = getPathFromLocale(maybeLocale, requestedLangCode, splitPathString);
+            if (redirectPath && !ignoreList.includes(maybeLocale)) {
+              window.location.replace('https://' + window.location.hostname + '/' + redirectPath + '/' + window.location.search);
+            }
+          }
+      }
+    }
+    </script>
+<meta charset="UTF-8">
+<title>This page is missing | Cloudflare </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://www.cloudflare.com/fonts/cloudflare.eot/">
+<meta itemprop="name" content="This page is missing | Cloudflare ">
+<meta itemprop="description" content="Cloudflare is a free global CDN and DNS provider that can speed up and protect any site online">
+<meta itemprop="image" content="https://www.cloudflare.com/img/cf-facebook-card.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="This page is missing | Cloudflare ">
+<meta name="twitter:description" content="Cloudflare is a free global CDN and DNS provider that can speed up and protect any site online">
+<meta name="twitter:site" content="@cloudflare">
+<meta name="twitter:creator" content="@cloudflare">
+<meta name="twitter:image" content="https://www.cloudflare.com/img/cf-twitter-card.png">
+<meta property="og:title" content="This page is missing | Cloudflare ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.cloudflare.com/pt-br/fonts/cloudflare.eot/">
+<meta property="og:image" content="https://www.cloudflare.com/img/cf-facebook-card.png">
+<meta property="og:description" content="Cloudflare is a free global CDN and DNS provider that can speed up and protect any site online">
+<meta property="og:site_name" content="Cloudflare">
+<meta class="swiftype" name="language" data-type="string" content="pt-br">
+<meta class="swiftype" name="title" data-type="string" content="This page is missing">
+<meta class="swiftype" name="description" data-type="string" content="Cloudflare is a free global CDN and DNS provider that can speed up and protect any site online">
+<meta class="swiftype" name="url" data-type="enum" content="https://www.cloudflare.com/pt-br/fonts/cloudflare.eot/">
+<meta name="baidu-site-verification" content="N0CNJSCAk5">
+<meta name="baidu-site-verification" content="Kj9FQ1BEWh">
+<meta name="baidu-site-verification" content="OEDgbws38Y">
+<meta name="baidu-site-verification" content="code-LHd7bZjChM">
+<link rel="icon" type="image/x-icon" href="../favicon_1.ico">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-128.png" sizes="128x128">
+<meta name="application-name" content="Cloudflare">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="msapplication-square70x70logo" content="/mstile-70x70.png">
+<meta name="msapplication-square150x150logo" content="/mstile-150x150.png">
+<meta name="msapplication-wide310x150logo" content="/mstile-310x150.png">
+<meta name="msapplication-square310x310logo" content="/mstile-310x310.png">
+<noscript><style>.nojs-hide{display: none;}</style></noscript>
+<style>.async-hide {opacity: 0 !important}</style>
+<link rel="stylesheet" href="https://assets.www.cloudflare.com/css/application-7d1e9e47f6.min.css">
+<script nonce="76a74680-eece-4750-bf52-1c3fd866f055">
+  window.CFJS = {
+    config: {
+      rumEnabled: true,
+      env: '/marketing-api',
+      availableLanguages: ''.split(','),
+      excludeMarketo: false,
+      marketoEnabled: true,
+      bizibleEnabled: true,
+      excludeHeapAnalytics: false,
+      asyncHide: false,
+      remarketingEnabled: false,
+      sentryDSN: 'https://bd9df81d859641f39ce626ce2a2cc90d@sentry.io/229513',
+      serverLang: "pt-br",
+      isEnglish: false,
+      isLocalized: false,
+      intlTelInputUtils: '/js/chunk-ed207c16f1337d207f80.js',
+      cookieDomain: "cloudflare.com",
+      techtargetEnabled: true,
+      googleOptimizeEnabled: true,
+        marketoFormEmbedTranslations: "{\"50\":\"+ 50\",\"mb\":\"MB\",\"no\":\"Não\",\"or\":\"OU\",\"all\":\"Todos\",\"cdn\":\"CDN\",\"dns\":\"DNS\",\"ssl\":\"SSL\",\"yes\":\"Sim\",\"5 mb\":\"5 MB\",\"asia\":\"Ásia\",\"back\":\"Voltar\",\"blog\":\"Blog\",\"both\":\"Ambos\",\"bots\":\"Bots\",\"chad\":\"Chade\",\"city\":\"Cidade: *\",\"cuba\":\"Cuba\",\"ddos\":\"DDoS\",\"date\":\"Data\",\"fiji\":\"Fiji\",\"guam\":\"Guam\",\"iran\":\"Iran\",\"iraq\":\"Iraque\",\"link\":\"Link\",\"mali\":\"Mali\",\"niue\":\"Niue\",\"none\":\"Nenhuma\",\"oman\":\"Omã\",\"past\":\"Anterior\",\"peru\":\"Peru\",\"plan\":\"Plano\",\"rsvp\":\"RSVP\",\"send\":\"Enviar\",\"time\":\"Tempo\",\"togo\":\"Togo\",\"year\":\"Ano\",\"10 mb\":\"10 MB\",\"apply\":\"Cadastre-se\",\"asn\":\"ASN*\",\"aruba\":\"Aruba\",\"benin\":\"Benim\",\"chile\":\"Chile\",\"china\":\"China\",\"cloud\":\"Nuvem\",\"congo\":\"Congo\",\"ebook\":\"E-book\",\"egypt\":\"Egito\",\"gabon\":\"Gabão\",\"ghana\":\"Gana\",\"haiti\":\"Haiti\",\"india\":\"Índia\",\"italy\":\"Itália\",\"japan\":\"Japão\",\"kenya\":\"Quênia\",\"level\":\"Nível\",\"libya\":\"Líbia\",\"macao\":\"Macau\",\"malta\":\"Malta\",\"nauru\":\"Nauru\",\"nepal\":\"Nepal\",\"niger\":\"Níger\",\"other\":\"Outros\",\"palau\":\"Palau\",\"phone\":\"Telefone: *\",\"qatar\":\"Catar\",\"sales\":\"Vendas\",\"samoa\":\"Samoa\",\"spain\":\"Espanha\",\"state\":\"Estado\",\"sudan\":\"Sudão\",\"syria\":\"Síria\",\"title\":\"Título\",\"tonga\":\"Tonga\",\"vegan\":\"Vegano(a)\",\"video\":\"Vídeo\",\"watch\":\"Assista\",\"yemen\":\"Iêmen\",\"plans\":{\"pro\":{\"id\":\"pro\",\"displayName\":\"Plano Pro\"},\"free\":{\"id\":\"free\",\"displayName\":\"Plano Gratuito\"},\"business\":{\"id\":\"business\",\"displayName\":\"Plano Business\"}},\"$3000\":\"+ US$ 3.000\",\"100 mb\":\"100 MB\",\"africa\":\"África\",\"agenda\":\"Agenda\",\"angola\":\"Angola\",\"belize\":\"Belize\",\"bhutan\":\"Butão\",\"brazil\":\"Brasil\",\"brunei\":\"Brunei\",\"canada\":\"Canadá\",\"cyprus\":\"Chipre\",\"email\":\"E-mail: *\",\"europe\":\"Europa\",\"filter\":\"Filtro\",\"france\":\"França\",\"gambia\":\"Gâmbia\",\"greece\":\"Grécia\",\"guinea\":\"Guiné\",\"guyana\":\"Guiana\",\"israel\":\"Israel\",\"jersey\":\"Jersey\",\"jordan\":\"Jordânia\",\"kosovo\":\"Kosovo\",\"kuwait\":\"Kuwait\",\"latvia\":\"Letônia\",\"length\":\"Comprimento\",\"malawi\":\"Malauí\",\"mexico\":\"México\",\"monaco\":\"Mônaco\",\"norway\":\"Noruega\",\"panama\":\"Panamá\",\"poland\":\"Polônia\",\"rwanda\":\"Ruanda\",\"serbia\":\"Sérvia\",\"simple\":\"Simples\",\"source\":\"Origem\",\"submit\":\"Enviar\",\"sweden\":\"Suécia\",\"taiwan\":\"Taiwan\",\"turkey\":\"Turquia\",\"tuvalu\":\"Tuvalu\",\"uganda\":\"Uganda\",\"zambia\":\"Zâmbia\",\"address\":\"Endereço: *\",\"albania\":\"Albânia\",\"algeria\":\"Argélia\",\"analyst\":\"Analista\",\"andorra\":\"Andorra\",\"archive\":\"Arquivo\",\"armenia\":\"Armênia\",\"austria\":\"Áustria\",\"bahamas\":\"Bahamas\",\"bahrain\":\"Barém\",\"belarus\":\"Bielorrússia\",\"belgium\":\"Bélgica\",\"bermuda\":\"Bermuda\",\"bolivia\":\"Bolívia\",\"burundi\":\"Burundi\",\"comment\":\"Comentário\",\"comoros\":\"Comores\",\"company\":\"Empresa: *\",\"complex\":\"Complexo\",\"country\":\"País: *\",\"croatia\":\"Croácia\",\"denmark\":\"Dinamarca\",\"ecuador\":\"Equador\",\"eritrea\":\"Eritreia\",\"estonia\":\"Estônia\",\"filters\":\"Filtros\",\"finland\":\"Finlândia\",\"georgia\":\"Geórgia\",\"germany\":\"Alemanha\",\"grenada\":\"Granada\",\"hungary\":\"Hungria\",\"iceland\":\"Islândia\",\"ireland\":\"Irlanda\",\"jamaica\":\"Jamaica\",\"lebanon\":\"Líbano\",\"lesotho\":\"Lesoto\",\"liberia\":\"Libéria\",\"mayotte\":\"Mayotte\",\"morocco\":\"Marrocos\",\"myanmar\":\"Myanmar\",\"namibia\":\"Namíbia\",\"nigeria\":\"Nigéria\",\"oceania\":\"Oceania\",\"offices\":\"Escritórios\",\"peering\":\"Troca de tráfego\",\"privacy\":\"Privacidade\",\"reunion\":\"Ilha da Reunião\",\"romania\":\"Romênia\",\"senegal\":\"Senegal\",\"sign up\":\"Inscreva-se\",\"somalia\":\"Somália\",\"support\":\"Suporte\",\"tokelau\":\"Toquelau\",\"tune in\":\"Sintonizar\",\"tunisia\":\"Tunísia\",\"ukraine\":\"Ucrânia\",\"uruguay\":\"Uruguai\",\"vanuatu\":\"Vanuatu\",\"virtual\":\"Virtual\",\"webinar\":\"Webinar\",\"website\":\"Site: *\",\"activity\":\"Atividade\",\"air date\":\"Data de entrada\",\"anguilla\":\"Anguila\",\"archives\":\"Arquivos\",\"barbados\":\"Barbados\",\"botswana\":\"Botsuana\",\"bulgaria\":\"Bulgária\",\"cambodia\":\"Camboja\",\"cameroon\":\"Camarões\",\"colombia\":\"Colômbia\",\"comments\":\"Comentários: *\",\"curaçao\":\"Curaçao\",\"djibouti\":\"Djibuti\",\"domain\":\"Domínio *\",\"dominica\":\"Dominica\",\"download\":\"Baixar\",\"ethiopia\":\"Etiópia\",\"featured\":\"Em destaque\",\"get help\":\"Tenha ajuda\",\"guernsey\":\"Ilha Guernsey\",\"honduras\":\"Honduras\",\"industry\":\"Setor\",\"innovate\":\"Inovar\",\"kiribati\":\"Quiribati\",\"language\":\"Idioma\",\"location\":\"Localização\",\"malaysia\":\"Malásia\",\"maldives\":\"Maldivas\",\"mongolia\":\"Mongólia\",\"our team\":\"Nossa equipe\",\"pakistan\":\"Paquistão\",\"paraguay\":\"Paraguai\",\"password\":\"Senha\",\"physical\":\"Física\",\"pitcairn\":\"Ilhas Pitcairn\",\"portugal\":\"Portugal\",\"register\":\"Cadastre-se\",\"reseller\":\"Revendedor\",\"security\":\"Segurança\",\"slovakia\":\"Eslováquia\",\"slovenia\":\"Eslovênia\",\"speakers\":\"Palestrantes\",\"stagnate\":\"Estagnar\",\"suriname\":\"Suriname\",\"tanzania\":\"Tanzânia\",\"thailand\":\"Tailândia\",\"upcoming\":\"Em breve\",\"viet nam\":\"Vietnã\",\"view all\":\"Ver tudo\",\"webinars\":\"Webinars\",\"zimbabwe\":\"Zimbábue\",\"argentina\":\"Argentina\",\"australia\":\"Austrália\",\"gibraltar\":\"Gibraltar\",\"greenland\":\"Groenlândia\",\"guatemala\":\"Guatemala\",\"hong kong\":\"Hong Kong\",\"indonesia\":\"Indonésia\",\"job title\":\"Cargo...*\",\"last name\":\"Sobrenome: *\",\"lithuania\":\"Lituânia\",\"load more\":\"Carregar mais\",\"mauritius\":\"Ilhas Maurício\",\"nicaragua\":\"Nicarágua\",\"our board\":\"Nossa diretoria\",\"palestine\":\"Palestina\",\"plan type\":\"Tipo de plano\",\"resilient\":\"Resiliente\",\"saas apps\":\"Aplicativos SaaS\",\"select\":\"Selecionar...\",\"show more\":\"Mostrar mais\",\"singapore\":\"Singapura\",\"sponsored\":\"Patrocínio\",\"sri lanka\":\"Sri Lanka\",\"subscribe\":\"Assine\",\"swaziland\":\"Suazilândia\",\"thank you\":\"Obrigado\",\"use case\":\"Caso de uso:\",\"venezuela\":\"Venezuela\",\"watch now\":\"Assista agora\",\"whatsapp\":\"WhatsApp:\",\"your api\":\"Sua API.\",\"your app\":\"Seu aplicativo.\",\"almoststat\":\"quase %{value} Tbps\",\"antarctica\":\"Antártica\",\"azerbaijan\":\"Azerbaijão\",\"bangladesh\":\"Bangladesh\",\"bot attack\":\"Ataque de Bots\",\"cache node\":\"Nó do cache\",\"cape verde\":\"Cabo Verde\",\"click here\":\"Clique aqui\",\"contact me\":\"Fale comigo\",\"contact us\":\"Fale conosco\",\"costa rica\":\"Costa Rica\",\"first name\":\"Nome: *\",\"guadeloupe\":\"Guadalupe\",\"it - staff\":\"TI – Funcionários\",\"interests\":\"Interesses:\",\"kazakhstan\":\"Cazaquistão\",\"kyrgyzstan\":\"Quirguistão\",\"learn more\":\"Saiba mais\",\"luxembourg\":\"Luxemburgo\",\"madagascar\":\"Madagáscar\",\"martinique\":\"Martinica\",\"mauritania\":\"Mauritânia\",\"micronesia\":\"Micronésia\",\"montenegro\":\"Montenegro\",\"montserrat\":\"Monserrate\",\"mozambique\":\"Moçambique\",\"press page\":\"Página de imprensa\",\"san marino\":\"San Marino\",\"serverless\":\"Sem servidor\",\"seychelles\":\"Seicheles\",\"tajikistan\":\"Tajiquistão\",\"uzbekistan\":\"Uzbequistão\",\"vegetarian\":\"Vegetariano(a)\",\"vulnerable\":\"Vulnerável\",\"whitepaper\":\"Artigos\",\"work email\":\"E-mail comercial: *\",\"yc batch\":\"Lote YC*\",\"afghanistan\":\"Afeganistão\",\"campaign\":\"Campanha: *\",\"communities\":\"Comunidades\",\"ddos attack\":\"Ataque de DDoS\",\"description\":\"Descrição\",\"distributor\":\"Distribuidor\",\"el salvador\":\"El Salvador\",\"full name\":\"Nome completo*\",\"get started\":\"Comece agora\",\"isle of man\":\"Ilha de Man\",\"key results\":\"Principais resultados\",\"link copied\":\"Link copiado\",\"middle east\":\"Oriente Médio\",\"most recent\":\"Mais recentes\",\"netherlands\":\"Países Baixos\",\"new zealand\":\"Nova Zelândia\",\"north korea\":\"Coreia do Norte\",\"performance\":\"Desempenho\",\"philippines\":\"Filipinas\",\"please wait\":\"Aguarde\",\"postal code\":\"CEP: *\",\"press/media\":\"Imprensa/mídia\",\"puerto rico\":\"Porto Rico\",\"reliability\":\"Confiabilidade\",\"saint lucia\":\"Santa Lúcia\",\"search tips\":\"Dicas de pesquisa\",\"select plan\":\"Selecionar plano\",\"set up your\":\"Configure o seu\",\"south korea\":\"Coreia do Sul\",\"south sudan\":\"Sudão do Sul\",\"switzerland\":\"Suíça\",\"timor-leste\":\"Timor-Leste\",\"watch video\":\"Assista ao vídeo\",\"website url\":\"URL do site\",\"all features\":\"Todas as funcionalidades\",\"batch year\":\"Ano do lote*\",\"burkina faso\":\"Burquina Faso\",\"chad (tchad\":\"Chade\",\"clear filter\":\"Limpar filtro\",\"close window\":\"Fechar janela\",\"cook islands\":\"Ilhas Cook\",\"data centers\":\"Data centers\",\"download pdf\":\"Baixar PDF\",\"get in touch\":\"Fale conosco\",\"it - c-level\":\"TI – Nível C\",\"it - manager\":\"TI – Gerente\",\"infographics\":\"Infográficos\",\"peru (per\":\"Peru\",\"remote users\":\"Usuários remotos\",\"request demo\":\"Solicite uma demonstração\",\"saint helena\":\"Santa Helena\",\"saudi arabia\":\"Arábia Saudita\",\"sierra leone\":\"Serra Leoa\",\"sint maarten\":\"São Martinho\",\"south africa\":\"África do Sul\",\"turkmenistan\":\"Turquemenistão\",\"form.privacy\":\"Ao enviar este formulário, você concorda em receber informações da Cloudflare relacionadas aos nossos produtos, eventos e ofertas especiais. Você pode cancelar o recebimento dessas mensagens a qualquer momento. Nunca venderemos seus dados e valorizamos suas opções de privacidade. Consulte nossa <a href='%{PRIVACY_POLICY_URL}' target='_blank'>Política de Privacidade</a> para obter mais informações.\",\"aland islands\":\"Ilhas Aland\",\"bouvet island\":\"Ilha Bouvet\",\"call sales at\":\"Ligue para a área de vendas:\",\"contact sales\":\"Contato de vendas\",\"cote d'ivoire\":\"Costa do Marfim\",\"email address\":\"Endereço de e-mail *\",\"faroe islands\":\"Ilhas Faroé\",\"french guiana\":\"Guiana Francesa\",\"ghana (gaana\":\"Gana\",\"guinea-bissau\":\"Guiné-Bissau\",\"internet apps\":\"Aplicativos de internet\",\"liechtenstein\":\"Liechtenstein\",\"network layer\":\"Camada de rede\",\"new caledonia\":\"Nova Caledônia\",\"niger (nijar\":\"Níger\",\"north america\":\"América do Norte\",\"organization\":\"Organização: *\",\"plans/pricing\":\"Planos/Preços\",\"published on\":\"Publicado em:\",\"register now\":\"Cadastre-se agora!\",\"sub-processor\":\"Subprocessador\",\"under attack\":\"Está sob ataque?\",\"united states\":\"Estados Unidos\",\"webinars type\":\"Tipos de webinar\",\"your network\":\"Sua rede.\",\"your website\":\"Seu site.\",\"american samoa\":\"Samoa Americana\",\"benin (bénin\":\"Benin\",\"cayman islands\":\"Ilhas Cayman\",\"cloudflare inc\":\"Cloudflare, Inc.\",\"czech republic\":\"República Tcheca\",\"download image\":\"Baixar imagem\",\"featured count\":\"Contagem em destaque\",\"italy (italia\":\"Itália\",\"macau\":\"Macau\",\"mainland china\":\"China Continental\",\"meeting reward\":\"Prêmio por reunião\",\"must be a url\":\"Deve ser um URL.\",\"norfolk island\":\"Ilha Norfolk\",\"norway (norge\":\"Noruega\",\"press releases\":\"Comunicados à imprensa\",\"student/intern\":\"Estudante/Estagiário\",\"type of attack\":\"Tipo de ataque *\",\"united kingdom\":\"Reino Unido\",\"wechat number\":\"Número WeChat: *\",\"western sahara\":\"Saara Ocidental\",\"collapse-facet\":\"Recolher %{label} da faceta\",\"åland islands\":\"Ilhas Aland\",\"add to calendar\":\"Adicionar ao calendário\",\"brazil (brasil\":\"Brasil\",\"console connect\":\"Console Connect\",\"estonia (eesti\":\"Estônia\",\"finland (suomi\":\"Finlândia\",\"have questions\":\"Dúvidas?\",\"interested in\":\"Interessado em:*\",\"learning center\":\"Central de Aprendizagem\",\"link from video\":\"Link do vídeo\",\"more than 100mb\":\"Mais de 100 MB\",\"poland (polska\":\"Polônia\",\"previous events\":\"Eventos anteriores\",\"related content\":\"Conteúdo relacionado\",\"resource center\":\"Centro de pesquisa\",\"solomon islands\":\"Ilhas Salomão\",\"source/location\":\"Origem/localização\",\"spain (españa\":\"Espanha\",\"upcoming events\":\"Próximos eventos\",\"video streaming\":\"Streaming de vídeos\",\"date_with_colon\":\"Data:\",\"contact us today\":\"Fale conosco agora\",\"christmas island\":\"Ilha Christmas\",\"contact email\":\"E-mail de contato: *\",\"côte d’ivoire\":\"Costa do Marfim\",\"featured stories\":\"Histórias em destaque\",\"featured webinar\":\"Webinar em destaque\",\"french polynesia\":\"Polinésia Francesa\",\"guinea (guinée\":\"Guiné\",\"it - vp/director\":\"TI – VP/diretor\",\"keynote speakers\":\"Principais palestrantes\",\"laos\":\"Laos\",\"latvia (latvija\":\"Letônia\",\"marshall islands\":\"Ilhas Marshall\",\"mexico (méxico\":\"México\",\"num employees\":\"N° funcionários: *\",\"organization url\":\"URL da organização: *\",\"panama (panam\":\"Panamá\",\"papua new guinea\":\"Papua Nova Guiné\",\"preferred city\":\"Cidade preferida *\",\"related products\":\"Produtos relacionados\",\"related blogpost\":\"Post do blog associado\",\"results per page\":\"Resultados por página\",\"security - staff\":\"Segurança – Funcionários\",\"self-hosted apps\":\"Aplicativos auto-hospedados\",\"services partner\":\"Parceiro de Serviços\",\"support response\":\"Resposta do suporte\",\"sweden (sverige\":\"Suécia\",\"to be determined\":\"A ser determinada\",\"sales_with_colon\":\"Vendas\",\"accelerator name\":\"Nome do acelerador:\",\"access management\":\"accessmanagement\",\"belgium (belgi\":\"Bélgica\",\"brunei darussalam\":\"Brunei\",\"copy article link\":\"Copiar o link do artigo\",\"denmark (danmark\":\"Dinamarca\",\"equatorial guinea\":\"Guiné Equatorial\",\"iceland (ísland\":\"Islândia\",\"mauritius (moris\":\"Maurício\",\"must be a number\":\"Deve ser um número.\",\"preferred country\":\"País preferencial *\",\"ransomware attack\":\"Ataque de ransomware\",\"saint barthélemy\":\"São Bartolomeu\",\"schema validation\":\"Validação de esquema\",\"search cloudflare\":\"Pesquisar Cloudflare\",\"talk to an expert\":\"Fale com um especialista\",\"turkey (türkiye\":\"Turquia\",\"url for peeringdb\":\"URL de PeeringDB\",\"view in dashboard\":\"Ver no painel\",\"wallis and futuna\":\"Wallis e Futuna\",\"webinar slidedeck\":\"Apresentação de slides do webinar\",\"form.privacy.gdpr\":\"As informações que você fornece à Cloudflare são regidas pelos termos da nossa <a href='%{PRIVACY_POLICY_URL}' target='_blank'>Política de Privacidade</a>.\",\"burundi (uburundi\":\"Burundi\",\"croatia (hrvatska\":\"Croácia\",\"dominican republic\":\"República Dominicana\",\"eng/devops - staff\":\"Eng/DevOps – Funcionários\",\"existing customer\":\"Cliente existente?\",\"korea, republic of\":\"Coreia do Sul\",\"namibia (namibi\":\"Namíbia\",\"on-demand webinars\":\"Webinars sob demanda\",\"organization name\":\"Nome da organização:\",\"romania (românia\":\"Romênia\",\"russian federation\":\"Russia\",\"security - c-level\":\"Segurança – Nível C\",\"security - manager\":\"Segurança – Gerente\",\"submitting form\":\"Enviando formulário…\",\"technology partner\":\"Parceiro de Tecnologia\",\"type of connection\":\"Tipo de conexão\",\"albania (shqipëri\":\"Albânia\",\"antigua and barbuda\":\"Antígua e Barbuda\",\"cameroon (cameroun\":\"Camarões\",\"durationbadgelevels\":{\"pro\":{\"time\":\"25 minutos\",\"level\":\"Iniciante\"},\"free\":{\"time\":\"20 minutos\",\"level\":\"Iniciante\"},\"business\":{\"time\":\"35 minutos\",\"level\":\"Iniciante\"}},\"in partnership with\":\"Em parceria com\",\"learning objectives\":\"Objetivos de aprendizado\",\"lithuania (lietuva\":\"Lituânia\",\"preferred address\":\"Endereço preferido *\",\"read the case study\":\"Leia o estudo de caso\",\"scroll to view more\":\"Role para ver mais\",\"senegal (sénégal\":\"Senegal\",\"telegram messaging\":\"Telegram:\",\"trinidad and tobago\":\"Trindade e Tobago\",\"u.s. virgin islands\":\"Ilhas Virgens Estados Unidos\",\"want to learn more\":\"Quer saber mais?\",\"you are registered\":\"Você está cadastrado.\",\"zero trust security\":\"Segurança Zero Trust\",\"additionaltermstext\":\"* Termos e condições adicionais poderão se aplicar.\",\"data loss prevention\":\"Prevenção de Perda de Dados\",\"dietary restrictions\":\"Restrições alimentares:\",\"email recommendation\":\"Recomendação de e-mail\",\"email_recommendation\":\"Recomendação de e-mail\",\"eng/devops - c-level\":\"Eng/DevOps – Nível C\",\"eng/devops - manager\":\"Eng/DevOps – Gerente\",\"looking for support\":\"Precisa de ajuda?\",\"moldova, republic of\":\"Moldávia\",\"must be valid email\":\"Deve ser um e-mail válido.\",\"network as a service\":\"Rede como Serviço\",\"private chat/support\":\"Chat/suporte privado\",\"related case studies\":\"Estudos de caso relacionados\",\"set up your pro plan\":\"Configure seu Plano Pro\",\"slovakia (slovensko\":\"Eslováquia\",\"slovenia (slovenija\":\"Eslovênia\",\"somalia (soomaaliya\":\"Somália\",\"syrian arab republic\":\"Síria\",\"united arab emirates\":\"Emirados Árabes Unidos\",\"vietnam (việt nam\":\"Vietnã\",\"form.privacy.partner\":\"Ao enviar o formulário, você está solicitando o recebimento de informações sobre a Cloudflare e produtos, eventos e ofertas especiais da %{PARTNER}, e concorda com o processamento de seus dados pessoais pela Cloudflare, conforme descrito na <a href='%{PRIVACY_POLICY_URL}' target='_blank'>Política de Privacidade da Cloudflare</a>, e pela %{PARTNER}, conforme descrito na Política de Privacidade da %{PARTNER}. Você também autoriza a Cloudflare a compartilhar seus dados pessoais com a %{PARTNER}.\",\"accelerator program\":\"Programa acelerador *\",\"austria (österreich\":\"Áustria\",\"caribbean netherlands\":\"Países Baixos Caribenhos\",\"germany (deutschland\":\"Alemanha\",\"gluten free / coeliac\":\"Sem glúten/celíaco(a)\",\"must be a valid date\":\"Deve ser uma data válida.\",\"no credit card needed\":\"Nenhum cartão de crédito necessário\",\"russia\":\"Rússia\",\"saint kitts and nevis\":\"São Cristóvão e Nevis\",\"sao tome and principe\":\"São Tomé e Príncipe\",\"set up your free plan\":\"Configure seu Plano Gratuito\",\"switzerland (schweiz\":\"Suíça\",\"view all case studies\":\"Veja todos os estudos de caso\",\"bosnia and herzegovina\":\"Bósnia e Herzegovina\",\"british virgin islands\":\"Ilhas Virgens Britânicas\",\"cloud resources attack\":\"Ataque a recursos de nuvem\",\"current ddos vendor\":\"Fornecedor atual de produtos contra DDoS...\",\"montenegro (crna gora\":\"Montenegro\",\"other (please specify\":\"Outros (especifique)\",\"other - please specify\":\"Outros – Especifique\",\"réunion (la réunion\":\"Reunião\",\"security - vp/director\":\"Segurança – VP/diretor\",\"select your country\":\"Selecione seu país...\",\"svalbard and jan mayen\":\"Svalbard e Jan Mayen\",\"terabitspersecondshort\":\"%{value} Tbps\",\"upcoming live webinars\":\"Próximos webinars ao vivo\",\"want to keep learning\":\"Quer saber mais?\",\"a server error occured\":\"Ocorreu um erro no servidor.\",\"cape verde (kabu verdi\":\"Cabo Verde\",\"cocos (keeling) islands\":\"Ilhas Cocos (Keeling)\",\"ddos protection hotline\":\"Linha direta de proteção contra DDoS\",\"hungary (magyarország\":\"Hungria\",\"interconnection partner\":\"Parceiro de interconexão\",\"must be a phone number\":\"Deve ser um número de telefone.\",\"netherlands (nederland\":\"Países Baixos\",\"preferred postal code\":\"Código postal preferido *\",\"this field is required\":\"Este campo é obrigatório.\",\"virgin islands, british\":\"Ilhas Virgens Britânicas\",\"azerbaijan (azərbaycan\":\"Azerbaijão\",\"central african republic\":\"República Centro-Africana\",\"early access to features\":\"Acesso antecipado a recursos\",\"eng/devops - vp/director\":\"Eng/DevOps – VP/diretor\",\"example \\\"cloudflare.com\":\"Exemplo 'cloudflare.com'\",\"faroe islands (føroyar\":\"Ilhas Faroé\",\"infrastructure - c-level\":\"Infraestrutura – Nível C\",\"infrastructure - manager\":\"Infraestrutura – Gerente\",\"mozambique (moçambique\":\"Moçambique\",\"northern mariana islands\":\"Marianas Setentrionais\",\"please select an option\":\"Selecione uma opção.\",\"turks and caicos islands\":\"Ilhas Turcas e Caicos\",\"after_reading_with_colon\":\"Após ler este artigo, você será capaz de:\",\"supportresponsetitletext\":\"Resposta do atendimento ao cliente:\",\"cloudflare account email\":\"E-mail da conta da Cloudflare:\",\"dairy free / lactose free\":\"Sem leite/sem lactose\",\"identity or access attack\":\"Ataques à identidade ou acesso\",\"iran, islamic republic of\":\"Irã\",\"kv and/or durable objects\":\"KV e/ou Durable Objects\",\"madagascar (madagasikara\":\"Madagascar\",\"product - product manager\":\"Produto – Gerente de produto\",\"saint pierre and miquelon\":\"São Pedro e Miquelão\",\"sales/marketing - c-level\":\"Vendas/Marketing – Nível C\",\"set up your business plan\":\"Configure seu Plano Business\",\"sint maarten (dutch part\":\"São Martinho (parte holandesa)\",\"solution & product guides\":\"Guias de soluções e produtos\",\"uzbekistan (oʻzbekiston\":\"Uzbequistão\",\"web or application attack\":\"Ataque à web ou aplicativos\",\"marketo_blocked_countries\":\"No momento, não podemos atender empresas ou organizações com base no país selecionado. Envie um e-mail para legal@cloudflare.com se precisar de assistência adicional.\",\"consulting integrator (ci\":\"Consultor integrador (CI)\",\"fish / shellfish allergies\":\"Alergia a peixes/mariscos\",\"infrastructure - architect\":\"Infraestrutura – Arquiteto\",\"learn how cloudflare works\":\"Saiba como a Cloudflare funciona\",\"network or firewall attack\":\"Ataque à rede ou firewall\",\"saint martin (french part\":\"São Martinho (parte francesa)\",\"falkland islands (malvinas\":\"Ilhas Malvinas\",\"finance/procurement - staff\":\"Financeiro/Compras – Funcionários\",\"french southern territories\":\"Territórios Franceses do Sul\",\"moldova (republica moldova\":\"Moldávia\",\"tree nut / peanut allergies\":\"Alergia a nozes/amendoim\",\"form.privacy.newsletterform\":\"Consulte a <a class='alternate-link--blue3' href='%{PRIVACY_POLICY_URL}' target='_blank'>política de privacidade</a> da Cloudflare para saber como coletamos e processamos seus dados pessoais.\",\"expected storage size in tb\":\"Tamanho de armazenamento esperado em TB:\",\"greenland (kalaallit nunaat\":\"Groenlândia\",\"infrastructure - vp/director\":\"Infraestrutura – VP/diretor\",\"physical data center partner\":\"Parceiro de data center físico\",\"tanzania, united republic of\":\"Tanzânia\",\"what interests you the most\":\"Quais são seus principais interesses? \",\"finance/procurement - c-level\":\"Financeiro/Compras – Nível C\",\"finance/procurement - manager\":\"Financeiro/Compras – Gerente\",\"guinea-bissau (guiné bissau\":\"Guiné-Bissau\",\"holy see (vatican city state\":\"Santa Sé (Cidade Estado do Vaticano)\",\"latin america & the caribbean\":\"América Latina e Caribe\",\"please refresh and try again\":\"Atualize e tente de novo.\",\"proof of concept (poc) reward\":\"Prêmio por prova de conceito (PoC)\",\"sales/marketing - vp/director\":\"Vendas/Marketing – VP/diretor\",\"select accelerator program\":\"Selecionar o programa de acelerador...\",\"subscribe to trending stories\":\"Assine as histórias de tendências\",\"technical presentation reward\":\"Prêmio por apresentação técnica\",\"web security (cdn, ddos, waf\":\"Segurança da web (CDN, DDoS, WAF)\",\"autonomous system number (asn\":\"Número de sistema autônomo (ASN)\",\"british indian ocean territory\":\"Território Britânico do Oceano Índico\",\"must be an amount of currency\":\"Deve ser um valor em dinheiro.\",\"are you currently under attack\":\"Está sob ataque atualmente?\",\"bolivia, plurinational state of\":\"Bolívia\",\"dns hijacking or on path attack\":\"Sequestro de DNS ou ataque on-path\",\"global systems integrator (gsi\":\"Integrador de Sistemas Global (GSI)\",\"bonaire, sint eustatius and saba\":\"Bonaire, Santo Eustáquio e Saba\",\"lao people's democratic republic\":\"Laos\",\"no results. try removing filters\":\"Sem resultados. Tente remover os filtros\",\"saint vincent and the grenadines\":\"São Vicente e Granadinas\",\"your privacy is important to us\":\"Sua privacidade é importante para nós.\",\"welcome_center_recommended_steps\":\"Siga as etapas recomendadas neste guia para configurar sua conta e ativar seu site na Cloudflare. Se você já tem uma conta na Cloudflare, faça o login e siga as etapas no seu Painel de Controle. Ainda não tem uma conta na Cloudflare?\",\"falkland islands (islas malvinas\":\"Ilhas Malvinas\",\"finance/procurement - vp/director\":\"Financeiro/Compras – VP/diretor\",\"french guiana (guyane française\":\"Guiana Francesa\",\"heard island and mcdonald islands\":\"Ilha Heard e Ilhas McDonald\",\"how large a script will you need\":\"Qual é o tamanho de script de que você precisa? *\",\"not sure? we’ll help you assess\":\"Não tem certeza? Vamos ajudar você a avaliar\",\"try exploring these helpful areas\":\"Tente explorar essas áreas úteis\",\"venezuela, bolivarian republic of\":\"Venezuela\",\"czech republic (česká republika\":\"República Tcheca\",\"data center location (city, state\":\"Localização do data center (cidade, estado)\",\"incorrect email. please try again\":\"E-mail incorreto. Tente de novo.\",\"vatican city (città del vaticano\":\"Cidade do Vaticano\",\"check the spelling of your keywords\":\"Confira a ortografia das palavras-chave\",\"new caledonia (nouvelle-calédonie\":\"Nova Caledônia\",\"other saas applications not listed\":\"Outros aplicativos SaaS que não estão listados:\",\"which events will you be attending\":\"De quais eventos você vai participar?\",\"congo (republic) (congo-brazzaville\":\"República do Congo\",\"myanmar (burma\":\"Myanmar\",\"please select which products you use\":\"Selecione os produtos que você usa:\",\"wallis and futuna (wallis-et-futuna\":\"Wallis e Futuna\",\"congo, the democratic republic of the\":\"República Democrática do Congo\",\"equatorial guinea (guinea ecuatorial\":\"Guiné Equatorial\",\"tell us a bit about your business\":\"Fale-nos um pouco sobre a sua empresa: *\",\"title required. please enter a title\":\"O cargo é obrigatório. Digite um cargo.\",\"why do you need a larger script size\":\"Por que você precisa de um tamanho de script maior?\",\"korea, democratic people's republic of\":\"Coreia do Norte\",\"staying in touch with product managers\":\"Contato com gerentes de produto\",\"are you a covid-19 vaccine distributor\":\"Você distribui a vacina da Covid-19? *\",\"mqtt (mosquitto, aws/gcp iot core, etc\":\"MQTT (Mosquitto, AWS/GCP IoT Core etc.)\",\"next day testing and deployment needed\":\"É necessário fazer testes e implantação no dia seguinte? *\",\"what is the title of the prospect(s\":\"Qual é o cargo do(s) cliente(s) em potencial? *\",\"french polynesia (polynésie française\":\"Polinésia Francesa\",\"location where you are seeking a partner\":\"Local onde você procura um parceiro\",\"macedonia (fyrom\":\"Macedônia do Norte\",\"postgres or other rdb (notify or similar\":\"Postgres ou outro RDB (NOTIFY ou similar)\",\"what type of partner are you looking for\":\"Que tipo de parceiro você está procurando?\",\"dominican republic (república dominicana\":\"República Dominicana\",\"macedonia, the former yugoslav republic of\":\"Macedônia do Norte\",\"full name is required. please enter a name\":\"O nome completo é obrigatório. Digite um nome.\",\"last name is required. please enter a name\":\"O sobrenome é obrigatório. Digite um nome.\",\"first name is required. please enter a name\":\"O nome completo é obrigatório. Digite um nome.\",\"saint helena, ascension and tristan da cunha\":\"Santa Helena, Ilha de Ascensão e Tristão da Cunha\",\"south georgia and the south sandwich islands\":\"Ilhas Geórgia do Sul e Sandwich do Sul\",\"describe the problem you are looking to solve\":\"Descreva o problema que você deseja resolver\",\"how many employees does your company have\":\"Quantos funcionários tem sua empresa?  *\",\"congo (drc) (jamhuri ya kidemokrasia ya kongo\":\"República Democrática do Congo\",\"what have you built using cloudflare products\":\"O que você já criou com os produtos da Cloudflare?\",\"after reading this article you will be able to\":\"Depois de ler este artigo você será capaz de:\",\"saint martin (saint-martin (partie française\":\"São Martinho (parte francesa)\",\"sorry, no search results matched with your term\":\"Nenhum resultado da pesquisa para este termo\",\"what messaging services have you used before\":\"Quais serviços de mensagem você já usou? *\",\"do you meet the requirements for project pangea\":\"Você atende aos requisitos do Projeto Pangea?\",\"if your guide does not download, enable pop-ups\":\"Se não conseguir baixar o guia, habilite os pop-ups.\",\"são tomé and príncipe (são tomé e príncipe\":\"São Tomé e Príncipe\",\"brief description on your role in covid-19 relief\":\"Breve descrição da sua função no combate à Covid-19: *\",\"email (of cloudflare account to receive upgrade\":\"E-mail (de conta da Cloudflare para receber o upgrade) *\",\"company name required. please enter a company name\":\"O nome da empresa é obrigatório. Digite o nome da empresa.\",\"phone number required. please enter a phone number\":\"O número de telefone é obrigatório. Digite um número de telefone.\",\"try using fewer, different or more general keywords\":\"Tente usar menos palavras-chave, diferentes ou mais genéricas\",\"saint pierre and miquelon (saint-pierre-et-miquelon\":\"São Pedro e Miquelão\",\"central african republic (république centrafricaine\":\"República Centro-Africana\",\"get started in just 5 minutes. join cloudflare today\":\"Comece a usar em apenas 5 minutos. Junte-se à Cloudflare hoje mesmo.\",\"name of company or organization of the prospect(s\":\"Nome da empresa ou organização do(s) cliente(s) em potencial? *\",\"unable to submit form. check field input and try again\":\"Não foi possível enviar o formulário. Verifique o preenchimento dos campos e tente de novo.\",\"there are no on-demand webinars that meet your criteria\":\"Não há webinars sob demanda que atendam aos seus critérios.\",\"what existing cloudflare products are you using today\":\"Quais produtos da Cloudflare você usa hoje? *\",\"someone from cloudflare will be in touch with you shortly\":\"Em breve um representante da Cloudflare entrará em contato.\",\"do you currently have a working integration with cloudflare\":\"Você tem uma integração funcional com a Cloudflare?\",\"sign up to receive curated learning articles from cloudflare\":\"Inscreva-se para receber artigos de aprendizado selecionados da Cloudflare\",\"there are no upcoming live webinars that meet your criteria\":\"Não há próximos webinars ao vivo que atendam aos seus critérios.\",\"first and last name of prospect or prospects participating\":\"Primeiro e último nomes dos clientes em potencial que participaram?*\",\"website url of the company or organization of the prospect(s\":\"URL do site da empresa ou organização do(s) cliente(s) em potencial? *\",\"please elaborate on the circumstances of current or past attacks\":\"Explique melhor as circunstâncias dos ataques atuais ou anteriores:\",\"what was the date of your meeting, technical presentation or poc\":\"Qual foi a data da sua reunião, apresentação técnica ou PoC?*\",\"what have you built using cloudflare’s products before, if anything\":\"O que você já criou com os produtos da Cloudflare?\",\"which saas applications do you want to secure? (check all that apply\":\"Quais aplicativos SaaS você deseja proteger? (marque todos os que se aplicam) *\",\"must be a phone number. <span class='mktoerrordetail'>503-555-1212</span\":\"Deve ser um número de telefone. <span class='mktoErrorDetail'>11-9729-3412</span>\",\"what support do you need from cloudflare to advance this sales opportunity\":\"Que suporte da Cloudflare você precisa para promover esta oportunidade de vendas? *\",\"are there any mutual customers interested in or already using this integration\":\"Clientes em comum interessados ou usando essa integração\",\"if you are an existing cloudflare stream user, what are your primary use cases\":\"Você usa o Cloudflare Stream atualmente? Quais são seus casos de uso primários?\",\"website url required. please enter a website similar to http://www.example.com\":\"O URL do site é obrigatório. Insira um site semelhante ao http://www.example.com.\",\"what type of insights or data are you looking for from the cloudforce one team\":\"Que tipo de insights ou dados você espera obter junto à equipe do Cloudforce One?\",\"must be valid email. <span class='mktoerrordetail'>example@yourdomain.com</span\":\"Deve ser um e-mail válido. <span class='mktoErrorDetail'>exemplo@seudominio.com</span>\",\"please provide an overview of the proposed partnership. (in less than 300 words\":\"Dê uma visão geral da parceria proposta. (em menos de 300 palavras)\",\"what existing cloudflare products are your customers most interested in today\":\"Em quais produtos da Cloudflare seus clientes estão mais interessados hoje?  *\",\"how much do you spend monthly on cloudflare across all your customers currently\":\"Quanto você gasta mensalmente com a Cloudflare considerando todos os seus clientes atualmente? *\",\"which reward are you claiming? please submit a separate claim form for each reward\":\"Qual prêmio você está solicitando? Envie um formulário de solicitação separado para cada prêmio. *\",\"leave a note about why you believe your organization is a good fit for project galileo\":\"Diga por que você acredita que sua organização se enquadra no Projeto Galileo:\",\"what was the prospect's articulated need for a cloudflare one product? please describe\":\"Qual foi a necessidade de um produto Cloudflare One manifestada pelo cliente em potencial? Descreva *\",\"name of cloudflare representative attending the meeting, technical presentation or poc\":\"Nome do representante da Cloudflare que participou da reunião, apresentação técnica ou PoC? *\",\"the information you provide to cloudflare is governed by the terms of our privacy policy\":\"As informações que você fornece à Cloudflare são regidas pelos termos da nossa Política de Privacidade.\",\"please complete this form to send our personalized cloudflare product recommendation to your inbox\":\"Preencha este formulário para enviar nossa recomendação personalizada de produto Cloudflare para sua caixa de entrada.\",\"please_complete_this_form_to_send_our_personalized_cloudflare_product_recommendation_to_your_inbox_\":\"Preencha este formulário para enviar nossa recomendação personalizada de produto Cloudflare para sua caixa de entrada:\",\"are there specific cloudflare products or functionality you would like in an enterprise sandbox account\":\"Produtos ou funcionalidades específicos da Cloudflare que gostaria na conta de sandbox empresarial\",\"asn required. your as number uniquely identifies your network and helps us identify the validity of your request\":\"ASN necessário. Seu número AS identifica a rede de maneira exclusiva e ajuda a identificar a validade de sua solicitação.\",\"please enter a url similar to https://www.peeringdb.com/asn/13335. this will speed up validation of your account\":\"Digite um URL como https://www.peeringdb.com/asn/13335. Isso acelera a validação da sua conta.\",\"yes - i want to stay in touch with cloudflare to receive valuable content such as product news, blog updates, and more\":\"Sim, quero manter contato com a Cloudflare e receber conteúdo importante, como notícias de produtos, atualizações do blog etc.\",\"how many domains/zones/applications (for your clients) do you think you would be able to onboard on average every month\":\"Quantos domínios/zonas/aplicativos (para seus clientes) você acha que seria capaz de integrar, em média, todos os meses? *\",\"which cloudflare one product or products were discussed at the meeting, technical presentation or were involved in the poc\":\"Qual produto ou produtos Cloudflare One foram discutidos na reunião, apresentação técnica ou estavam envolvidos na PoC? *\",\"yes - i want to stay in touch with cloudflare to receive other valuable content such as product news, blog updates, and more\":\"Sim, quero manter contato com a Cloudflare e receber conteúdos importantes, como notícias de produtos, atualizações do blog etc.\",\"we host a variety of webinars that showcase how to use cloudflare and how our customers get the most of our services and products\":\"Oferecemos diversos webinars que mostram como usar a Cloudflare e como nossos clientes aproveitam o máximo dos nossos produtos e serviços.\",\"how many domains/zones/applications (for your clients) do you think you would be able to onboard on average every month? (select only one\":\"Quantos domínios/zonas/aplicativos (para os seus clientes) você acha que será capaz de integrar em média todos os meses? (selecione apenas uma opção) *\",\"by clicking 'get started', i agree to <a class='blue-alternate-link' target='_blank' href='/website-terms/'>cloudflare's terms and conditions</a> and <a class='blue-alternate-link' href='/privacypolicy/' target='_blank'>privacy policy</a\":\"Ao clicar em “Começar”, declaro concordar com os <a class='blue-alternate-link' target='_blank' href='/website-terms/'>termos e condições</a> e com a <a class='blue-alternate-link' href='/privacypolicy/' target='_blank'>política de privacidade da Cloudflare</a>.\",\"in submitting this form, you agree to receive information from cloudflare related to our products, events, and special offers. you can unsubscribe from such messages at any time. we never sell your data, and we value your privacy choices. please see our privacy policy for information\":\"Ao enviar este formulário, você concorda em receber informações da Cloudflare relacionadas aos nossos produtos, eventos e ofertas especiais. Você pode cancelar o recebimento dessas mensagens a qualquer momento. Nunca venderemos seus dados e valorizamos suas opções de privacidade. Consulte nossa Política de Privacidade para obter mais informações.\",\"by submitting the form, you request to receive information about cloudflare and %{partner} products, events, and special offers, and you agree to the processing of your personal data by cloudflare as described in the cloudflare privacy policy, and by %{partner} as described in the %{partner}privacy policy. you also authorize cloudflare to share your personal data with %{partner\":\"Ao enviar o formulário, você está solicitando o recebimento de informações sobre a Cloudflare e produtos, eventos e ofertas especiais da %{PARTNER}, e concorda com o processamento de seus dados pessoais pela Cloudflare, conforme descrito na Política de Privacidade da Cloudflare, e pela %{PARTNER}, conforme descrito na Política de Privacidade da %{PARTNER}. Você também autoriza a Cloudflare a compartilhar seus dados pessoais com a %{PARTNER}.\"}",
+        marketo1346dropdownData: "{\"infrastructure - c-level\":\"Infraestrutura – Nível C\",\"infrastructure - vp/director\":\"Infraestrutura – VP/diretor\",\"infrastructure - manager\":\"Infraestrutura – Gerente\",\"infrastructure - architect\":\"Infraestrutura – Arquiteto\",\"eng/devops - c-level\":\"Eng/DevOps – Nível C\",\"eng/devops - vp/director\":\"Eng/DevOps – VP/diretor\",\"eng/devops - manager\":\"Eng/DevOps – Gerente\",\"eng/devops - staff\":\"Eng/DevOps – Funcionário\",\"it - c-level\":\"TI – Nível C\",\"it - vp/director\":\"TI – VP/diretor\",\"it - manager\":\"TI – Gerente\",\"it - staff\":\"TI – Funcionário\",\"security - c-level\":\"Segurança – Nível C\",\"security - vp/director\":\"Segurança – VP/diretor\",\"security - manager\":\"Segurança – Gerente\",\"security - staff\":\"Segurança – Funcionário\",\"finance/procurement - c-level\":\"Financeiro/Compras – Nível C\",\"finance/procurement - vp/director\":\"Financeiro/Compras – VP/diretor\",\"finance/procurement - manager\":\"Financeiro/Compras – Gerente\",\"finance/procurement - staff\":\"Financeiro/Compras – Funcionário\",\"sales/marketing - c-level\":\"Vendas/Marketing – Nível C\",\"sales/marketing - vp/director\":\"Vendas/Marketing – VP/diretor\",\"product - product manager\":\"Produto – Gerente de produt\",\"press/media\":\"Imprensa/mídia\",\"student/intern\":\"Estudante/Estagiário\",\"other\":\"Outra\"}",
+      gtm: {
+        containerId: "GTM-PKQFGQB",
+        disabled: false,
+        uaCookieDomain: ".cloudflare.com",
+        uaCodeMarketing_29: "UA-10218544-29",
+        optimize: "GTM-N4JSZJ8",
+        uaCodeAdWords: "AW-819572718",
+        uaCodeAdWordsBI: "DC-8921596",
+        adWordsConversionCode: "AW-972248548",
+        adWordsConversionCodeForm: "AW-836330296",
+        adWordsConversionLabel: "caqvCO3e32EQ5KvNzwM",
+        adWordsConversionLabelForm: "-l5JCJnczYgBELjG5Y4D",
+      }
+    }
+  }
+</script>
+<script src="https://assets.www.cloudflare.com/js/runtime-6a16446847617098e330.js" nonce="76a74680-eece-4750-bf52-1c3fd866f055"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-a9b7aa963cde85dc9611.js" nonce="76a74680-eece-4750-bf52-1c3fd866f055"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-9ed4ae964e711458f84f.js" nonce="76a74680-eece-4750-bf52-1c3fd866f055"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-5fd37836d64725aae99f.js" nonce="76a74680-eece-4750-bf52-1c3fd866f055"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-10223bd69693130e8a70.js" nonce="76a74680-eece-4750-bf52-1c3fd866f055"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-7c5a2fc67352533f763c.js" nonce="76a74680-eece-4750-bf52-1c3fd866f055"></script>
+<script src="../js/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="e34df59b-4a48-4bf9-b2b5-7a4bb09cd231"></script>
+</head>
+<body class="marketing-nojs ">
+<header style="display:none" class="flash-banner flash-banner--gray flash-banner--not-localized" data-name="not-localized">
+<section class="tile tile--mini-banner hide-mobile">
+<div class="tile__content--1200px">
+<div class="grid--center grid--vertical-center">
+<h4 class="text--white">Esta página não está disponível no idioma que você selecionou. Estamos trabalhando para oferecer mais conteúdo neste e em outros idiomas. Agradecemos sua paciência.</h4>
+</div>
+<div class="flash-banner__close_x js-accept-top-nav-mini-flash-banner"></div>
+</div>
+</section>
+</header>
+<script src="https://assets.www.cloudflare.com/js/chunk-98f956b9756523a10775.js" nonce="76a74680-eece-4750-bf52-1c3fd866f055"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-c8181d31e37c857686bd.js" nonce="76a74680-eece-4750-bf52-1c3fd866f055"></script>
+<header class="cms-topnav topnav top-nav js-top-nav ">
+<nav class="top-nav__upper-bar top-nav__items test-utility-menu">
+<div class="top-nav__item-list top-nav__item-list--right">
+<span>
+<a href="/pt-br/plans/enterprise/contact/">Vendas:</a>
+</span>
+<a data-i18n-phonenumber="" href="tel:+16503198930" style="display:none">+1 650 319 8930</a>
+<noscript>
+      <a href="tel:+16503198930">+1 650 319 8930</a>
+    </noscript>
+<span class="header-section-divider">|</span>
+<a class="header-language-picker js-header-support-picker bold" role="link">
+Support
+<span>
+<svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1.15819L6.84183 2.21065e-05L4.00053 2.84207L1.15816 0L0 1.1576L4.00053 5.15783L8 1.15819Z" fill="#747474"></path>
+</svg>
+</span>
+</a>
+<div id="js-header-support-picker-dropdown" class="js-header-support-picker-dropdown" style="display: none;">
+<ul class="marketing-ul marketing-ul--no-bullets marketing-ul--no-margins-li header-language-picker-dropdown">
+<li>
+<a href="https://dash.cloudflare.com/?to=/:account/support" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="">Entre em contato com o suporte</a>
+</li>
+<li>
+<a href="../index_3.html" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="">Central de Atendimento</a>
+</li>
+<li>
+<a href="../index_8.html" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="">Comunidade Cloudflare</a>
+</li>
+</ul>
+</div>
+<span class="header-section-divider">|</span>
+<a class="header-language-picker js-header-account-picker bold">
+My Account
+<span>
+<svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1.15819L6.84183 2.21065e-05L4.00053 2.84207L1.15816 0L0 1.1576L4.00053 5.15783L8 1.15819Z" fill="#747474"></path>
+</svg>
+</span>
+</a>
+<div id="js-header-account-picker-dropdown" class="js-header-account-picker-dropdown" style="display: none;">
+<ul class="marketing-ul marketing-ul--no-bullets marketing-ul--no-margins-li header-language-picker-dropdown">
+<li>
+<a href="https://dash.cloudflare.com/login" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="">Log In</a>
+</li>
+<li>
+<a href="https://dash.cloudflare.com/profile" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="">Meu perfil</a>
+</li>
+<li>
+<a href="https://dash.cloudflare.com/?to=/:account/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="">Página inicial da conta</a>
+</li>
+<li>
+<a href="https://dash.cloudflare.com/?to=/:account/billing" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="">Faturamento</a>
+</li>
+<li class="merchandise">
+<a href="/teams/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="">Proteja os funcionários remotos com a Cloudflare</a>
+</li>
+</ul>
+</div>
+<span class="header-section-divider">|</span>
+<a class="header-language-picker js-header-language-picker">
+<span class="header-language-picker__globe-icon"></span>Português
+<svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1.15819L6.84183 2.21065e-05L4.00053 2.84207L1.15816 0L0 1.1576L4.00053 5.15783L8 1.15819Z" fill="#747474"></path>
+</svg>
+</a><div id="js-header-language-picker-dropdown" class="js-header-language-picker-dropdown" style="display: none;"><a class="header-language-picker js-header-language-picker">
+</a><ul class="marketing-ul marketing-ul--no-bullets marketing-ul--no-margins-li header-language-picker-dropdown"><a class="header-language-picker js-header-language-picker">
+</a><li><a class="header-language-picker js-header-language-picker">
+</a><a href="cloudflare.eot" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="en-us">English</a>
+</li>
+<li>
+<a href="cloudflare_6.eot">English (United Kingdom)</a>
+</li>
+<li>
+<a href="cloudflare_7.eot">English (Canada)</a>
+</li>
+<li>
+<a href="cloudflare_3.eot">English (Australia)</a>
+</li>
+<li>
+<a href="cloudflare_10.eot">English (India)</a>
+</li>
+<li>
+<a href="cloudflare_4.eot">Deutsch</a>
+</li>
+<li>
+<a href="cloudflare_8.eot">Español</a>
+</li>
+<li>
+<a href="cloudflare_5.eot">Français</a>
+</li>
+<li>
+<a href="cloudflare_12.eot">Italiano</a>
+</li>
+<li>
+<a href="cloudflare_9.eot">日本語</a>
+</li>
+<li>
+<a href="cloudflare_11.eot">한국어</a>
+</li>
+<li class="header-language-picker-dropdown__active">
+<a href="cloudflare_13.eot">Português</a>
+</li>
+<li>
+<a href="cloudflare_1.eot">繁體中文</a>
+</li>
+<li>
+<a href="cloudflare_2.eot">简体中文</a>
+</li>
+</ul>
+</div>
+</div></nav>
+<nav class="top-nav__upper-bar top-nav__items ab-test">
+<div class="top-nav__item-list top-nav__item-list--right">
+<a href="/searchresults/" class="top-nav__link-search" data-tracking-category="mainnav" data-tracking-action="click" data-tracking-label="Search">
+<svg width="15" height="13.96" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M44.8538 40.1325L29.5838 26.25C31.6534 23.4122 32.5569 19.8892 32.1085 16.4057C31.6602 12.9221 29.8941 9.74271 27.1735 7.52135C24.4529 5.29999 20.9845 4.20551 17.4816 4.463C13.9788 4.72049 10.7077 6.31036 8.34115 8.90567C5.97458 11.501 4.6924 14.9044 4.75828 18.4161C4.82416 21.9278 6.23309 25.2808 8.69533 27.7855C11.1576 30.2902 14.486 31.7563 17.996 31.8822C21.506 32.0081 24.9309 30.7844 27.5663 28.4625L42.8288 42.345L44.8538 40.1325ZM18.5288 28.8825C16.4148 28.8825 14.3483 28.256 12.5901 27.0822C10.832 25.9083 9.4612 24.2397 8.65085 22.2872C7.84049 20.3347 7.62695 18.1858 8.0372 16.112C8.44744 14.0382 9.46306 12.1325 10.9558 10.6356C12.4485 9.13871 14.3514 8.11775 16.424 7.7017C18.4967 7.28565 20.6461 7.49317 22.6009 8.29805C24.5557 9.10293 26.2281 10.4691 27.4068 12.2239C28.5856 13.9787 29.2179 16.0435 29.2238 18.1575C29.2199 20.9928 28.0918 23.7108 26.087 25.7157C24.0821 27.7205 21.3641 28.8486 18.5288 28.8525V28.8825Z" fill="#222222"></path>
+</svg>
+</a>
+<span class="header-section-divider">|</span>
+<span>
+<a class="bold" href="../index_3.html" data-tracking-category="mainnav" data-tracking-action="click" data-tracking-label="Support">Suporte</a>
+</span>
+<span class="header-section-divider">|</span>
+<span>
+<a href="/pt-br/plans/enterprise/contact/">Vendas:</a>
+</span>
+<a data-i18n-phonenumber="" href="tel:+16503198930" style="display:none">+1 650 319 8930</a>
+<noscript>
+          <a href="tel:+16503198930">+1 650 319 8930</a>
+        </noscript>
+<span class="header-section-divider">|</span>
+<a class="header-language-picker js-header-language-picker">
+<span class="header-language-picker__globe-icon"></span>Português
+<span class="header-language-picker__caret-icon">▶</span>
+<span class="header-language-picker__caret-icon hidden-element">▼</span></a>
+<div id="js-header-language-picker-dropdown" class="js-header-language-picker-dropdown" style="display: none;">
+<ul class="marketing-ul marketing-ul--no-bullets marketing-ul--no-margins-li header-language-picker-dropdown">
+<li>
+<a href="cloudflare.eot" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="en-us">English</a>
+</li>
+<li>
+<a href="cloudflare_6.eot">English (United Kingdom)</a>
+</li>
+<li>
+<a href="cloudflare_7.eot">English (Canada)</a>
+</li>
+<li>
+<a href="cloudflare_3.eot">English (Australia)</a>
+</li>
+<li>
+<a href="cloudflare_10.eot">English (India)</a>
+</li>
+<li>
+<a href="cloudflare_4.eot">Deutsch</a>
+</li>
+<li>
+<a href="cloudflare_8.eot">Español</a>
+</li>
+<li>
+<a href="cloudflare_5.eot">Français</a>
+</li>
+<li>
+<a href="cloudflare_12.eot">Italiano</a>
+</li>
+<li>
+<a href="cloudflare_9.eot">日本語</a>
+</li>
+<li>
+<a href="cloudflare_11.eot">한국어</a>
+</li>
+<li class="header-language-picker-dropdown__active">
+<a href="cloudflare_13.eot">Português</a>
+</li>
+<li>
+<a href="cloudflare_1.eot">繁體中文</a>
+</li>
+<li>
+<a href="cloudflare_2.eot">简体中文</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<nav class="top-nav__items top-nav__items--align-content ">
+<a href="/pt-br/"> <img style="" class="top-nav__logo top-nav__logo--dark top-nav__logo--localized " src="/img/logo-cloudflare-dark.svg" alt="Cloudflare">
+<img class="top-nav__logo top-nav__logo--light top-nav__logo--localized " src="/img/logo-cloudflare.svg" alt="Cloudflare">
+</a>
+<ul class="top-nav__item-list top-nav__item-list--left">
+<li class="top-nav__item-list__link top-nav__item-list__link--localized top-nav__items__desktop nojs-hide" data-submenu="Soluções" data-tracking-category="mainnav" data-tracking-action="click" data-tracking-label="Soluções" tabindex="0">
+Soluções
+</li>
+<li class="top-nav__item-list__link top-nav__item-list__link--localized top-nav__items__desktop nojs-hide" data-submenu="Produtos" data-tracking-category="mainnav" data-tracking-action="click" data-tracking-label="Produtos" tabindex="0">
+Produtos
+</li>
+<li class="top-nav__item-list__link top-nav__item-list__link--localized top-nav__items__desktop nojs-hide" data-submenu="Documentação" data-tracking-category="mainnav" data-tracking-action="click" data-tracking-label="Documentação" tabindex="0">
+Documentação
+</li>
+<li class="top-nav__item-list__link top-nav__item-list__link--localized top-nav__items__desktop nojs-hide" data-submenu="Recursos" data-tracking-category="mainnav" data-tracking-action="click" data-tracking-label="Recursos" tabindex="0">
+Recursos
+</li>
+<li class="top-nav__item-list__link top-nav__item-list__link--localized top-nav__items__desktop nojs-hide" data-submenu="Parceiros" data-tracking-category="mainnav" data-tracking-action="click" data-tracking-label="Parceiros" tabindex="0">
+Parceiros
+</li>
+<li class="top-nav__item-list__link top-nav__item-list__link--localized top-nav__items__desktop">
+<a href="/pt-br/enterprise/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="for-enterprise" tabindex="0">
+Para empresas
+</a>
+</li>
+<li class="top-nav__item-list__link top-nav__item-list__link--localized top-nav__items__desktop nojs-hide" data-submenu="Preços" data-tracking-category="mainnav" data-tracking-action="click" data-tracking-label="Preços" tabindex="0">
+Preços
+</li>
+</ul>
+<ul class="top-nav__item-list top-nav__item-list--right">
+<li class="top-nav__item-list__link top-nav__item-list__link--localized top-nav__items__desktop">
+<a href="https://dash.cloudflare.com/login" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="login" tabindex="0">
+Login
+</a>
+</li>
+<li class="top-nav__item-list__link top-nav__item-list__link--localized top-nav__items__desktop">
+<a href="../sign-up.html" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="signup" tabindex="0">
+Cadastre-se
+</a>
+</li>
+<li class="top-nav__item-list__link top-nav__item-list__link--localized top-nav__items__desktop top-nav__item-list__link--no-ul">
+<a class="button button--new-orange" href="/pt-br/under-attack-hotline/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="under_attack" tabindex="0">Está sob ataque?</a>
+</li>
+</ul>
+<button class="js-mobilenav-toggle toggle">
+<span class="icon"></span>
+</button>
+</nav>
+<div class="desktop-nav top-nav-container nav-dropdown">
+<div class="desktop-nav__Soluções desktop-nav__container">
+<div class="nav-dropdown-container">
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">SOLUÇÕES</div>
+<div class="nav-dropdown-header header-black">Proporcionar experiências on-line superiores</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/ddos/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="ddos">Mitigue ataques de DDoS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/products/bot-management/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="malicious-bot-abuse">Interromper o abuso de bots maliciosos</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/performance/accelerate-internet-applications/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="accelerate-internet-applications">Acelerar aplicativos de Internet</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/performance/ensure-application-availability/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="ensure-application-availability">Garantir a disponibilidade de aplicativos</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/website-optimization/">Otimize as experiências na web</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/products/cloudflare-stream/">Stream de vídeos sob demanda</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/china-network/">Experiência on-line superior para usuários da China</a>
+</span>
+<div class="nav-dropdown-header header-black">Proteja os aplicativos e os dispositivos dos funcionários</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/teams-access/">Ofereça Zero Trust Access a aplicativos</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/teams-sase/">Implemente o Serviço de Acesso Seguro de Borda (SASE)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/teams-gateway/">Proteger usuários que estão acessando a Internet</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/teams/">Proteja as redes corporativas</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/teams/third-party-access/">Gerencie o acesso seguro dos contratados</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/teams/vpn-replacement/">Substitua as redes privadas virtuais (VPNs)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/teams/remote-workforces/">Proteja sua força de trabalho remota</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/teams/browser-isolation/">Interrompa os ataques de dia zero com isolamento do navegador</a>
+</span>
+</div>
+<div class="dropdown-column">
+<div class="nav-dropdown-header">&nbsp;</div>
+<div class="nav-dropdown-header header-black">Proteger e acelerar redes</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/network-services/">Serviços de rede da Cloudflare</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/magic-transit/">Mitigar ataques de DDoS L3</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/network-interconnect/">Conectar a infraestrutura de rede com a Cloudflare</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/cloudflare-one/">Transformar redes corporativas</a>
+</span>
+<div class="nav-dropdown-header header-black">Código na borda da rede</div>
+<span class="nav-dropdown-link">
+<a href="../index_7.html">Desenvolver um aplicativo sem servidor</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://workers.cloudflare.com/sites">Implantar um site estático</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/tutorials/configure-your-cdn">Configurar uma CDN</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/templates/pages/conditional_response/">Definir o roteamento condicional de solicitações</a>
+</span>
+<div class="nav-dropdown-header header-black">Gerenciar uma nuvem segura</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/multi-cloud/">Proteger plataformas híbridas, de nuvem e SaaS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/ssl-for-saas-providers/">Habilitar aplicativos SSL for SaaS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/bandwidth-alliance/">Reduzir custos da transferência de dados na nuvem</a>
+</span>
+<div class="nav-dropdown-header header-black">Registrar um site</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/products/registrar/">Registrar ou transferir um site</a>
+</span>
+</div>
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">SETORES</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/ecommerce/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="industries_ecommerce">Comércio eletrônico</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/financial-services/">Serviços financeiros</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/gaming/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="industries_gaming">Jogos</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/healthcare/">Saúde e ciências da vida</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/media-and-entertainment/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="industries_media-and-entertainment">Entretenimento e mídia</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/public-sector/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="industries_publicsector">Setor público</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/saas/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="industries_saas">SaaS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/education/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="education - /education">Educação</a>
+</span>
+<div class="nav-dropdown-header header-orange">INTERESSE PÚBLICO</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/campaigns/">Campanhas eleitorais</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/athenian/">Projeto Athenian</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/galileo/">Projeto Galileu</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/fair-shot/">Projeto Fair Shot</a>
+</span>
+</div>
+</div>
+</div>
+<div class="desktop-nav__Produtos desktop-nav__container">
+<div class="nav-dropdown-container">
+<div class="dropdown-column">
+ <div class="nav-dropdown-header header-orange">PARA INFRAESTRUTURA</div>
+<div class="nav-dropdown-header header-black">Segurança de rede e aplicativo</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/apishield/">API Shield</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/products/bot-management/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="bot_management">Gerenciamento de Bots</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/ddos/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="ddos">Proteção contra DDoS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/magic-transit/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="magic-transit">Magic Transit</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/magic-wan/">Magic WAN</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/network-interconnect/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="network-interconnect">Interconexão de rede</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/rate-limiting/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="rate_limiting">Rate Limiting</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/products/cloudflare-spectrum/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="spectrum">Aplicativos de TCP / UDP</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/ssl/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="ssl">SSL/TLS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/ssl-for-saas-providers/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="SSL/TLS for SaaS Providers">Provedores de SSL/TLS for SaaS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/waf/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="waf">WAF</a>
+</span>
+<div class="nav-dropdown-header header-black">Performance e confiabilidade</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/products/argo-smart-routing/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="argo_smart_routing">Argo Smart Routing</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/cdn/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="cdn">CDN</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/network/china/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_cloudflare_china">China Network</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/dns/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="dns">DNS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/load-balancing/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="load_balancing">Balanceamento de carga</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/products/stream-delivery/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="stream-delivery-homepage">Stream Delivery</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/waiting-room/">Sala de Espera</a>
+</span>
+</div>
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">PARA EQUIPES</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/teams-home/">Cloudflare for Teams</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/teams-access/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="teams-access">Access</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/teams-gateway/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="teams-gateway">Gateway</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/teams/browser-isolation/">Isolamento do navegador</a>
+</span>
+<div class="nav-dropdown-header header-orange">PARA DESENVOLVEDORES</div>
+<div class="nav-dropdown-header header-black">Aplicativos sem servidor</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/products/cloudflare-workers/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="cloudflare-workers">Cloudflare Workers</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/products/workers-kv/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="workers-kv">Cloudflare Workers KV</a>
+</span>
+<div class="nav-dropdown-header header-black">Registro de domínios</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/products/registrar/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="registrar">Cloudflare Registrar</a>
+</span>
+<div class="nav-dropdown-header header-black">Desenvolvimento de site</div>
+<span class="nav-dropdown-link">
+<a href="https://pages.cloudflare.com/">Páginas da Cloudflare</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/products/cloudflare-stream/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="cloudflare-stream">Cloudflare Stream</a>
+</span>
+<div class="nav-dropdown-header header-black">Desenvolvedores de SaaS</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/saas/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="saas">Cloudflare para SaaS</a>
+</span>
+</div>
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">PARA TODOS</div>
+<span class="nav-dropdown-link">
+<a href="https://1.1.1.1" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="1111-homepage">1.1.1.1</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://blog.cloudflare.com/1111-warp-better-vpn/">1.1.1.1 com WARP (aplicativo)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://blog.cloudflare.com/introducing-1-1-1-1-for-families/">1.1.1.1 para famílias</a>
+</span>
+<div class="nav-dropdown-header header-orange">INFORMAÇÕES</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/analytics/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="analytics">Analytics</a>
+</span>
+<span class="nav-dropdown-link">
+ <a href="/pt-br/products/cloudflare-logs/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="cloudflare_logs">Cloudflare Logs</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/web-analytics/">Análise de dados na web</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://radar.cloudflare.com/">Cloudflare Radar</a>
+</span>
+<div class="nav-dropdown-header header-orange">PRIVACIDADE</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/data-localization/">Localização de dados</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/privacy-and-compliance/">Conformidade</a>
+</span>
+</div>
+</div>
+</div>
+<div class="desktop-nav__Documentação desktop-nav__container">
+<div class="nav-dropdown-container">
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">PARA INFRAESTRUTURA</div>
+<div class="nav-dropdown-header header-black">Segurança avançada</div>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/bots/">Gerenciamento de Bots</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/firewall/">Regras de firewall</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/magic-transit/">Magic Transit</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/spectrum/">Spectrum (TCP/UDP)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/ssl/">SSL</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/waf/">WAF</a>
+</span>
+<div class="nav-dropdown-header">Desempenho e confiabilidade</div>
+<span class="nav-dropdown-link">
+<a href="https://support.cloudflare.com/hc/en-us/articles/200172516-Understanding-Cloudflare-s-CDN" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="cdn-documentation">CDN</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/dns/">DNS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/images/">Redimensionamento de imagens</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/load-balancing">Balanceamento de carga</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/stream/">Stream (Vídeo)</a>
+</span>
+</div>
+<div class="dropdown-column">
+<div class="nav-dropdown-header">&nbsp;</div>
+<div class="nav-dropdown-header header-black">Informações</div>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/analytics/">Analytics</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/logs/"></a>
+</span>
+<div class="nav-dropdown-header header-black">Registro de domínios</div>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/registrar/">Registrar</a>
+</span>
+<div class="nav-dropdown-header header-orange">PARA APLICAÇÕES SEM SERVIDOR</div>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/quickstart">Início rápido do Workers</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/pages/">Páginas da Cloudflare</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/templates/">Amostrar projetos do Workers</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/tutorials">Tutoriais do Workers</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/tooling/wrangler">Linha de comando (Wrangler)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/reference/apis">Tempo de execução</a>
+</span>
+</div>
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">PARA EQUIPES</div>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/cloudflare-one/">Cloudflare for Teams</a>
+</span>
+<div class="nav-dropdown-header header-orange">CONHEÇA A API CLOUDFLARE</div>
+<span class="nav-dropdown-link">
+<a href="https://api.cloudflare.com/">API da Cloudflare</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/api/">Autenticação de API</a>
+</span>
+<div class="nav-dropdown-header header-orange">CENTRAL DE DOCUMENTAÇÃO</div>
+<span class="nav-dropdown-link">
+<a href="../index_4.html">Central de documentação para desenvolvedores</a>
+</span>
+</div>
+</div>
+</div>
+<div class="desktop-nav__Recursos desktop-nav__container">
+<div class="nav-dropdown-container">
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">RECURSOS</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/resource-hub/">CENTRAL DE RECURSOS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/resource-hub/?resourcetype=Whitepaper">Artigos técnicos</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/webinars/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_webinars">Webinars</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/resource-hub/?resourcetype=Solution+%26+Product+Guides">Guias de produtos e soluções</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/case-studies/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_case_studies">Estudos de caso</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/analysts/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_analysts">Analistas</a>
+</span>
+<div class="nav-dropdown-header header-orange">EXPLORAR</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/whats-new/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="whats_new">O que há de novo?</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/network/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_network_map">Mapa de rede</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/network/china/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_cloudflare_china">Cloudflare na China</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/trust-hub/gdpr/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > GDPR">RGPD</a>
+</span>
+</div>
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">COMEÇAR</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/products/registrar/">Registrar um site</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/welcome-center/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_welcome_center">Central de Boas-Vindas</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="../index_3.html">Tenha ajuda</a>
+</span>
+<div class="nav-dropdown-header header-orange">SAIBA MAIS</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/learning/">Central de Aprendizagem</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/learning/security/what-is-web-application-security/">Segurança</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/learning/ddos/what-is-a-ddos-attack/">DDoS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/learning/bots/what-is-a-bot/">Gerenciamento de Bots</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/learning/ssl/what-is-ssl/">SSL</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/learning/access-management/what-is-identity-and-access-management/">Gerenciamento de identidades e acesso</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/learning/performance/why-site-speed-matters/">Desempenho</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/learning/cdn/what-is-a-cdn/">CDN</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/learning/dns/what-is-dns/">DNS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/learning/cloud/what-is-the-cloud/">Nuvem</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/learning/serverless/what-is-serverless/">sem servidor</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/learning/network-layer/what-is-the-network-layer/">Camada de rede</a>
+</span>
+</div>
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">CONECTAR</div>
+<span class="nav-dropdown-link">
+<a href="../index_2.html" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="blog">Blog</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="../index_8.html" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="community">Comunidade</a>
+</span>
+<div class="nav-dropdown-header header-orange">CONFIANÇA</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/trust-hub/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > Trust Hub">Central de Confiança</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/trust-hub/privacy-and-data-protection/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust  > Privacy &amp; Data Protection">Proteção de dados e da privacidade</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/trust-hub/compliance-resources/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > Certifications">Certificações</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/trust-hub/trust-and-safety/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > Trust &amp; Safety">Confiança e segurança</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/trust-hub/gdpr/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > GDPR">RGPD</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/privacypolicy/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > Legal Documentation">Documentação legal</a>
+</span>
+<div class="nav-dropdown-header header-orange">ENTRAR EM CONTATO</div>
+<a data-i18n-phonenumber="" href="tel:+16503198930" style="display:none">+1 650 319 8930</a>
+</div>
+</div>
+</div>
+<div class="desktop-nav__Parceiros desktop-nav__container">
+<div class="nav-dropdown-container">
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">PARCEIROS DE ALIANÇA E CANAL</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/partners/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="partnerships">Rede de parceiros</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://portal.cloudflarepartners.com">Portal de parceiros</a>
+</span>
+</div>
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">PARCEIROS DE TECNOLOGIA</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/partners/technology-partners/">Visão geral</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/partners/analytics/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="partners-analytics">Parceiros de analytics</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/bandwidth-alliance/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="partnerships_bandwidth_alliance">Bandwidth Alliance</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/endpoint-partners/">Endpoint Security Partnerships</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/network-interconnect-partnerships/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="network-interconnect-partnerships">Parcerias de interconexão</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/network-onramp-partners/">Network On-ramp Partnerships</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/partners/peering-portal/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="partnerships_peering_portal">Portal de Peering</a>
+</span>
+</div>
+</div>
+</div>
+<div class="desktop-nav__Preços desktop-nav__container">
+<div class="nav-dropdown-container">
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">PREÇOS POR PLANO</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/plans/">Grátis</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/plans/pro/">Pro</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/plans/business/">Business</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/plans/enterprise/">Empresarial</a>
+</span>
+</div>
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">COMPARAR E EXPLORAR</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/about-your-website/">Precisa de ajuda para escolher um plano?</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/plans/#addons">Complementos</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/plans/">Comparar todos os planos</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mobile-nav nav-dropdown">
+<ul class="mobile-nav__list">
+<li class="mobile-nav__list__item">
+<div class="mobile-sub-nav__title" data-submenu="Soluções">
+<span class="mobile-sub-nav__title__text">Soluções</span>
+<span class="icon icon-plus icon-plus-Soluções"></span>
+</div>
+</li>
+<div class="mobile-submenu-Soluções mobile-sub">
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">SOLUÇÕES</div>
+<div class="nav-dropdown-header header-black">Proporcionar experiências on-line superiores</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/ddos/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="ddos">Mitigue ataques de DDoS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/products/bot-management/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="malicious-bot-abuse">Interromper o abuso de bots maliciosos</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/performance/accelerate-internet-applications/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="accelerate-internet-applications">Acelerar aplicativos de Internet</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/performance/ensure-application-availability/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="ensure-application-availability">Garantir a disponibilidade de aplicativos</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/website-optimization/">Otimize as experiências na web</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/products/cloudflare-stream/">Stream de vídeos sob demanda</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/china-network/">Experiência on-line superior para usuários da China</a>
+</span>
+<div class="nav-dropdown-header header-black">Proteja os aplicativos e os dispositivos dos funcionários</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/teams-access/">Ofereça Zero Trust Access a aplicativos</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/teams-sase/">Implemente o Serviço de Acesso Seguro de Borda (SASE)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/teams-gateway/">Proteger usuários que estão acessando a Internet</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/teams/">Proteja as redes corporativas</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/teams/third-party-access/">Gerencie o acesso seguro dos contratados</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/teams/vpn-replacement/">Substitua as redes privadas virtuais (VPNs)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/teams/remote-workforces/">Proteja sua força de trabalho remota</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/teams/browser-isolation/">Interrompa os ataques de dia zero com isolamento do navegador</a>
+</span>
+</div>
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header">&nbsp;</div>
+<div class="nav-dropdown-header header-black">Proteger e acelerar redes</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/network-services/">Serviços de rede da Cloudflare</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/magic-transit/">Mitigar ataques de DDoS L3</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/network-interconnect/">Conectar a infraestrutura de rede com a Cloudflare</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/cloudflare-one/">Transformar redes corporativas</a>
+</span>
+<div class="nav-dropdown-header header-black">Código na borda da rede</div>
+<span class="nav-dropdown-link">
+<a href="../index_7.html">Desenvolver um aplicativo sem servidor</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://workers.cloudflare.com/sites">Implantar um site estático</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/tutorials/configure-your-cdn">Configurar uma CDN</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/templates/pages/conditional_response/">Definir o roteamento condicional de solicitações</a>
+</span>
+<div class="nav-dropdown-header header-black">Gerenciar uma nuvem segura</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/multi-cloud/">Proteger plataformas híbridas, de nuvem e SaaS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/ssl-for-saas-providers/">Habilitar aplicativos SSL for SaaS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/bandwidth-alliance/">Reduzir custos da transferência de dados na nuvem</a>
+</span>
+<div class="nav-dropdown-header header-black">Registrar um site</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/products/registrar/">Registrar ou transferir um site</a>
+</span>
+</div>
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">SETORES</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/ecommerce/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="industries_ecommerce">Comércio eletrônico</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/financial-services/">Serviços financeiros</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/gaming/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="industries_gaming">Jogos</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/healthcare/">Saúde e ciências da vida</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/media-and-entertainment/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="industries_media-and-entertainment">Entretenimento e mídia</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/public-sector/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="industries_publicsector">Setor público</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/saas/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="industries_saas">SaaS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/education/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="education - /education">Educação</a>
+</span>
+<div class="nav-dropdown-header header-orange">INTERESSE PÚBLICO</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/campaigns/">Campanhas eleitorais</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/athenian/">Projeto Athenian</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/galileo/">Projeto Galileu</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/fair-shot/">Projeto Fair Shot</a>
+</span>
+</div>
+</div>
+<li class="mobile-nav__list__item">
+<div class="mobile-sub-nav__title" data-submenu="Produtos">
+<span class="mobile-sub-nav__title__text">Produtos</span>
+<span class="icon icon-plus icon-plus-Produtos"></span>
+</div>
+</li>
+<div class="mobile-submenu-Produtos mobile-sub">
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">PARA INFRAESTRUTURA</div>
+<div class="nav-dropdown-header header-black">Segurança de rede e aplicativo</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/apishield/">API Shield</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/products/bot-management/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="bot_management">Gerenciamento de Bots</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/ddos/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="ddos">Proteção contra DDoS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/magic-transit/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="magic-transit">Magic Transit</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/magic-wan/">Magic WAN</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/network-interconnect/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="network-interconnect">Interconexão de rede</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/rate-limiting/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="rate_limiting">Rate Limiting</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/products/cloudflare-spectrum/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="spectrum">Aplicativos de TCP / UDP</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/ssl/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="ssl">SSL/TLS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/ssl-for-saas-providers/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="SSL/TLS for SaaS Providers">Provedores de SSL/TLS for SaaS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/waf/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="waf">WAF</a>
+</span>
+<div class="nav-dropdown-header header-black">Performance e confiabilidade</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/products/argo-smart-routing/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="argo_smart_routing">Argo Smart Routing</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/cdn/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="cdn">CDN</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/network/china/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_cloudflare_china">China Network</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/dns/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="dns">DNS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/load-balancing/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="load_balancing">Balanceamento de carga</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/products/stream-delivery/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="stream-delivery-homepage">Stream Delivery</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/waiting-room/">Sala de Espera</a>
+</span>
+</div>
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">PARA EQUIPES</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/teams-home/">Cloudflare for Teams</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/teams-access/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="teams-access">Access</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/teams-gateway/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="teams-gateway">Gateway</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/teams/browser-isolation/">Isolamento do navegador</a>
+</span>
+<div class="nav-dropdown-header header-orange">PARA DESENVOLVEDORES</div>
+<div class="nav-dropdown-header header-black">Aplicativos sem servidor</div>
+ <span class="nav-dropdown-link">
+<a href="/pt-br/products/cloudflare-workers/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="cloudflare-workers">Cloudflare Workers</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/products/workers-kv/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="workers-kv">Cloudflare Workers KV</a>
+</span>
+<div class="nav-dropdown-header header-black">Registro de domínios</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/products/registrar/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="registrar">Cloudflare Registrar</a>
+</span>
+<div class="nav-dropdown-header header-black">Desenvolvimento de site</div>
+<span class="nav-dropdown-link">
+<a href="https://pages.cloudflare.com/">Páginas da Cloudflare</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/products/cloudflare-stream/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="cloudflare-stream">Cloudflare Stream</a>
+</span>
+<div class="nav-dropdown-header header-black">Desenvolvedores de SaaS</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/saas/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="saas">Cloudflare para SaaS</a>
+</span>
+</div>
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">PARA TODOS</div>
+<span class="nav-dropdown-link">
+<a href="https://1.1.1.1" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="1111-homepage">1.1.1.1</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://blog.cloudflare.com/1111-warp-better-vpn/">1.1.1.1 com WARP (aplicativo)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://blog.cloudflare.com/introducing-1-1-1-1-for-families/">1.1.1.1 para famílias</a>
+</span>
+<div class="nav-dropdown-header header-orange">INFORMAÇÕES</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/analytics/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="analytics">Analytics</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/products/cloudflare-logs/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="cloudflare_logs">Cloudflare Logs</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/web-analytics/">Análise de dados na web</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://radar.cloudflare.com/">Cloudflare Radar</a>
+</span>
+<div class="nav-dropdown-header header-orange">PRIVACIDADE</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/data-localization/">Localização de dados</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/privacy-and-compliance/">Conformidade</a>
+</span>
+</div>
+</div>
+<li class="mobile-nav__list__item">
+<div class="mobile-sub-nav__title" data-submenu="Documentação">
+<span class="mobile-sub-nav__title__text">Documentação</span>
+<span class="icon icon-plus icon-plus-Documentação"></span>
+</div>
+</li>
+<div class="mobile-submenu-Documentação mobile-sub">
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">PARA INFRAESTRUTURA</div>
+<div class="nav-dropdown-header header-black">Segurança avançada</div>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/bots/">Gerenciamento de Bots</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/firewall/">Regras de firewall</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/magic-transit/">Magic Transit</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/spectrum/">Spectrum (TCP/UDP)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/ssl/">SSL</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/waf/">WAF</a>
+</span>
+<div class="nav-dropdown-header">Desempenho e confiabilidade</div>
+<span class="nav-dropdown-link">
+<a href="https://support.cloudflare.com/hc/en-us/articles/200172516-Understanding-Cloudflare-s-CDN" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="cdn-documentation">CDN</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/dns/">DNS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/images/">Redimensionamento de imagens</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/load-balancing">Balanceamento de carga</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/stream/">Stream (Vídeo)</a>
+</span>
+</div>
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header">&nbsp;</div>
+<div class="nav-dropdown-header header-black">Informações</div>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/analytics/">Analytics</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/logs/"></a>
+</span>
+<div class="nav-dropdown-header header-black">Registro de domínios</div>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/registrar/">Registrar</a>
+</span>
+<div class="nav-dropdown-header header-orange">PARA APLICAÇÕES SEM SERVIDOR</div>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/quickstart">Início rápido do Workers</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/pages/">Páginas da Cloudflare</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/templates/">Amostrar projetos do Workers</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/tutorials">Tutoriais do Workers</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/tooling/wrangler">Linha de comando (Wrangler)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/reference/apis">Tempo de execução</a>
+</span>
+</div>
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">PARA EQUIPES</div>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/cloudflare-one/">Cloudflare for Teams</a>
+</span>
+<div class="nav-dropdown-header header-orange">CONHEÇA A API CLOUDFLARE</div>
+<span class="nav-dropdown-link">
+<a href="https://api.cloudflare.com/">API da Cloudflare</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/api/">Autenticação de API</a>
+</span>
+<div class="nav-dropdown-header header-orange">CENTRAL DE DOCUMENTAÇÃO</div>
+<span class="nav-dropdown-link">
+<a href="../index_4.html">Central de documentação para desenvolvedores</a>
+</span>
+</div>
+</div>
+<li class="mobile-nav__list__item">
+<div class="mobile-sub-nav__title" data-submenu="Recursos">
+<span class="mobile-sub-nav__title__text">Recursos</span>
+<span class="icon icon-plus icon-plus-Recursos"></span>
+</div>
+</li>
+<div class="mobile-submenu-Recursos mobile-sub">
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">RECURSOS</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/resource-hub/">CENTRAL DE RECURSOS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/resource-hub/?resourcetype=Whitepaper">Artigos técnicos</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/webinars/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_webinars">Webinars</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/resource-hub/?resourcetype=Solution+%26+Product+Guides">Guias de produtos e soluções</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/case-studies/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_case_studies">Estudos de caso</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/analysts/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_analysts">Analistas</a>
+</span>
+<div class="nav-dropdown-header header-orange">EXPLORAR</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/whats-new/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="whats_new">O que há de novo?</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/network/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_network_map">Mapa de rede</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/network/china/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_cloudflare_china">Cloudflare na China</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/trust-hub/gdpr/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > GDPR">RGPD</a>
+</span>
+</div>
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">COMEÇAR</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/products/registrar/">Registrar um site</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/welcome-center/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_welcome_center">Central de Boas-Vindas</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="../index_3.html">Tenha ajuda</a>
+</span>
+<div class="nav-dropdown-header header-orange">SAIBA MAIS</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/learning/">Central de Aprendizagem</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/learning/security/what-is-web-application-security/">Segurança</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/learning/ddos/what-is-a-ddos-attack/">DDoS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/learning/bots/what-is-a-bot/">Gerenciamento de Bots</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/learning/ssl/what-is-ssl/">SSL</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/learning/access-management/what-is-identity-and-access-management/">Gerenciamento de identidades e acesso</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/learning/performance/why-site-speed-matters/">Desempenho</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/learning/cdn/what-is-a-cdn/">CDN</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/learning/dns/what-is-dns/">DNS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/learning/cloud/what-is-the-cloud/">Nuvem</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/learning/serverless/what-is-serverless/">sem servidor</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/learning/network-layer/what-is-the-network-layer/">Camada de rede</a>
+</span>
+</div>
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">CONECTAR</div>
+<span class="nav-dropdown-link">
+<a href="../index_2.html" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="blog">Blog</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="../index_8.html" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="community">Comunidade</a>
+</span>
+<div class="nav-dropdown-header header-orange">CONFIANÇA</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/trust-hub/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > Trust Hub">Central de Confiança</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/trust-hub/privacy-and-data-protection/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust  > Privacy &amp; Data Protection">Proteção de dados e da privacidade</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/trust-hub/compliance-resources/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > Certifications">Certificações</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/trust-hub/trust-and-safety/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > Trust &amp; Safety">Confiança e segurança</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/trust-hub/gdpr/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > GDPR">RGPD</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/privacypolicy/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > Legal Documentation">Documentação legal</a>
+</span>
+<div class="nav-dropdown-header header-orange">ENTRAR EM CONTATO</div>
+<a data-i18n-phonenumber="" href="tel:+16503198930" style="display:none">+1 650 319 8930</a>
+</div>
+</div>
+<li class="mobile-nav__list__item">
+<div class="mobile-sub-nav__title" data-submenu="Parceiros">
+<span class="mobile-sub-nav__title__text">Parceiros</span>
+<span class="icon icon-plus icon-plus-Parceiros"></span>
+</div>
+</li>
+<div class="mobile-submenu-Parceiros mobile-sub">
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">PARCEIROS DE ALIANÇA E CANAL</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/partners/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="partnerships">Rede de parceiros</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://portal.cloudflarepartners.com">Portal de parceiros</a>
+</span>
+</div>
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">PARCEIROS DE TECNOLOGIA</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/partners/technology-partners/">Visão geral</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/partners/analytics/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="partners-analytics">Parceiros de analytics</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/bandwidth-alliance/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="partnerships_bandwidth_alliance">Bandwidth Alliance</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/endpoint-partners/">Endpoint Security Partnerships</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/network-interconnect-partnerships/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="network-interconnect-partnerships">Parcerias de interconexão</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/network-onramp-partners/">Network On-ramp Partnerships</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/partners/peering-portal/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="partnerships_peering_portal">Portal de Peering</a>
+</span>
+</div>
+</div>
+<li class="mobile-nav__list__item">
+<span class="nav-dropdown-link">
+<a href="/pt-br/enterprise/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="for-enterprise">Para empresas</a>
+</span>
+</li>
+<li class="mobile-nav__list__item">
+<div class="mobile-sub-nav__title" data-submenu="Preços">
+<span class="mobile-sub-nav__title__text">Preços</span>
+<span class="icon icon-plus icon-plus-Preços"></span>
+</div>
+</li>
+<div class="mobile-submenu-Preços mobile-sub">
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">PREÇOS POR PLANO</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/plans/">Grátis</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/plans/pro/">Pro</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/plans/business/">Business</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/plans/enterprise/">Empresarial</a>
+</span>
+</div>
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">COMPARAR E EXPLORAR</div>
+<span class="nav-dropdown-link">
+<a href="/pt-br/about-your-website/">Precisa de ajuda para escolher um plano?</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/plans/#addons">Complementos</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/plans/">Comparar todos os planos</a>
+</span>
+</div>
+</div>
+<li class="mobile-nav__list__item test-utility-menu">
+<div class="mobile-sub-nav__title" data-submenu="Support">
+<span class="mobile-sub-nav__title__text">Support</span>
+<span class="icon icon-plus icon-plus-Support"></span>
+</div>
+</li>
+<div class="mobile-submenu-Support mobile-sub">
+<div class="mobile-sub-nav">
+<span class="nav-dropdown-link">
+<a href="https://dash.cloudflare.com/?to=/:account/support">Entre em contato com o suporte</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="../index_3.html">Central de Atendimento</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="../index_8.html">Comunidade Cloudflare</a>
+</span>
+</div>
+</div>
+<li class="mobile-nav__list__item test-utility-menu">
+<div class="mobile-sub-nav__title" data-submenu="My_Account">
+<span class="mobile-sub-nav__title__text">My Account</span>
+<span class="icon icon-plus icon-plus-My Account"></span>
+</div>
+</li>
+<div class="mobile-submenu-My_Account mobile-sub">
+<div class="mobile-sub-nav">
+<span class="nav-dropdown-link">
+<a href="https://dash.cloudflare.com/login" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="utliity_nav-log_in">Log In</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://dash.cloudflare.com/profile" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="utililty-tab-profile">Meu perfil</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://dash.cloudflare.com/?to=/:account/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Merchandise">Página inicial da conta</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://dash.cloudflare.com/?to=/:account/billing">Faturamento</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/pt-br/teams/">Proteja os funcionários remotos com a Cloudflare</a>
+</span>
+</div>
+</div>
+<li class="mobile-nav__list__item mobile-language-picker">
+<div class="mobile-sub-nav__title" data-submenu="languageMobile">
+<span class="mobile-sub-nav__title__text">
+Português
+ </span>
+<span class="icon icon-plus icon-plus-languageMobile"></span>
+</div>
+</li>
+<div class="mobile-submenu-languageMobile mobile-sub">
+<ul class="mobile-sub-nav">
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/en-us/">
+English
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/en-gb/">
+English (United Kingdom)
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/en-ca/">
+English (Canada)
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/en-au/">
+English (Australia)
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/en-in/">
+English (India)
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/de-de/">
+Deutsch
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/es-es/">
+Español
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/fr-fr/">
+Français
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/it-it/">
+Italiano
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/ja-jp/">
+日本語
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/ko-kr/">
+한국어
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/zh-tw/">
+繁體中文
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/zh-cn/">
+简体中文
+</a>
+</li>
+</ul>
+</div>
+</ul>
+</div>
+<div class="desktop-nav top-nav-container nav-dropdown">
+</div>
+</header>
+<div class="compact-nav-dropdown js-compact-nav-dropdown">
+<ul class="marketing-list">
+<li class="desktop-nav__sub-menu__list__item">Contact Us</li>
+<li class="desktop-nav__sub-menu__list__item"><a href="/under-attack-hotline/">Help! I'm Under Attack!</a></li>
+<li class="desktop-nav__sub-menu__list__item"><a href="../contact.html">Email Sales</a></li>
+<li class="desktop-nav__sub-menu__list__item"><a href="../index_3.html">Support</a></li>
+<li class="desktop-nav__sub-menu__list__item"><a href="tel:+18889935273">1-888-993-5273</a></li>
+</ul>
+</div>
+<div class="site-content  ">
+<section class="tile" id="error-page-content">
+<div class="tile__content tile__content--fixed">
+<div class="grid">
+<div class="grid__item grid__item--four-fifths">
+<div class="grid grid--vertical-center">
+<div class="grid__item grid__item--half grid__item--no-padding">
+<img class="responsive-image" title="404" alt="404" src="/img/error-page/404-image.png" style="width: 285px; max-width: 100%;">
+</div>
+<div class="grid__item grid__item grid__item--half grid__item--no-padding">
+<p class="error-page-text text--orange text--no-pad-no-margin-bottom text--no-pad-no-margin-top">Oops! You appear to be lost.</p>
+</div>
+</div>
+<div class="grid">
+<div class="grid__item grid__item--no-margins grid__item--no-padding">
+<p class="error-page-text text--no-pad-no-margin-bottom">Handy links:</p>
+</div>
+</div>
+<div class="grid">
+<div class="grid__item grid__item--fifth" style="padding-left:0">
+<div class="grid--center grid--vertical-center grid--left-mobile-tablet">
+<a href="../index_1.html" style="display:inherit;"><img class="error-icon" title="Home" alt="Home" src="/img/error-page/404-home.png"></a>
+ <p class="text--24px text--28px-mobile-tablet"><a href="../index_1.html" class="orange-alternate-link anchor text--bolder">Home</a></p></div>
+</div>
+<div class="grid__item grid__item--fifth" style="padding-left:0">
+<div class="grid--center grid--vertical-center grid--left-mobile-tablet">
+<a href="../resource-hub_1.html" style="display:inherit;"><img class="error-icon" title="Resources" alt="Resources" src="/img/error-page/404-resources.png"></a>
+<p class="text--24px text--28px-mobile-tablet"><a href="../resource-hub_1.html" class="orange-alternate-link anchor text--bolder">Resources</a></p></div>
+</div>
+<div class="grid__item grid__item--fifth" style="padding-left:0">
+<div class="grid--center grid--vertical-center grid--left-mobile-tablet">
+<a href="../plans.html" style="display:inherit;"><img class="error-icon" title="Plans" alt="Plans" src="/img/error-page/404-plans.png"></a>
+<p class="text--24px text--28px-mobile-tablet"><a href="../plans.html" class="orange-alternate-link anchor text--bolder">Plans</a></p></div>
+</div>
+<div class="grid__item grid__item--fifth" style="padding-left:0">
+<div class="grid--center grid--vertical-center grid--left-mobile-tablet">
+<a href="../index_2.html" style="display:inherit;"><img class="error-icon" title="Blog" alt="Blog" src="/img/error-page/404-blog.png"></a>
+<p class="text--24px text--28px-mobile-tablet"><a href="../index_2.html" class="orange-alternate-link anchor text--bolder">Blog</a></p></div>
+</div>
+<div class="grid__item grid__item--fifth" style="padding-left:0">
+<div class="grid--center grid--vertical-center grid--left-mobile-tablet">
+<a href="../careers.html" style="display:inherit;"><img class="error-icon" title="Careers" alt="Careers" src="/img/error-page/404-careers.png"></a>
+<p class="text--24px text--28px-mobile-tablet"><a href="../careers.html" class="orange-alternate-link anchor text--bolder">Careers</a></p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<a href="/cdn-cgi/beacon/hp-link?source=help&amp;req_id=1" target"_blank"="" class="hidden-element"></a>
+</div>
+<footer class="cms-mainfooter main-footer">
+
+<div class="main-footer__container">
+<div class="main-footer__row">
+<div class="main-footer__menu-group">
+<ul id="vendas-menu">
+<li data-submenu="vendas-menu" class="main-footer__menu-group__header js-toggle-footer-group">
+Vendas
+<img src="/img/icons/gray/caret-down.svg" class="icon" alt="grey arrow pointing down" aria-hidden="true">
+</li>
+<li>
+<a href="/pt-br/plans/enterprise/contact/">
+Vendas para empresas
+</a>
+</li>
+<li>
+<a href="/pt-br/partners/">
+Seja um parceiro
+</a>
+</li>
+</ul>
+<p class="phone">
+Contato de vendas:<br><a data-i18n-phonenumber="" class="tel" href="tel:+16503198930" style="display:none">+1 650 319 8930</a>
+<noscript><a class="phone" href="tel:+16503198930">+1 650 319 8930</a></noscript>
+</p>
+</div>
+<div class="main-footer__menu-group">
+<ul id="comece-a-usar-menu">
+<li data-submenu="comece-a-usar-menu" class="main-footer__menu-group__header js-toggle-footer-group">
+Comece a usar
+<img src="/img/icons/gray/caret-down.svg" class="icon" alt="grey arrow pointing down" aria-hidden="true">
+</li>
+<li>
+<a href="/pt-br/analysts/">
+Analistas do setor
+</a>
+</li>
+<li>
+<a href="/pt-br/plans/">
+Preços
+ </a>
+</li>
+<li>
+<a href="/pt-br/case-studies/">
+Estudos de caso
+</a>
+</li>
+<li>
+<a href="/pt-br/resources/">
+Artigos técnicos
+</a>
+</li>
+<li>
+<a href="/pt-br/webinars/">
+Webinars
+</a>
+</li>
+<li>
+<a href="/pt-br/learning/">
+Central de Aprendizagem
+</a>
+</li>
+</ul>
+</div>
+<div class="main-footer__menu-group">
+<ul id="comunidade-menu">
+<li data-submenu="comunidade-menu" class="main-footer__menu-group__header js-toggle-footer-group">
+Comunidade
+<img src="/img/icons/gray/caret-down.svg" class="icon" alt="grey arrow pointing down" aria-hidden="true">
+</li>
+<li>
+<a href="../index_8.html">
+Centro da comunidade
+</a>
+</li>
+<li>
+<a href="../index_2.html">
+Blog
+</a>
+</li>
+<li>
+<a href="/pt-br/galileo/">
+Projeto Galileo
+</a>
+</li>
+<li>
+<a href="/pt-br/athenian/">
+Projeto Athenian
+</a>
+</li>
+<li>
+<a href="/pt-br/campaigns/">
+Cloudflare para Campanhas
+</a>
+</li>
+<li>
+<a href="../index_5.html">
+Cloudflare TV
+</a>
+</li>
+</ul>
+</div>
+<div class="main-footer__menu-group">
+<ul id="desenvolvedores-menu">
+<li data-submenu="desenvolvedores-menu" class="main-footer__menu-group__header js-toggle-footer-group">
+Desenvolvedores
+<img src="/img/icons/gray/caret-down.svg" class="icon" alt="grey arrow pointing down" aria-hidden="true">
+</li>
+<li>
+<a href="../index_4.html">
+Central do desenvolvedor
+</a>
+</li>
+<li>
+<a href="/pt-br/products/cloudflare-workers/">
+Cloudflare Workers
+</a>
+</li>
+<li>
+<a href="/pt-br/integrations/">
+Integrações
+</a>
+</li>
+</ul>
+</div>
+<div class="main-footer__menu-group">
+<ul id="suporte-menu">
+<li data-submenu="suporte-menu" class="main-footer__menu-group__header js-toggle-footer-group">
+Suporte
+<img src="/img/icons/gray/caret-down.svg" class="icon" alt="grey arrow pointing down" aria-hidden="true">
+</li>
+<li>
+<a href="../index_3.html">
+Central de Atendimento
+</a>
+</li>
+<li>
+<a href="../index_6.html">
+Status da Cloudflare
+</a>
+</li>
+<li>
+<a href="/pt-br/compliance/">
+Conformidade
+</a>
+</li>
+<li>
+<a href="/pt-br/gdpr/introduction/">
+RGPD
+</a>
+</li>
+<li>
+<a href="/pt-br/abuse/">
+Confiança e segurança
+</a>
+</li>
+</ul>
+</div>
+<div class="main-footer__menu-group">
+<ul id="empresa-menu">
+<li data-submenu="empresa-menu" class="main-footer__menu-group__header js-toggle-footer-group">
+Empresa
+<img src="/img/icons/gray/caret-down.svg" class="icon" alt="grey arrow pointing down" aria-hidden="true">
+</li>
+<li>
+<a href="/pt-br/about-overview/">
+Sobre a Cloudflare
+</a>
+</li>
+<li>
+<a href="/pt-br/diversity-equity-and-inclusion/">
+Diversidade, igualdade e inclusão
+</a>
+</li>
+<li>
+<a href="../default.aspx">
+Relações com investidores
+</a>
+</li>
+<li>
+<a href="/pt-br/people/">
+Nossa equipe
+</a>
+</li>
+<li>
+<a href="/pt-br/press/">
+Imprensa
+</a>
+</li>
+<li>
+<a href="/pt-br/careers/">
+Carreiras
+</a>
+</li>
+<li>
+<a href="/pt-br/connect/">
+Cloudflare Connect
+</a>
+</li>
+<li>
+<a href="/pt-br/logo/">
+Logotipo
+</a>
+</li>
+<li>
+<a href="/pt-br/network/">
+Mapa de rede
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="main-footer__menu_bottom">
+<div class="main-footer__menu_bottom__container">
+<div class="main-footer__menu_bottom__social">
+<a target="_blank" rel="noopener" href="https://www.facebook.com/Cloudflare/"><img class="" title="Facebook" alt="Facebook" src="/img/footer/facebook.svg"></a>
+<a target="_blank" rel="noopener" href="https://twitter.com/Cloudflare"><img class="" title="Twitter" alt="Twitter" src="/img/footer/twitter.svg"></a>
+<a target="_blank" rel="noopener" href="../cloudflare_1.html"><img class="" title="LinkedIn" alt="LinkedIn" src="/img/footer/linkedin.svg"></a>
+<a target="_blank" rel="noopener" href="../cloudflare.html"><img class="" title="Youtube" alt="Youtube" src="/img/footer/youtube.svg"></a>
+<a target="_blank" rel="noopener" href="https://www.instagram.com/cloudflare"><img class="" title="Instagram" alt="Instagram" src="/img/footer/instagram.svg"></a>
+</div>
+<div class="main-footer__menu_bottom__copyright">
+<span>� 2022 Cloudflare, Inc.</span>
+<div>
+<a href="/pt-br/privacypolicy/">Política de privacidade</a>
+<a href="/pt-br/website-terms/">Termos de Uso</a>
+<a href="/pt-br/disclosure/">Denuncie problemas de segurança</a>
+<a href="/pt-br/abuse/">Confiança e segurança</a>
+<a href="#" data-prevent-default="click" class="ot-sdk-show-settings">Preferências de cookies</a>
+<a href="/pt-br/trademark/">Marca registrada</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<div class="eu-cookie-banner js-eu-cookie-banner">
+<div class="eu-cookie-banner__content text--white text--center">
+<p>To provide you with the best possible experience on our website, we may use cookies, as described <a href="/cookie-policy/">here</a>.<br>By clicking accept, closing this banner, or continuing to browse our websites, you consent to the use of such cookies.</p>
+<div class="grid grid--center">
+<div class="grid__item grid__item--fourth-half">
+<button style="max-width: 150px;" class="button button--white button--inline js-accept-eu-cookie">I accept</button>
+</div>
+</div>
+<div class="close_x js-accept-eu-cookie"></div>
+</div>
+</div>
+<script src="https://assets.www.cloudflare.com/js/chunk-d1d241eda36aa08700f5.js" nonce="76a74680-eece-4750-bf52-1c3fd866f055"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-50c2888dc9fc9d219699.js" nonce="76a74680-eece-4750-bf52-1c3fd866f055"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-ad048942265b0bf93d6c.js" nonce="76a74680-eece-4750-bf52-1c3fd866f055"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-ed2cdfc0465e7134a1ed.js" nonce="76a74680-eece-4750-bf52-1c3fd866f055"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-d0f1f4ebd38c39f7095a.js" nonce="76a74680-eece-4750-bf52-1c3fd866f055"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-6cb50819ee379c1477b0.js" nonce="76a74680-eece-4750-bf52-1c3fd866f055"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-fe08601582edb624164b.js" nonce="76a74680-eece-4750-bf52-1c3fd866f055"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-2998cc3b7d6bdd8fefa3.js" nonce="76a74680-eece-4750-bf52-1c3fd866f055"></script>
+<script nonce="76a74680-eece-4750-bf52-1c3fd866f055">
+        $(document).ready(function() {
+          var NavMiniBanner = new CFJS.FlashBanner('not-localized');
+        });
+      </script>
+<script async="" src="https://assets.www.cloudflare.com/js/chunk-a15957a83aa617098672.js" nonce="76a74680-eece-4750-bf52-1c3fd866f055"></script>
+<script async="" src="https://assets.www.cloudflare.com/js/chunk-eaa36412b9cad4cd7179.js" nonce="76a74680-eece-4750-bf52-1c3fd866f055"></script>
+<script type="application/ld+json" nonce="76a74680-eece-4750-bf52-1c3fd866f055">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "cloudflare.com",
+        "url": "http://www.cloudflare.com",
+        "sameAs": [
+          "http://www.facebook.com/cloudflare",
+          "http://www.twitter.com/cloudflare",
+          "http://plus.google.com/+cloudflare",
+          "https://www.linkedin.com/company/cloudflare",
+          "http://www.youtube.com/user/CloudflareTeam"
+        ]
+      }
+    </script>
+<script type="application/ld+json" nonce="76a74680-eece-4750-bf52-1c3fd866f055">
+      {
+        "@context": "http://schema.org",
+        "@type": "Corporation",
+        "name": "Cloudflare",
+        "url": "http://www.cloudflare.com",
+        "description": "Cloudflare is a free global CDN and DNS provider that can speed up and protect any site online."
+      }
+    </script>
+<script>
+      function renderNav () {
+        document.querySelectorAll('.cms-topnav').forEach(function(el) {
+          if (window.renderModalNav) {
+            window.renderModalNav(el);
+            el.classList.add('br-refresh')
+          }
+        })
+      }
+    </script>
+<script src="/compiledNav/navigation.js" onload="renderNav()"></script>
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" data-cf-beacon="{&quot;rayId&quot;:&quot;74490bc25ebdd424&quot;,&quot;token&quot;:&quot;6f9a2202213848f5bff934592489e351&quot;,&quot;version&quot;:&quot;2022.8.1&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+
+</body></html>

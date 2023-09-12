@@ -1,0 +1,2035 @@
+<!DOCTYPE html><html lang="zh-tw" itemscope="" itemtype="http://schema.org/Article"><head><script async="" src="../js/optimize.js"></script><script>window.redwood={"consentGroups":{"C0001":true,"C0002":true,"C0003":true,"C0004":true},"country":"NG","colo":"LOS","user":null,"locale":"zh-TW"}</script>
+    <script type="text/javascript">
+      var OneTrust={"geolocationResponse":{"countryCode":"NG"}}
+    </script>
+    <script>
+     const acceptedLocales = [
+      'en-au',
+      'en-ca',
+      'en-gb',
+      'en-in',
+      'en-us',
+      'de-de',
+      'es-es',
+      'fr-fr',
+      'it-it',
+      'ja-jp',
+      'ko-kr',
+      'pt-br',
+      'zh-tw',
+      'zh-cn',
+      'zh-Hans-CN',
+    ];
+    const orphanLocales = [
+      'ru-ru',
+      'sv-se',
+      'nl-nl',
+      'vi-vn',
+      'th-th',
+      'id-id',
+      'tr-tr',
+    ];
+    const ignoreList = [
+      'apps',
+      'docs',
+      'rate-limit-test',
+      'rss',
+    ]
+    function getPathFromLocale(locale, code, pathString) {
+      if ( locale === code || !acceptedLocales.includes(code) || acceptedLocales.includes(locale) || orphanLocales.includes(locale) ) {
+        return null;
+      } else {
+        return [code, locale ? locale : '', pathString].filter(part => part !== '').join('/');
+      }
+    };
+    if(window.location.host !== 'staging.cloudflare-cn.com' && window.location.host !== 'cloudflare-cn.com' && window.location.host !== 'www.cloudflare-cn.com') {
+      if (localStorage.getItem('langPreference')) {
+        if (localStorage.getItem('langPreference').toLowerCase() != 'en-us') {
+            const langPreference = localStorage.getItem('langPreference').toLowerCase();
+            const splitPath = window.location.pathname.split('/').filter(part => part !== '');
+            const currentLang = splitPath[0];
+            if (!acceptedLocales.includes(currentLang) && !orphanLocales.includes(currentLang) && !ignoreList.includes(splitPath[0])) {
+              splitPath.splice(0, 0, langPreference.toLowerCase());
+              const newUrl = 'https://' + window.location.hostname + '/' + splitPath.join('/') + '/' + window.location.search;
+              window.location.replace(newUrl);
+            }
+          }
+      } else if (!window.navigator.userAgent.toLowerCase().includes('googlebot')) {
+          const requestedLang = window.navigator.language;
+          const splitPath = window.location.pathname.split('/').filter(part => part !== '');
+          const maybeLocale = splitPath.shift();
+          const splitPathString = splitPath.join('/');
+
+          if (requestedLang && requestedLang.toLowerCase() != "en-us") {
+            const requestedLangCode = requestedLang
+              .toLowerCase()
+              .replace('_', '-');
+            const redirectPath = getPathFromLocale(maybeLocale, requestedLangCode, splitPathString);
+            if (redirectPath && !ignoreList.includes(maybeLocale)) {
+              window.location.replace('https://' + window.location.hostname + '/' + redirectPath + '/' + window.location.search);
+            }
+          }
+      }
+    }
+    </script>
+<meta charset="UTF-8">
+<title>This page is missing | Cloudflare </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://www.cloudflare.com/fonts/cloudflare.woff/">
+<meta itemprop="name" content="This page is missing | Cloudflare ">
+<meta itemprop="description" content="Cloudflare is a free global CDN and DNS provider that can speed up and protect any site online">
+<meta itemprop="image" content="https://www.cloudflare.com/img/cf-facebook-card.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="This page is missing | Cloudflare ">
+<meta name="twitter:description" content="Cloudflare is a free global CDN and DNS provider that can speed up and protect any site online">
+<meta name="twitter:site" content="@cloudflare">
+<meta name="twitter:creator" content="@cloudflare">
+<meta name="twitter:image" content="https://www.cloudflare.com/img/cf-twitter-card.png">
+<meta property="og:title" content="This page is missing | Cloudflare ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.cloudflare.com/zh-tw/fonts/cloudflare.woff/">
+
+<meta property="og:image" content="https://www.cloudflare.com/img/cf-facebook-card.png">
+<meta property="og:description" content="Cloudflare is a free global CDN and DNS provider that can speed up and protect any site online">
+<meta property="og:site_name" content="Cloudflare">
+<meta class="swiftype" name="language" data-type="string" content="zh-tw">
+<meta class="swiftype" name="title" data-type="string" content="This page is missing">
+<meta class="swiftype" name="description" data-type="string" content="Cloudflare is a free global CDN and DNS provider that can speed up and protect any site online">
+<meta class="swiftype" name="url" data-type="enum" content="https://www.cloudflare.com/zh-tw/fonts/cloudflare.woff/">
+<meta name="baidu-site-verification" content="N0CNJSCAk5">
+<meta name="baidu-site-verification" content="Kj9FQ1BEWh">
+<meta name="baidu-site-verification" content="OEDgbws38Y">
+<meta name="baidu-site-verification" content="code-LHd7bZjChM">
+<link rel="icon" type="image/x-icon" href="../favicon_1.ico">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-128.png" sizes="128x128">
+<meta name="application-name" content="Cloudflare">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="msapplication-square70x70logo" content="/mstile-70x70.png">
+<meta name="msapplication-square150x150logo" content="/mstile-150x150.png">
+<meta name="msapplication-wide310x150logo" content="/mstile-310x150.png">
+<meta name="msapplication-square310x310logo" content="/mstile-310x310.png">
+<noscript><style>.nojs-hide{display: none;}</style></noscript>
+<style>.async-hide {opacity: 0 !important}</style>
+<link rel="stylesheet" href="https://assets.www.cloudflare.com/css/application-7d1e9e47f6.min.css">
+<script nonce="a1258fc6-4643-40ad-8a5a-98f0113fcea7">
+  window.CFJS = {
+    config: {
+      rumEnabled: true,
+      env: '/marketing-api',
+      availableLanguages: ''.split(','),
+      excludeMarketo: false,
+      marketoEnabled: true,
+      bizibleEnabled: true,
+      excludeHeapAnalytics: false,
+      asyncHide: false,
+      remarketingEnabled: false,
+      sentryDSN: 'https://bd9df81d859641f39ce626ce2a2cc90d@sentry.io/229513',
+      serverLang: "zh-tw",
+      isEnglish: false,
+      isLocalized: false,
+      intlTelInputUtils: '/js/chunk-ed207c16f1337d207f80.js',
+      cookieDomain: "cloudflare.com",
+      techtargetEnabled: true,
+      googleOptimizeEnabled: true,
+        marketoFormEmbedTranslations: "{\"50\":\"超過 50 人\",\"mb\":\"MB\",\"no\":\"否\",\"or\":\"或\",\"all\":\"所有\",\"cdn\":\"CDN\",\"dns\":\"DNS\",\"ssl\":\"SSL\",\"yes\":\"是\",\"5 mb\":\"5 MB\",\"asia\":\"亞洲\",\"back\":\"返回\",\"blog\":\"部落格\",\"both\":\"兩者\",\"bots\":\"傀儡程式\",\"chad\":\"查德\",\"city\":\"城市：*\",\"cuba\":\"古巴\",\"ddos\":\"DDoS\",\"date\":\"日期\",\"fiji\":\"斐濟\",\"guam\":\"關島\",\"iran\":\"伊朗\",\"iraq\":\"伊拉克\",\"link\":\"連結\",\"mali\":\"馬利\",\"niue\":\"紐埃\",\"none\":\"無\",\"oman\":\"阿曼\",\"past\":\"過去\",\"peru\":\"祕魯\",\"plan\":\"方案\",\"rsvp\":\"敬請回复\",\"send\":\"傳送\",\"time\":\"時間\",\"togo\":\"多哥\",\"year\":\"年\",\"10 mb\":\"10 MB\",\"apply\":\"申請\",\"asn\":\"ASN *\",\"aruba\":\"阿魯巴\",\"benin\":\"貝南\",\"chile\":\"智利\",\"china\":\"中國\",\"cloud\":\"雲端\",\"congo\":\"剛果\",\"ebook\":\"電子書\",\"egypt\":\"埃及\",\"gabon\":\"加彭\",\"ghana\":\"迦納\",\"haiti\":\"海地\",\"india\":\"印度\",\"italy\":\"義大利\",\"japan\":\"日本\",\"kenya\":\"肯亞\",\"level\":\"級別\",\"libya\":\"利比亞\",\"macao\":\"澳門\",\"malta\":\"馬爾他\",\"nauru\":\"諾魯\",\"nepal\":\"尼泊爾\",\"niger\":\"尼日\",\"other\":\"其他\",\"palau\":\"帛琉\",\"phone\":\"電話：*\",\"qatar\":\"卡達\",\"sales\":\"銷售\",\"samoa\":\"薩摩亞\",\"spain\":\"西班牙\",\"state\":\"州\",\"sudan\":\"蘇丹\",\"syria\":\"敘利亞\",\"title\":\"標題\",\"tonga\":\"東加\",\"vegan\":\"純素食\",\"video\":\"影片\",\"watch\":\"觀賞\",\"yemen\":\"葉門\",\"plans\":{\"pro\":{\"id\":\"pro\",\"displayName\":\"Pro 方案\"},\"free\":{\"id\":\"free\",\"displayName\":\"免費方案\"},\"business\":{\"id\":\"business\",\"displayName\":\"Business 方案\"}},\"$3000\":\"超過 3000 美元\",\"100 mb\":\"100 MB\",\"africa\":\"非洲\",\"agenda\":\"議程\",\"angola\":\"安哥拉\",\"belize\":\"貝里斯\",\"bhutan\":\"不丹\",\"brazil\":\"巴西\",\"brunei\":\"汶萊\",\"canada\":\"加拿大\",\"cyprus\":\"賽普勒斯\",\"email\":\"電子郵件：*\",\"europe\":\"歐洲\",\"filter\":\"篩選\",\"france\":\"法國\",\"gambia\":\"甘比亞\",\"greece\":\"希臘\",\"guinea\":\"幾內亞\",\"guyana\":\"蓋亞納\",\"israel\":\"以色列\",\"jersey\":\"澤西島\",\"jordan\":\"約旦\",\"kosovo\":\"科索沃\",\"kuwait\":\"科威特\",\"latvia\":\"拉脫維亞\",\"length\":\"長度\",\"malawi\":\"馬拉威\",\"mexico\":\"墨西哥\",\"monaco\":\"摩納哥\",\"norway\":\"挪威\",\"panama\":\"巴拿馬\",\"poland\":\"波蘭\",\"rwanda\":\"盧安達\",\"serbia\":\"塞爾維亞\",\"simple\":\"簡易\",\"source\":\"來源\",\"submit\":\"提交\",\"sweden\":\"瑞典\",\"taiwan\":\"台灣\",\"turkey\":\"土耳其\",\"tuvalu\":\"吐瓦魯\",\"uganda\":\"烏干達\",\"zambia\":\"尚比亞\",\"address\":\"地址：*\",\"albania\":\"阿爾巴尼亞\",\"algeria\":\"阿爾及利亞\",\"analyst\":\"分析人員\",\"andorra\":\"安道爾\",\"archive\":\"封存\",\"armenia\":\"亞美尼亞\",\"austria\":\"奧地利\",\"bahamas\":\"巴哈馬\",\"bahrain\":\"巴林\",\"belarus\":\"白俄羅斯\",\"belgium\":\"比利時\",\"bermuda\":\"百慕達\",\"bolivia\":\"玻利維亞\",\"burundi\":\"蒲隆地\",\"comment\":\"註解\",\"comoros\":\"葛摩\",\"company\":\"公司：*\",\"complex\":\"複雜\",\"country\":\"國家/地區：*\",\"croatia\":\"克羅埃西亞\",\"denmark\":\"丹麥\",\"ecuador\":\"厄瓜多\",\"eritrea\":\"厄利垂亞\",\"estonia\":\"愛沙尼亞\",\"filters\":\"篩選\",\"finland\":\"芬蘭\",\"georgia\":\"喬治亞\",\"germany\":\"德國\",\"grenada\":\"格瑞那達\",\"hungary\":\"匈牙利\",\"iceland\":\"冰島\",\"ireland\":\"愛爾蘭\",\"jamaica\":\"牙買加\",\"lebanon\":\"黎巴嫩\",\"lesotho\":\"賴索托\",\"liberia\":\"賴比瑞亞\",\"mayotte\":\"馬約特島\",\"morocco\":\"摩洛哥\",\"myanmar\":\"緬甸\",\"namibia\":\"納米比亞\",\"nigeria\":\"奈及利亞\",\"oceania\":\"大洋洲\",\"offices\":\"辦公室\",\"peering\":\"對等互連\",\"privacy\":\"隱私權\",\"reunion\":\"留尼旺\",\"romania\":\"羅馬尼亞\",\"senegal\":\"塞內加爾\",\"sign up\":\"申請\",\"somalia\":\"索馬利亞\",\"support\":\"支援\",\"tokelau\":\"托克勞\",\"tune in\":\"收看精彩節目\",\"tunisia\":\"突尼西亞\",\"ukraine\":\"烏克蘭\",\"uruguay\":\"烏拉圭\",\"vanuatu\":\"萬那杜\",\"virtual\":\"虛擬\",\"webinar\":\"網路研討會\",\"website\":\"網站：*\",\"activity\":\"活動\",\"air date\":\"播放日期\",\"anguilla\":\"安圭拉\",\"archives\":\"封存\",\"barbados\":\"巴貝多\",\"botswana\":\"波札那\",\"bulgaria\":\"保加利亞\",\"cambodia\":\"柬埔寨\",\"cameroon\":\"喀麥隆\",\"colombia\":\"哥倫比亞\",\"comments\":\"註解：*\",\"curaçao\":\"古拉索\",\"djibouti\":\"吉布地\",\"domain\":\"網域 *\",\"dominica\":\"多米尼克\",\"download\":\"下載\",\"ethiopia\":\"衣索比亞\",\"featured\":\"精選\",\"get help\":\"立即獲得協助\",\"guernsey\":\"根西島\",\"honduras\":\"宏都拉斯\",\"industry\":\"產業\",\"innovate\":\"創新\",\"kiribati\":\"吉里巴斯\",\"language\":\"語言\",\"location\":\"地點\",\"malaysia\":\"馬來西亞\",\"maldives\":\"馬爾地夫\",\"mongolia\":\"蒙古\",\"our team\":\"我們的團隊\",\"pakistan\":\"巴基斯坦\",\"paraguay\":\"巴拉圭\",\"password\":\"密碼 *\",\"physical\":\"實體\",\"pitcairn\":\"皮特康\",\"portugal\":\"葡萄牙\",\"register\":\"註冊\",\"reseller\":\"轉銷商\",\"security\":\"安全性\",\"slovakia\":\"斯洛伐克\",\"slovenia\":\"斯洛維尼亞\",\"speakers\":\"主講人\",\"stagnate\":\"停滯不前\",\"suriname\":\"蘇利南\",\"tanzania\":\"坦尚尼亞\",\"thailand\":\"泰國\",\"upcoming\":\"即將來臨\",\"viet nam\":\"越南\",\"view all\":\"查看全部\",\"webinars\":\"網路研討會\",\"zimbabwe\":\"辛巴威\",\"argentina\":\"阿根廷\",\"australia\":\"澳大利亞\",\"gibraltar\":\"直布羅陀\",\"greenland\":\"格陵蘭\",\"guatemala\":\"瓜地馬拉\",\"hong kong\":\"香港\",\"indonesia\":\"印尼\",\"job title\":\"職位...*\",\"last name\":\"姓氏：*\",\"lithuania\":\"立陶宛\",\"load more\":\"載入更多\",\"mauritius\":\"模里西斯\",\"nicaragua\":\"尼加拉瓜\",\"our board\":\"我們的董事會\",\"palestine\":\"巴勒斯坦\",\"plan type\":\"方案類型\",\"resilient\":\"具有復原能力\",\"saas apps\":\"SaaS App\",\"select\":\"選取...\",\"show more\":\"顯示更多\",\"singapore\":\"新加坡\",\"sponsored\":\"贊助\",\"sri lanka\":\"斯里蘭卡\",\"subscribe\":\"訂閱\",\"swaziland\":\"史瓦濟蘭\",\"thank you\":\"謝謝\",\"use case\":\"使用案例：\",\"venezuela\":\"委內瑞拉\",\"watch now\":\"立即觀賞\",\"whatsapp\":\"WhatsApp：\",\"your api\":\"您的 API。\",\"your app\":\"您的 App。\",\"almoststat\":\"將近 %{value} Tbps\",\"antarctica\":\"南極洲\",\"azerbaijan\":\"亞塞拜然\",\"bangladesh\":\"孟加拉\",\"bot attack\":\"機器人攻擊\",\"cache node\":\"快取節點\",\"cape verde\":\"維德角\",\"click here\":\"按一下此處\",\"contact me\":\"與我連絡\",\"contact us\":\"與我們連絡\",\"costa rica\":\"哥斯大黎加\",\"first name\":\"名字：*\",\"guadeloupe\":\"哥德洛普\",\"it - staff\":\"IT - 職員\",\"interests\":\"興趣：\",\"kazakhstan\":\"哈薩克\",\"kyrgyzstan\":\"吉爾吉斯\",\"learn more\":\"瞭解更多\",\"luxembourg\":\"盧森堡\",\"madagascar\":\"馬達加斯加\",\"martinique\":\"馬丁尼克\",\"mauritania\":\"茅利塔尼亞\",\"micronesia\":\"密克羅尼西亞\",\"montenegro\":\"黑山\",\"montserrat\":\"蒙特色拉特島\",\"mozambique\":\"莫三比克\",\"press page\":\"新聞頁面\",\"san marino\":\"莫桑比克\",\"serverless\":\"無伺服器\",\"seychelles\":\"塞席爾\",\"tajikistan\":\"塔吉克\",\"uzbekistan\":\"烏茲別克\",\"vegetarian\":\"素食\",\"vulnerable\":\"易受攻擊\",\"whitepaper\":\"白皮書\",\"work email\":\"工作電子郵件：*\",\"yc batch\":\"YC 批次 *\",\"afghanistan\":\"阿富汗\",\"campaign\":\"精選團隊：*\",\"communities\":\"社群\",\"ddos attack\":\"DDoS 攻擊\",\"description\":\"描述\",\"distributor\":\"經銷商\",\"el salvador\":\"薩爾瓦多\",\"full name\":\"全名 *\",\"get started\":\"開始使用\",\"isle of man\":\"曼島\",\"key results\":\"主要成效\",\"link copied\":\"連結已複製\",\"middle east\":\"中東\",\"most recent\":\"最近\",\"netherlands\":\"荷蘭\",\"new zealand\":\"紐西蘭\",\"north korea\":\"北韓 (조선 민주주의 인민 공화국)\",\"performance\":\"效能\",\"philippines\":\"菲律賓\",\"please wait\":\"請稍候\",\"postal code\":\"郵編：*\",\"press/media\":\"新聞/媒體\",\"puerto rico\":\"波多黎各\",\"reliability\":\"可靠性\",\"saint lucia\":\"聖露西亞\",\"search tips\":\"搜尋提示\",\"select plan\":\"選擇方案\",\"set up your\":\"設定您的\",\"south korea\":\"南韓 (대한민국)\",\"south sudan\":\"南蘇丹\",\"switzerland\":\"瑞士\",\"timor-leste\":\"東帝汶\",\"watch video\":\"觀看影片\",\"website url\":\"網站 URL\",\"all features\":\"所有功能\",\"batch year\":\"批次年份 *\",\"burkina faso\":\"布吉納法索\",\"chad (tchad\":\"查德\",\"clear filter\":\"清除篩選\",\"close window\":\"關閉視窗\",\"cook islands\":\"庫克群島\",\"data centers\":\"資料中心\",\"download pdf\":\"下載 PDF\",\"get in touch\":\"保持連絡\",\"it - c-level\":\"IT - 高層主管\",\"it - manager\":\"IT - 經理\",\"infographics\":\"資訊圖\",\"peru (per\":\"秘魯\",\"remote users\":\"遠端使用者\",\"request demo\":\"請求示範\",\"saint helena\":\"聖赫勒拿\",\"saudi arabia\":\"沙烏地阿拉伯\",\"sierra leone\":\"獅子山\",\"sint maarten\":\"聖馬丁\",\"south africa\":\"南非\",\"turkmenistan\":\"土庫曼\",\"form.privacy\":\"提交表格，即表示您同意接收關於 Cloudflare 產品、活動和特別優惠的資訊。您可以隨時退訂此類訊息。我們重視您的隱私選擇，絕不會出售您的資料。請參閱我們的<a href='%{PRIVACY_POLICY_URL}' target='_blank'>隱私權政策</a>以瞭解相關資訊。\",\"aland islands\":\"奧蘭群島\",\"bouvet island\":\"布威島\",\"call sales at\":\"電洽銷售人員：\",\"contact sales\":\"連絡銷售團隊\",\"cote d'ivoire\":\"科特迪瓦（象牙海岸）\",\"email address\":\"電子郵件地址 *\",\"faroe islands\":\"法羅群島\",\"french guiana\":\"法屬蓋亞納\",\"ghana (gaana\":\"迦納 (Gaana)\",\"guinea-bissau\":\"幾內亞比索\",\"internet apps\":\"網際網路應用程式\",\"liechtenstein\":\"列支敦士登\",\"network layer\":\"網路層\",\"new caledonia\":\"新喀里多尼亞\",\"niger (nijar\":\"尼日 (Nijar)\",\"north america\":\"北美洲\",\"organization\":\"組織：*\",\"plans/pricing\":\"方案/定價\",\"published on\":\"發佈於：\",\"register now\":\"立即註冊！\",\"sub-processor\":\"轉承包方\",\"under attack\":\"遭到攻擊？\",\"united states\":\"美國\",\"webinars type\":\"網路研討會類型\",\"your network\":\"您的網路。\",\"your website\":\"您的網站。\",\"american samoa\":\"美屬薩摩亞\",\"benin (bénin\":\"貝南 (Bénin)\",\"cayman islands\":\"開曼群島\",\"cloudflare inc\":\"Cloudflare, Inc.\",\"czech republic\":\"捷克共和國\",\"download image\":\"下載影像\",\"featured count\":\"精選計數\",\"italy (italia\":\"義大利 (Italia)\",\"macau\":\"澳門\",\"mainland china\":\"中國大陸\",\"meeting reward\":\"會議獎勵\",\"must be a url\":\"必須是 URL。\",\"norfolk island\":\"諾福克島\",\"norway (norge\":\"挪威 (Norge)\",\"press releases\":\"新聞稿\",\"student/intern\":\"學生/實習\",\"type of attack\":\"攻擊類型 *\",\"united kingdom\":\"英國\",\"wechat number\":\"WeChat 號碼：*\",\"western sahara\":\"西撒哈拉\",\"collapse-facet\":\"收合 %{label} 面向\",\"åland islands\":\"奧蘭群島\",\"add to calendar\":\"新增至日曆\",\"brazil (brasil\":\"巴西 (Brasil)\",\"console connect\":\"控制台連線\",\"estonia (eesti\":\"愛沙尼亞 (Eesti)\",\"finland (suomi\":\"芬蘭 (Suomi)\",\"have questions\":\"有疑問嗎？\",\"interested in\":\"感興趣的產品:*\",\"learning center\":\"學習中心\",\"link from video\":\"影片提供的連結\",\"more than 100mb\":\"超過 100 MB\",\"poland (polska\":\"波蘭 (Polska)\",\"previous events\":\"之前的事件\",\"related content\":\"相關內容\",\"resource center\":\"資源中心\",\"solomon islands\":\"所羅門群島\",\"source/location\":\"來源/地點\",\"spain (españa\":\"西班牙 (España)\",\"upcoming events\":\"即將來臨的事件\",\"video streaming\":\"視訊串流\",\"date_with_colon\":\"日期：\",\"contact us today\":\"立即與我們連絡\",\"christmas island\":\"聖誕島\",\"contact email\":\"聯絡電子郵件：*\",\"côte d’ivoire\":\"科特迪瓦（象牙海岸）\",\"featured stories\":\"專題故事\",\"featured webinar\":\"精選網路研討會\",\"french polynesia\":\"法屬玻里尼西亞\",\"guinea (guinée\":\"幾內亞 (Guinée)\",\"it - vp/director\":\"IT - 副總/總監\",\"keynote speakers\":\"專題主講人\",\"laos\":\"寮國 (ລາວ)\",\"latvia (latvija\":\"拉脫維亞 (Latvija)\",\"marshall islands\":\"馬紹爾群島\",\"mexico (méxico\":\"墨西哥 (México)\",\"num employees\":\"員工人數：*\",\"organization url\":\"組織 URL：*\",\"panama (panam\":\"巴拿馬 (Panamá)\",\"papua new guinea\":\"巴布亞紐幾內亞\",\"preferred city\":\"慣用城市*\",\"related products\":\"相關產品\",\"related blogpost\":\"相關部落格文章\",\"results per page\":\"每個頁面的結果\",\"security - staff\":\"安全 - 職員\",\"self-hosted apps\":\"自託管 App\",\"services partner\":\"服務合作夥伴\",\"support response\":\"支援回應\",\"sweden (sverige\":\"瑞典 (Sverige)\",\"to be determined\":\"待定\",\"sales_with_colon\":\"銷售：\",\"accelerator name\":\"加速器名稱：\",\"access management\":\"存取管理\",\"belgium (belgi\":\"比利時 (België)\",\"brunei darussalam\":\"汶萊\",\"copy article link\":\"複製文章連結\",\"denmark (danmark\":\"丹麥 (Danmark)\",\"equatorial guinea\":\"赤道幾內亞\",\"iceland (ísland\":\"冰島 (Ísland)\",\"mauritius (moris\":\"模里西斯 (Moris)\",\"must be a number\":\"必須是數字。\",\"preferred country\":\"慣用國家或地區*\",\"ransomware attack\":\"勒索軟體攻擊\",\"saint barthélemy\":\"聖巴泰勒米\",\"schema validation\":\"模式驗證\",\"search cloudflare\":\"搜尋 Cloudflare\",\"talk to an expert\":\"與專家討論\",\"turkey (türkiye\":\"土耳其 (Türkiye)\",\"url for peeringdb\":\"適合 PeeringDB 的 URL\",\"view in dashboard\":\"在儀表板中查看\",\"wallis and futuna\":\"瓦利斯及福杜納\",\"webinar slidedeck\":\"網路研討會投影片組\",\"form.privacy.gdpr\":\"您提供給 Cloudflare 的資訊受<a href='%{PRIVACY_POLICY_URL}' target='_blank'>隱私權政策</a>條款的約束。\",\"burundi (uburundi\":\"蒲隆地 (Uburundi)\",\"croatia (hrvatska\":\"克羅埃西亞 (Hrvatska)\",\"dominican republic\":\"多明尼加共和國\",\"eng/devops - staff\":\"工程/DevOps - 職員\",\"existing customer\":\"是現有客戶？\",\"korea, republic of\":\"韓國\",\"namibia (namibi\":\"納米比亞 (Namibië)\",\"on-demand webinars\":\"視需求網路研討會\",\"organization name\":\"組織名稱：\",\"romania (românia\":\"羅馬尼亞 (România)\",\"russian federation\":\"俄羅斯聯邦\",\"security - c-level\":\"安全 - 高層主管\",\"security - manager\":\"安全 - 經理\",\"submitting form\":\"正在提交表單...\",\"technology partner\":\"技術合作夥伴\",\"type of connection\":\"連線類型\",\"albania (shqipëri\":\"阿爾巴尼亞 (Shqipëri)\",\"antigua and barbuda\":\"安地卡及巴布達\",\"cameroon (cameroun\":\"喀麥隆 (Cameroun)\",\"durationbadgelevels\":{\"pro\":{\"time\":\"25 分鐘\",\"level\":\"初級\"},\"free\":{\"time\":\"20 分鐘\",\"level\":\"初級\"},\"business\":{\"time\":\"35 分鐘\",\"level\":\"初級\"}},\"in partnership with\":\"合作夥伴：\",\"learning objectives\":\"學習目標\",\"lithuania (lietuva\":\"立陶宛 (Lietuva)\",\"preferred address\":\"慣用地址*\",\"read the case study\":\"詳閱案例研究\",\"scroll to view more\":\"滾動查看更多\",\"senegal (sénégal\":\"塞內加爾 (Sénégal)\",\"telegram messaging\":\"Telegram 訊息：\",\"trinidad and tobago\":\"千里達及托巴哥\",\"u.s. virgin islands\":\"美屬維京群島\",\"want to learn more\":\"想要瞭解更多？\",\"you are registered\":\"您已註冊。\",\"zero trust security\":\"零信任安全性\",\"additionaltermstext\":\"* 可能適用其他條款與條件。\",\"data loss prevention\":\"資料丟失預防\",\"dietary restrictions\":\"飲食限制：\",\"email recommendation\":\"透過電子郵件傳送推薦\",\"email_recommendation\":\"透過電子郵件傳送推薦\",\"eng/devops - c-level\":\"工程/DevOps - 高層主管\",\"eng/devops - manager\":\"工程/DevOps - 經理\",\"looking for support\":\"尋求支援？\",\"moldova, republic of\":\"摩爾多瓦共和國\",\"must be valid email\":\"必須是有效電子郵件。\",\"network as a service\":\"網路即服務\",\"private chat/support\":\"私聊/支援\",\"related case studies\":\"相關案例研究\",\"set up your pro plan\":\"設定您的 Pro 方案\",\"slovakia (slovensko\":\"斯洛伐克 (Slovensko)\",\"slovenia (slovenija\":\"斯洛維尼亞 (Slovenija)\",\"somalia (soomaaliya\":\"索馬利亞 (Soomaaliya)\",\"syrian arab republic\":\"敘利亞\",\"united arab emirates\":\"阿拉伯聯合大公國\",\"vietnam (việt nam\":\"越南 (Việt Nam)\",\"form.privacy.partner\":\"提交表格即表示，您請求接收有關 Cloudflare 以及 %{PARTNER} 產品、活動和特別優惠的資訊，並且您同意 Cloudflare 按照 <a href='%{PRIVACY_POLICY_URL}' target='_blank'>Cloudflare 隱私權政策</a>中的規定處理您的個人資料，並同意 %{PARTNER} 按照 %{PARTNER} 隱私權政策中的規定處理您的個人資料。您還授權 Cloudflare 與 %{PARTNER} 共用您的個人資料。\",\"accelerator program\":\"加速器程式 *\",\"austria (österreich\":\"奧地利 (Österreich)\",\"caribbean netherlands\":\"荷屬加勒比\",\"germany (deutschland\":\"德國 (Deutschland)\",\"gluten free / coeliac\":\"無麩質/乳糜瀉\",\"must be a valid date\":\"必須是有效日期。\",\"no credit card needed\":\"無需信用卡\",\"russia\":\"俄羅斯 (Россия)\",\"saint kitts and nevis\":\"聖克里斯多福及尼維斯\",\"sao tome and principe\":\"聖多美和普林西比\",\"set up your free plan\":\"設定您的 Free 方案\",\"switzerland (schweiz\":\"瑞士 (Schweiz)\",\"view all case studies\":\"檢視所有案例研究\",\"bosnia and herzegovina\":\"波士尼亞與赫塞哥維納\",\"british virgin islands\":\"英屬維京群島\",\"cloud resources attack\":\"雲端資源攻擊\",\"current ddos vendor\":\"目前 DDoS 廠商...\",\"montenegro (crna gora\":\"蒙特內哥羅 (Crna Gora)\",\"other (please specify\":\"其他（請註明）\",\"other - please specify\":\"其他 —— 請注明\",\"réunion (la réunion\":\"留尼旺 (La Réunion)\",\"security - vp/director\":\"安全 - 副總/總監\",\"select your country\":\"選擇國家/地區...\",\"svalbard and jan mayen\":\"冷岸及央棉群島\",\"terabitspersecondshort\":\"%{value} Tbps\",\"upcoming live webinars\":\"即將舉行的即時網路研討會\",\"want to keep learning\":\"想要繼續瞭解嗎？\",\"a server error occured\":\"發生伺服器錯誤。\",\"cape verde (kabu verdi\":\"維德角 (Kabu Verdi)\",\"cocos (keeling) islands\":\"可可斯（基林）群島\",\"ddos protection hotline\":\"DDoS 保護熱線\",\"hungary (magyarország\":\"匈牙利 (Magyarország)\",\"interconnection partner\":\"互連合作夥伴\",\"must be a phone number\":\"必須是電話號碼。\",\"netherlands (nederland\":\"荷蘭\",\"preferred postal code\":\"慣用郵遞區號*\",\"this field is required\":\"此欄位為必填。\",\"virgin islands, british\":\"英屬維京群島\",\"azerbaijan (azərbaycan\":\"亞塞拜然 (Azərbaycan)\",\"central african republic\":\"中非共和國\",\"early access to features\":\"功能提前體驗\",\"eng/devops - vp/director\":\"工程/DevOps - 副總/總監\",\"example \\\"cloudflare.com\":\"範例「cloudflare.com」\",\"faroe islands (føroyar\":\"法羅群島 (Føroyar)\",\"infrastructure - c-level\":\"基礎結構 - 高層主管\",\"infrastructure - manager\":\"基礎結構 - 經理\",\"mozambique (moçambique\":\"莫三比克 (Moçambique)\",\"northern mariana islands\":\"北馬利安納群島邦\",\"please select an option\":\"請選取一個選項。\",\"turks and caicos islands\":\"土克斯及開科斯群島\",\"after_reading_with_colon\":\"閱讀本文後，您將能夠：\",\"supportresponsetitletext\":\"支援回應：\",\"cloudflare account email\":\"Cloudflare 帳戶電子郵件：\",\"dairy free / lactose free\":\"無乳製品/無乳糖\",\"identity or access attack\":\"身分識別與存取攻擊\",\"iran, islamic republic of\":\"伊朗\",\"kv and/or durable objects\":\"KV 和/或 Durable Objects\",\"madagascar (madagasikara\":\"馬達加斯加 (Madagasikara)\",\"product - product manager\":\"產品 - 產品經理\",\"saint pierre and miquelon\":\"聖皮瑞及麥克隆\",\"sales/marketing - c-level\":\"銷售/行銷 - 高層主管\",\"set up your business plan\":\"設定您的 Business 方案\",\"sint maarten (dutch part\":\"聖馬丁島（荷蘭部分）\",\"solution & product guides\":\"解決方案和產品指南\",\"uzbekistan (oʻzbekiston\":\"烏茲別克 (Oʻzbekiston)\",\"web or application attack\":\"Web 或應用程式攻擊\",\"marketo_blocked_countries\":\"我們目前無法為您所選國家/地區的企業或組織提供服務。如需其他幫助，請發送電子郵件至 legal@cloudflare.com。\",\"consulting integrator (ci\":\"諮詢整合人員 (CI)\",\"fish / shellfish allergies\":\"魚類/貝類過敏\",\"infrastructure - architect\":\"基礎結構 - 結構設計師\",\"learn how cloudflare works\":\"瞭解 Cloudflare 的運作方式\",\"network or firewall attack\":\"網路或防火牆攻擊\",\"saint martin (french part\":\"聖馬丁島（法語部分）\",\"falkland islands (malvinas\":\"福克蘭群島（馬爾維納斯）\",\"finance/procurement - staff\":\"財務/採購 - 職員\",\"french southern territories\":\"法屬南部領地\",\"moldova (republica moldova\":\"摩爾多瓦 (Republica Moldova)\",\"tree nut / peanut allergies\":\"堅果/花生過敏\",\"form.privacy.newsletterform\":\"請參閱 Cloudflare 的<a class='alternate-link--blue3' href='%{PRIVACY_POLICY_URL}' target='_blank'>隱私權政策</a>，了解我們如何收集和處理您的個人資料。\",\"expected storage size in tb\":\"預期儲存大小 (TB)：\",\"greenland (kalaallit nunaat\":\"格陵蘭島 (Kalaallit Nunaat)\",\"infrastructure - vp/director\":\"基礎結構 - 副總/總監\",\"physical data center partner\":\"物理資料中心合作夥伴\",\"tanzania, united republic of\":\"坦尚尼亞\",\"what interests you the most\":\"您最感興趣的是什麼? \",\"finance/procurement - c-level\":\"財務/採購 - 高層主管\",\"finance/procurement - manager\":\"財務/採購 - 經理\",\"guinea-bissau (guiné bissau\":\"幾內亞比索 (Guiné Bissau)\",\"holy see (vatican city state\":\"教廷（梵蒂岡）\",\"latin america & the caribbean\":\"拉丁美洲與加勒比海\",\"please refresh and try again\":\"請重新整理並再試一次。\",\"proof of concept (poc) reward\":\"概念驗證（PoC）獎勵\",\"sales/marketing - vp/director\":\"銷售/行銷 - 副總/總監\",\"select accelerator program\":\"選擇加速器程式...\",\"subscribe to trending stories\":\"訂閱熱門故事\",\"technical presentation reward\":\"技術宣講獎勵\",\"web security (cdn, ddos, waf\":\"網路安全（ CDN、DDoS、WAF）\",\"autonomous system number (asn\":\"自主系統碼 (ASN)\",\"british indian ocean territory\":\"英屬印度洋領地\",\"must be an amount of currency\":\"必須是貨幣金額。\",\"are you currently under attack\":\"您目前正受到攻擊嗎？\",\"bolivia, plurinational state of\":\"玻利維亞多民族國\",\"dns hijacking or on path attack\":\"DNS 劫持或路徑攻擊\",\"global systems integrator (gsi\":\"全球系統整合人員 (GSI)\",\"bonaire, sint eustatius and saba\":\"波奈、聖佑達修斯和沙巴\",\"lao people's democratic republic\":\"寮國人民共和國\",\"no results. try removing filters\":\"無結果。嘗試刪除篩選條件\",\"saint vincent and the grenadines\":\"聖文森及格瑞那丁\",\"your privacy is important to us\":\"您的隱私權對我們非常重要。\",\"welcome_center_recommended_steps\":\"按照本指南中的建議步驟操作，設定您的帳戶並啟動您使用 Cloudflare 的網站。如果您已擁有 Cloudflare 帳戶，請登入並按照儀表板中的每個步驟進行操作。還沒有 Cloudflare 帳戶？\",\"falkland islands (islas malvinas\":\"福克蘭群島 (Islas Malvinas)\",\"finance/procurement - vp/director\":\"財務/採購 - 副總/總監\",\"french guiana (guyane française\":\"法屬蓋亞納\",\"heard island and mcdonald islands\":\"赫德島及麥當勞群島\",\"how large a script will you need\":\"您需要多大的指令碼檔？ *\",\"not sure? we’ll help you assess\":\"沒有把握？我們會幫您評估\",\"try exploring these helpful areas\":\"請探索這些實用領域\",\"venezuela, bolivarian republic of\":\"委內瑞拉共和國\",\"czech republic (česká republika\":\"捷克 (Česká republika)\",\"data center location (city, state\":\"資料中心位置（城市、州）\",\"incorrect email. please try again\":\"電子郵件不正確。請再試一次。\",\"vatican city (città del vaticano\":\"梵蒂岡 (Città del Vaticano)\",\"check the spelling of your keywords\":\"請檢查您關鍵字的拼寫\",\"new caledonia (nouvelle-calédonie\":\"新喀里多尼亞 (Nouvelle-Calédonie)\",\"other saas applications not listed\":\"未列出的其他 SaaS 應用程式：\",\"which events will you be attending\":\"您將參加哪些活動？\",\"congo (republic) (congo-brazzaville\":\"剛果 (共和國) (Congo-Brazzaville)\",\"myanmar (burma\":\"緬甸 (မြန်မာ)\",\"please select which products you use\":\"請選擇您使用的產品\",\"wallis and futuna (wallis-et-futuna\":\"瓦利斯及福杜納 (Wallis-et-Futuna)\",\"congo, the democratic republic of the\":\"剛果民主共和國\",\"equatorial guinea (guinea ecuatorial\":\"赤道幾內亞 (Guinea Ecuatorial)\",\"tell us a bit about your business\":\"請簡短說明您的業務：*\",\"title required. please enter a title\":\"必須提供職稱。請輸入職稱。\",\"why do you need a larger script size\":\"您為什麼需要更大的指令碼檔？\",\"korea, democratic people's republic of\":\"北韓\",\"staying in touch with product managers\":\"與產品經理保持聯繫\",\"are you a covid-19 vaccine distributor\":\"您是 COVID-19 疫苗經銷商嗎？*\",\"mqtt (mosquitto, aws/gcp iot core, etc\":\"MQTT（Mosquitto、AWS/GCP IoT Core 等）\",\"next day testing and deployment needed\":\"需要次日測試和部署嗎？*\",\"what is the title of the prospect(s\":\"潛在客戶的職位是什麼？*\",\"french polynesia (polynésie française\":\"法屬玻里尼西亞 (Polynésie française)\",\"location where you are seeking a partner\":\"您尋找合作夥伴的地點\",\"macedonia (fyrom\":\"馬其頓 (FYROM) (Македонија)\",\"postgres or other rdb (notify or similar\":\"Postgres 或其他 RDB（NOTIFY 或類似產品）\",\"what type of partner are you looking for\":\"您要尋找何種合作夥伴？\",\"dominican republic (república dominicana\":\"多明尼加共和國 (República Dominicana)\",\"macedonia, the former yugoslav republic of\":\"馬其頓，前南斯拉夫共和國\",\"full name is required. please enter a name\":\"必須提供全名。請輸入名稱。\",\"last name is required. please enter a name\":\"必須提供姓氏。請輸入姓名。\",\"first name is required. please enter a name\":\"必須提供名字。請輸入名稱。\",\"saint helena, ascension and tristan da cunha\":\"聖赫勒拿、阿森松和特里斯坦達庫尼亞\",\"south georgia and the south sandwich islands\":\"南喬治亞島和南桑威奇群島\",\"describe the problem you are looking to solve\":\"描述您想要解決的問題\",\"how many employees does your company have\":\"您的公司有多少員工？*\",\"congo (drc) (jamhuri ya kidemokrasia ya kongo\":\"剛果 (DRC) (Jamhuri ya Kidemokrasia ya Kongo)\",\"what have you built using cloudflare products\":\"您使用 Cloudflare 產品構建了什麼?\",\"after reading this article you will be able to\":\"閱讀本文後，您將能夠：\",\"saint martin (saint-martin (partie française\":\"聖馬丁 (Saint-Martin (partie française))\",\"sorry, no search results matched with your term\":\"很抱歉，沒有匹配您字詞的搜尋結果\",\"what messaging services have you used before\":\"您以前使用過哪些傳訊服務？*\",\"do you meet the requirements for project pangea\":\"您是否符合 Pangea 專案的要求？\",\"if your guide does not download, enable pop-ups\":\"如果您的指南並未下載，請啟用快顯視窗。\",\"são tomé and príncipe (são tomé e príncipe\":\"聖多美普林西比 (São Tomé e Príncipe)\",\"brief description on your role in covid-19 relief\":\"簡要說明您在 COVID-19 救助工作中的角色：*\",\"email (of cloudflare account to receive upgrade\":\"電子郵箱（用於接收升級的 Cloudflare 帳戶）*\",\"company name required. please enter a company name\":\"必須提供公司名稱。請輸入公司名稱。\",\"phone number required. please enter a phone number\":\"必須提供電話號碼。請輸入電話號碼。\",\"try using fewer, different or more general keywords\":\"請嘗試使用較少、不同或更廣泛的關鍵字\",\"saint pierre and miquelon (saint-pierre-et-miquelon\":\"聖皮瑞及麥克隆 (Saint-Pierre-et-Miquelon)\",\"central african republic (république centrafricaine\":\"中非共和國 (République centrafricaine)\",\"get started in just 5 minutes. join cloudflare today\":\"5 分鐘內即可開始使用。 立即加入 Cloudflare。\",\"name of company or organization of the prospect(s\":\"潛在客戶所屬公司或組織的名稱是什麼？*\",\"unable to submit form. check field input and try again\":\"無法提交表單。檢查欄位輸入並再試一次。\",\"there are no on-demand webinars that meet your criteria\":\"沒有符合您條件的視需求網路研討會。\",\"what existing cloudflare products are you using today\":\"您目前正在使用哪些現有的 Cloudflare 產品？*\",\"someone from cloudflare will be in touch with you shortly\":\"Cloudflare 的工作人員會盡快與您連絡。\",\"do you currently have a working integration with cloudflare\":\"您目前與 Cloudflare 是否有正在運作的整合？\",\"sign up to receive curated learning articles from cloudflare\":\"註冊即可收到 Cloudflare 精心彙整的學習文章\",\"there are no upcoming live webinars that meet your criteria\":\"沒有符合您條件的即將舉行的即時網路研討會。\",\"first and last name of prospect or prospects participating\":\"潛在客戶的姓名是什麼？*\",\"website url of the company or organization of the prospect(s\":\"潛在客戶所屬公司或組織的網站 URL 是什麼？*\",\"please elaborate on the circumstances of current or past attacks\":\"請詳細說明目前或過去遭受攻擊的情況：\",\"what was the date of your meeting, technical presentation or poc\":\"您的會議、技術宣講或 PoC 的日期是什麼？*\",\"what have you built using cloudflare’s products before, if anything\":\"您使用 Cloudflare 產品建構了什麼內容（若有）？\",\"which saas applications do you want to secure? (check all that apply\":\"您想要保護哪些 SaaS 應用程式？（勾選所有適用項目）*\",\"must be a phone number. <span class='mktoerrordetail'>503-555-1212</span\":\"必須是電話號碼。<span class='mktoErrorDetail'>503-555-1212</span>\",\"what support do you need from cloudflare to advance this sales opportunity\":\"您需要 Cloudflare 提供什麼支援來推進這一銷售機會？*\",\"are there any mutual customers interested in or already using this integration\":\"是否有任何共同的客戶對該整合感興趣或已經使用該整合？\",\"if you are an existing cloudflare stream user, what are your primary use cases\":\"如果您是現有 Cloudflare Stream 使用者，您有哪些主要使用案例？\",\"website url required. please enter a website similar to http://www.example.com\":\"網站 URL 是必填項目。請輸入類似於 http://www.example.com. 的網站。\",\"what type of insights or data are you looking for from the cloudforce one team\":\"您希望從 Cloudforce One 團隊中獲得哪種深入解析或資料？\",\"must be valid email. <span class='mktoerrordetail'>example@yourdomain.com</span\":\"必須是有效的電子郵件。<span class='mktoErrorDetail'>example@yourdomain.com</span>\",\"please provide an overview of the proposed partnership. (in less than 300 words\":\"請提供提議的合作夥伴關係概述。（300 字以內）\",\"what existing cloudflare products are your customers most interested in today\":\"目前您的客戶最感興趣的現有 Cloudflare 產品有哪些？*\",\"how much do you spend monthly on cloudflare across all your customers currently\":\"目前您每個月為所有客戶花費的 Cloudflare 服務費用是多少？*\",\"which reward are you claiming? please submit a separate claim form for each reward\":\"您申請的獎勵是什麼？請為每項獎勵單獨提出申請。*\",\"leave a note about why you believe your organization is a good fit for project galileo\":\"請說明您為何認為您的組織非常適合 Galileo 專案：\",\"what was the prospect's articulated need for a cloudflare one product? please describe\":\"潛在客戶對 Cloudflare One 產品提出的明確需求是什麼？請說明 *\",\"name of cloudflare representative attending the meeting, technical presentation or poc\":\"參加會議、技術宣講或 PoC 的 Cloudflare 代表姓名？\",\"the information you provide to cloudflare is governed by the terms of our privacy policy\":\"您提供給 Cloudflare 的資訊受隱私權政策條款的約束。\",\"please complete this form to send our personalized cloudflare product recommendation to your inbox\":\"請填寫此表，將我們的個人化 Cloudflare 產品推薦傳送到您的收件匣。\",\"please_complete_this_form_to_send_our_personalized_cloudflare_product_recommendation_to_your_inbox_\":\"請填寫此表，將我們的個人化 Cloudflare 產品推薦傳送到您的收件匣：\",\"are there specific cloudflare products or functionality you would like in an enterprise sandbox account\":\"您是否想要在企業沙箱帳戶中使用特定的 Cloudflare 產品或功能？\",\"asn required. your as number uniquely identifies your network and helps us identify the validity of your request\":\"ASN 為必要項。您的 AS 號碼可唯一識別您的網路，並協助我們識別您要求的有效性。\",\"please enter a url similar to https://www.peeringdb.com/asn/13335. this will speed up validation of your account\":\"請輸入 URL（類似 https://www.peeringdb.com/asn/13335）。這將提升您帳戶的驗證速度。\",\"yes - i want to stay in touch with cloudflare to receive valuable content such as product news, blog updates, and more\":\"是 - 我想與 Cloudflare 保持連絡以接收產品新聞、部落格更新等重要內容。\",\"how many domains/zones/applications (for your clients) do you think you would be able to onboard on average every month\":\"您認為您平均每個月將能夠（為客戶）上線多少個網域/區域/應用程式？*\",\"which cloudflare one product or products were discussed at the meeting, technical presentation or were involved in the poc\":\"會議或技術宣講中討論或 PoC 中涉及的 Cloudflare One 產品是什麼？\",\"yes - i want to stay in touch with cloudflare to receive other valuable content such as product news, blog updates, and more\":\"是 - 我想與 Cloudflare 保持連絡以接收產品新聞、部落格更新等其他重要內容。\",\"we host a variety of webinars that showcase how to use cloudflare and how our customers get the most of our services and products\":\"我們舉辦各種網絡研討會，展示如何使用 Cloudflare 以及我們的客戶如何從服務和產品中充分受益。\",\"how many domains/zones/applications (for your clients) do you think you would be able to onboard on average every month? (select only one\":\"您認為您平均每個月能夠（為客戶）啟用多少個網域/區域/應用程式？（請僅選擇一項）*\",\"by clicking 'get started', i agree to <a class='blue-alternate-link' target='_blank' href='/website-terms/'>cloudflare's terms and conditions</a> and <a class='blue-alternate-link' href='/privacypolicy/' target='_blank'>privacy policy</a\":\"按一下 [開始使用] 後，代表我同意 <a class='blue-alternate-link' target='_blank' href='/website-terms/'>Cloudflare 的條款和條件</a>以及<a class='blue-alternate-link' href='/privacypolicy/' target='_blank'>隱私權原則</a>。\",\"in submitting this form, you agree to receive information from cloudflare related to our products, events, and special offers. you can unsubscribe from such messages at any time. we never sell your data, and we value your privacy choices. please see our privacy policy for information\":\"提交表格，即表示您同意接收關於 Cloudflare 產品、活動和特別優惠的資訊。您可以隨時退訂此類訊息。我們重視您的隱私選擇，絕不會出售您的資料。請參閱我們的隱私權政策以瞭解相關資訊。\",\"by submitting the form, you request to receive information about cloudflare and %{partner} products, events, and special offers, and you agree to the processing of your personal data by cloudflare as described in the cloudflare privacy policy, and by %{partner} as described in the %{partner}privacy policy. you also authorize cloudflare to share your personal data with %{partner\":\"提交表格即表示，您請求接收有關 Cloudflare 以及 %{PARTNER} 產品、活動和特別優惠的資訊，並且您同意 Cloudflare 按照 Cloudflare 隱私權政策中的規定處理您的個人資料，並同意 %{PARTNER} 按照 %{PARTNER} 隱私權政策中的規定處理您的個人資料。您還授權 Cloudflare 與 %{PARTNER} 共用您的個人資料。\"}",
+        marketo1346dropdownData: "{\"infrastructure - c-level\":\"基礎結構 - 高管\",\"infrastructure - vp/director\":\"基礎結構 - 副總裁/總監\",\"infrastructure - manager\":\"基礎結構 - 經理\",\"infrastructure - architect\":\"基礎結構 - 結構設計師\",\"eng/devops - c-level\":\"工程/DevOps - 高管\",\"eng/devops - vp/director\":\"工程/DevOps - 副總裁/總監\",\"eng/devops - manager\":\"工程/DevOps - 經理\",\"eng/devops - staff\":\"工程/DevOps - 職員\",\"it - c-level\":\"IT - 高管\",\"it - vp/director\":\"IT - 副總裁/總監\",\"it - manager\":\"IT - 經理\",\"it - staff\":\"IT - 職員\",\"security - c-level\":\"安全 - 高管\",\"security - vp/director\":\"安全 - 副總裁/總監\",\"security - manager\":\"安全 - 經理\",\"security - staff\":\"安全 - 職員\",\"finance/procurement - c-level\":\"財務/採購 - 高管\",\"finance/procurement - vp/director\":\"財務/採購 - 副總裁/總監\",\"finance/procurement - manager\":\"財務/採購 - 經理\",\"finance/procurement - staff\":\"財務/採購 - 職員\",\"sales/marketing - c-level\":\"銷售/行銷 - 高管\",\"sales/marketing - vp/director\":\"銷售/行銷 - 副總裁/總監\",\"product - product manager\":\"產品 - 產品經理\",\"press/media\":\"新聞/媒體\",\"student/intern\":\"學生/實習\",\"other\":\"其他\"}",
+      gtm: {
+        containerId: "GTM-PKQFGQB",
+        disabled: false,
+        uaCookieDomain: ".cloudflare.com",
+        uaCodeMarketing_29: "UA-10218544-29",
+        optimize: "GTM-N4JSZJ8",
+        uaCodeAdWords: "AW-819572718",
+        uaCodeAdWordsBI: "DC-8921596",
+        adWordsConversionCode: "AW-972248548",
+        adWordsConversionCodeForm: "AW-836330296",
+        adWordsConversionLabel: "caqvCO3e32EQ5KvNzwM",
+        adWordsConversionLabelForm: "-l5JCJnczYgBELjG5Y4D",
+      }
+    }
+  }
+</script>
+<script src="https://assets.www.cloudflare.com/js/runtime-6a16446847617098e330.js" nonce="a1258fc6-4643-40ad-8a5a-98f0113fcea7"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-a9b7aa963cde85dc9611.js" nonce="a1258fc6-4643-40ad-8a5a-98f0113fcea7"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-9ed4ae964e711458f84f.js" nonce="a1258fc6-4643-40ad-8a5a-98f0113fcea7"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-5fd37836d64725aae99f.js" nonce="a1258fc6-4643-40ad-8a5a-98f0113fcea7"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-10223bd69693130e8a70.js" nonce="a1258fc6-4643-40ad-8a5a-98f0113fcea7"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-7c5a2fc67352533f763c.js" nonce="a1258fc6-4643-40ad-8a5a-98f0113fcea7"></script>
+<script src="../js/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="e34df59b-4a48-4bf9-b2b5-7a4bb09cd231"></script>
+</head>
+<body class="marketing-nojs ">
+<header style="display:none" class="flash-banner flash-banner--gray flash-banner--not-localized" data-name="not-localized">
+<section class="tile tile--mini-banner hide-mobile">
+<div class="tile__content--1200px">
+<div class="grid--center grid--vertical-center">
+<h4 class="text--white">本�&nbsp;�面目前不提供您所選語言的版本。我們正在不斷努力以該語言和其他語言提供更多內容。感謝您的耐心等待。</h4>
+</div>
+<div class="flash-banner__close_x js-accept-top-nav-mini-flash-banner"></div>
+</div>
+</section>
+</header>
+<script src="https://assets.www.cloudflare.com/js/chunk-98f956b9756523a10775.js" nonce="a1258fc6-4643-40ad-8a5a-98f0113fcea7"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-c8181d31e37c857686bd.js" nonce="a1258fc6-4643-40ad-8a5a-98f0113fcea7"></script>
+<header class="cms-topnav topnav top-nav js-top-nav ">
+<nav class="top-nav__upper-bar top-nav__items test-utility-menu">
+<div class="top-nav__item-list top-nav__item-list--right">
+<span>
+<a href="/zh-tw/plans/enterprise/contact/">銷售:</a>
+</span>
+<a data-i18n-phonenumber="" href="tel:+16503198930" style="display:none">+1 650 319 8930</a>
+<noscript>
+      <a href="tel:+16503198930">+1 650 319 8930</a>
+    </noscript>
+<span class="header-section-divider">|</span>
+<a class="header-language-picker js-header-support-picker bold" role="link">
+Support
+<span>
+<svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1.15819L6.84183 2.21065e-05L4.00053 2.84207L1.15816 0L0 1.1576L4.00053 5.15783L8 1.15819Z" fill="#747474"></path>
+</svg>
+</span>
+</a>
+<div id="js-header-support-picker-dropdown" class="js-header-support-picker-dropdown" style="display: none;">
+<ul class="marketing-ul marketing-ul--no-bullets marketing-ul--no-margins-li header-language-picker-dropdown">
+<li>
+<a href="https://dash.cloudflare.com/?to=/:account/support" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="">聯絡客戶支援</a>
+</li>
+<li>
+<a href="../index_3.html" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="">幫助中心</a>
+</li>
+<li>
+<a href="../index_8.html" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="">Cloudflare 社群</a>
+</li>
+</ul>
+</div>
+<span class="header-section-divider">|</span>
+<a class="header-language-picker js-header-account-picker bold">
+My Account
+<span>
+<svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1.15819L6.84183 2.21065e-05L4.00053 2.84207L1.15816 0L0 1.1576L4.00053 5.15783L8 1.15819Z" fill="#747474"></path>
+</svg>
+</span>
+</a>
+<div id="js-header-account-picker-dropdown" class="js-header-account-picker-dropdown" style="display: none;">
+<ul class="marketing-ul marketing-ul--no-bullets marketing-ul--no-margins-li header-language-picker-dropdown">
+<li>
+<a href="https://dash.cloudflare.com/login" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="">Log In</a>
+</li>
+<li>
+<a href="https://dash.cloudflare.com/profile" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="">我的資料</a>
+</li>
+<li>
+<a href="https://dash.cloudflare.com/?to=/:account/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="">帳戶首�&nbsp;�</a>
+</li>
+<li>
+<a href="https://dash.cloudflare.com/?to=/:account/billing" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="">計費</a>
+</li>
+<li class="merchandise">
+<a href="/teams/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="">使用 Cloudflare 保護�&nbsp;端員工</a>
+</li>
+</ul>
+</div>
+<span class="header-section-divider">|</span>
+<a class="header-language-picker js-header-language-picker">
+<span class="header-language-picker__globe-icon"></span>繁體中文
+<svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1.15819L6.84183 2.21065e-05L4.00053 2.84207L1.15816 0L0 1.1576L4.00053 5.15783L8 1.15819Z" fill="#747474"></path>
+</svg>
+</a><div id="js-header-language-picker-dropdown" class="js-header-language-picker-dropdown" style="display: none;"><a class="header-language-picker js-header-language-picker">
+</a><ul class="marketing-ul marketing-ul--no-bullets marketing-ul--no-margins-li header-language-picker-dropdown"><a class="header-language-picker js-header-language-picker">
+</a><li><a class="header-language-picker js-header-language-picker">
+</a><a href="cloudflare.woff" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="en-us">English</a>
+</li>
+<li>
+<a href="cloudflare_2.woff">English (United Kingdom)</a>
+</li>
+<li>
+<a href="cloudflare_3.woff">English (Canada)</a>
+</li>
+<li>
+<a href="cloudflare_8.woff">English (Australia)</a>
+</li>
+<li>
+<a href="cloudflare_11.woff">English (India)</a>
+</li>
+<li>
+<a href="cloudflare_13.woff">Deutsch</a>
+</li>
+<li>
+<a href="cloudflare_1.woff">Español</a>
+</li>
+<li>
+<a href="cloudflare_9.woff">Français</a>
+</li>
+<li>
+<a href="cloudflare_7.woff">Italiano</a>
+</li>
+<li>
+<a href="cloudflare_10.woff">日本語</a>
+</li>
+<li>
+<a href="cloudflare_12.woff">한국어</a>
+</li>
+<li>
+<a href="cloudflare_5.woff">Português</a>
+</li>
+<li class="header-language-picker-dropdown__active">
+<a href="cloudflare_6.woff">繁體中文</a>
+</li>
+<li>
+<a href="cloudflare_4.woff">简体中文</a>
+</li>
+</ul>
+</div>
+</div></nav>
+<nav class="top-nav__upper-bar top-nav__items ab-test">
+<div class="top-nav__item-list top-nav__item-list--right">
+<a href="/searchresults/" class="top-nav__link-search" data-tracking-category="mainnav" data-tracking-action="click" data-tracking-label="Search">
+<svg width="15" height="13.96" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M44.8538 40.1325L29.5838 26.25C31.6534 23.4122 32.5569 19.8892 32.1085 16.4057C31.6602 12.9221 29.8941 9.74271 27.1735 7.52135C24.4529 5.29999 20.9845 4.20551 17.4816 4.463C13.9788 4.72049 10.7077 6.31036 8.34115 8.90567C5.97458 11.501 4.6924 14.9044 4.75828 18.4161C4.82416 21.9278 6.23309 25.2808 8.69533 27.7855C11.1576 30.2902 14.486 31.7563 17.996 31.8822C21.506 32.0081 24.9309 30.7844 27.5663 28.4625L42.8288 42.345L44.8538 40.1325ZM18.5288 28.8825C16.4148 28.8825 14.3483 28.256 12.5901 27.0822C10.832 25.9083 9.4612 24.2397 8.65085 22.2872C7.84049 20.3347 7.62695 18.1858 8.0372 16.112C8.44744 14.0382 9.46306 12.1325 10.9558 10.6356C12.4485 9.13871 14.3514 8.11775 16.424 7.7017C18.4967 7.28565 20.6461 7.49317 22.6009 8.29805C24.5557 9.10293 26.2281 10.4691 27.4068 12.2239C28.5856 13.9787 29.2179 16.0435 29.2238 18.1575C29.2199 20.9928 28.0918 23.7108 26.087 25.7157C24.0821 27.7205 21.3641 28.8486 18.5288 28.8525V28.8825Z" fill="#222222"></path>
+</svg>
+</a>
+<span class="header-section-divider">|</span>
+<span>
+<a class="bold" href="../index_3.html" data-tracking-category="mainnav" data-tracking-action="click" data-tracking-label="Support">支援</a>
+</span>
+<span class="header-section-divider">|</span>
+<span>
+<a href="/zh-tw/plans/enterprise/contact/">銷售:</a>
+</span>
+<a data-i18n-phonenumber="" href="tel:+16503198930" style="display:none">+1 650 319 8930</a>
+<noscript>
+          <a href="tel:+16503198930">+1 650 319 8930</a>
+        </noscript>
+<span class="header-section-divider">|</span>
+<a class="header-language-picker js-header-language-picker">
+<span class="header-language-picker__globe-icon"></span>繁體中文
+<span class="header-language-picker__caret-icon">▶</span>
+<span class="header-language-picker__caret-icon hidden-element">▼</span></a>
+<div id="js-header-language-picker-dropdown" class="js-header-language-picker-dropdown" style="display: none;">
+<ul class="marketing-ul marketing-ul--no-bullets marketing-ul--no-margins-li header-language-picker-dropdown">
+<li>
+<a href="cloudflare.woff" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="en-us">English</a>
+</li>
+<li>
+<a href="cloudflare_2.woff">English (United Kingdom)</a>
+</li>
+<li>
+<a href="cloudflare_3.woff">English (Canada)</a>
+</li>
+<li>
+<a href="cloudflare_8.woff">English (Australia)</a>
+</li>
+<li>
+<a href="cloudflare_11.woff">English (India)</a>
+</li>
+<li>
+<a href="cloudflare_13.woff">Deutsch</a>
+</li>
+<li>
+<a href="cloudflare_1.woff">Español</a>
+</li>
+<li>
+<a href="cloudflare_9.woff">Français</a>
+</li>
+<li>
+<a href="cloudflare_7.woff">Italiano</a>
+</li>
+<li>
+<a href="cloudflare_10.woff">日本語</a>
+</li>
+<li>
+<a href="cloudflare_12.woff">한국어</a>
+</li>
+<li>
+<a href="cloudflare_5.woff">Português</a>
+</li>
+<li class="header-language-picker-dropdown__active">
+<a href="cloudflare_6.woff">繁體中文</a>
+</li>
+<li>
+<a href="cloudflare_4.woff">简体中文</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<nav class="top-nav__items top-nav__items--align-content ">
+<a href="/zh-tw/"> <img style="" class="top-nav__logo top-nav__logo--dark top-nav__logo--localized " src="/img/logo-cloudflare-dark.svg" alt="Cloudflare">
+<img class="top-nav__logo top-nav__logo--light top-nav__logo--localized " src="/img/logo-cloudflare.svg" alt="Cloudflare">
+</a>
+<ul class="top-nav__item-list top-nav__item-list--left">
+<li class="top-nav__item-list__link top-nav__item-list__link--localized top-nav__items__desktop nojs-hide" data-submenu="解決方案" data-tracking-category="mainnav" data-tracking-action="click" data-tracking-label="解決方案" tabindex="0">
+解決方案
+</li>
+<li class="top-nav__item-list__link top-nav__item-list__link--localized top-nav__items__desktop nojs-hide" data-submenu="產品" data-tracking-category="mainnav" data-tracking-action="click" data-tracking-label="產品" tabindex="0">
+產品
+</li>
+<li class="top-nav__item-list__link top-nav__item-list__link--localized top-nav__items__desktop nojs-hide" data-submenu="文件" data-tracking-category="mainnav" data-tracking-action="click" data-tracking-label="文件" tabindex="0">
+文件
+</li>
+<li class="top-nav__item-list__link top-nav__item-list__link--localized top-nav__items__desktop nojs-hide" data-submenu="資源" data-tracking-category="mainnav" data-tracking-action="click" data-tracking-label="資源" tabindex="0">
+資源
+</li>
+<li class="top-nav__item-list__link top-nav__item-list__link--localized top-nav__items__desktop nojs-hide" data-submenu="合作夥伴" data-tracking-category="mainnav" data-tracking-action="click" data-tracking-label="合作夥伴" tabindex="0">
+合作夥伴
+</li>
+<li class="top-nav__item-list__link top-nav__item-list__link--localized top-nav__items__desktop">
+<a href="/zh-tw/enterprise/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="for-enterprise" tabindex="0">
+企業適用
+</a>
+</li>
+<li class="top-nav__item-list__link top-nav__item-list__link--localized top-nav__items__desktop nojs-hide" data-submenu="定價" data-tracking-category="mainnav" data-tracking-action="click" data-tracking-label="定價" tabindex="0">
+定價
+</li>
+</ul>
+<ul class="top-nav__item-list top-nav__item-list--right">
+<li class="top-nav__item-list__link top-nav__item-list__link--localized top-nav__items__desktop">
+<a href="https://dash.cloudflare.com/login" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="login" tabindex="0">
+登入
+</a>
+</li>
+<li class="top-nav__item-list__link top-nav__item-list__link--localized top-nav__items__desktop">
+<a href="../sign-up.html" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="signup" tabindex="0">
+註冊
+</a>
+</li>
+<li class="top-nav__item-list__link top-nav__item-list__link--localized top-nav__items__desktop top-nav__item-list__link--no-ul">
+<a class="button button--new-orange" href="/zh-tw/under-attack-hotline/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="under_attack" tabindex="0">遭到攻擊？</a>
+</li>
+</ul>
+<button class="js-mobilenav-toggle toggle">
+<span class="icon"></span>
+</button>
+</nav>
+<div class="desktop-nav top-nav-container nav-dropdown">
+<div class="desktop-nav__解決方案 desktop-nav__container">
+<div class="nav-dropdown-container">
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">解決方案</div>
+<div class="nav-dropdown-header header-black">提供出色的線上體驗</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/ddos/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="ddos">緩解 DDoS 攻擊</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/products/bot-management/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="malicious-bot-abuse">阻止惡意傀儡程式濫用</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/performance/accelerate-internet-applications/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="accelerate-internet-applications">�&nbsp;快您的網際網路應用程式速度</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/performance/ensure-application-availability/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="ensure-application-availability">確保應用程式可用性</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/website-optimization/">最佳化 Web 體驗</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/products/cloudflare-stream/">隨選 Stream 視訊</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/china-network/">為中國使用者提供卓越的線上體驗</a>
+</span>
+<div class="nav-dropdown-header header-black">保護員工應用程式和裝置</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/teams-access/">實現應用程式零信任存取</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/teams-sase/">實施安全存取服務邊緣 (SASE)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/teams-gateway/">在使用者存取網際網路時�&nbsp;以保護</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/teams/">保護企業網路</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/teams/third-party-access/">管理安全的承包商存取</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/teams/vpn-replacement/">取代虛擬私人網路 (VPN)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/teams/remote-workforces/">保護您的�&nbsp;端員工</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/teams/browser-isolation/">利用瀏覽器隔離阻止零日攻擊</a>
+</span>
+</div>
+<div class="dropdown-column">
+<div class="nav-dropdown-header">&nbsp;</div>
+<div class="nav-dropdown-header header-black">保護並�&nbsp;速網路</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/network-services/">Cloudflare 的網路服務</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/magic-transit/">緩解 L3 DDoS 攻擊</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/network-interconnect/">使用 Cloudflare 連線網路基礎結構</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/cloudflare-one/">轉變企業網路</a>
+</span>
+<div class="nav-dropdown-header header-black">網路邊緣上的程式碼</div>
+<span class="nav-dropdown-link">
+<a href="../index_7.html">建立無伺服器的應用程式</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://workers.cloudflare.com/sites">部署靜態網站</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/tutorials/configure-your-cdn">設定 CDN</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/templates/pages/conditional_response/">定義條件式要求路由</a>
+</span>
+<div class="nav-dropdown-header header-black">管理安全雲端</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/multi-cloud/">保護混合、雲端和 SaaS 平台</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/ssl-for-saas-providers/">啟用 SSL for SaaS 應用程式</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/bandwidth-alliance/">降低雲端資料傳輸成本</a>
+</span>
+<div class="nav-dropdown-header header-black">註冊網站</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/products/registrar/">註冊或轉讓網站</a>
+</span>
+</div>
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">產業</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/ecommerce/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="industries_ecommerce">電子商務</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/financial-services/">金融服務</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/gaming/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="industries_gaming">遊戲</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/healthcare/">醫療保健與生命科學</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/media-and-entertainment/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="industries_media-and-entertainment">媒體與娛樂</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/public-sector/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="industries_publicsector">公共部門</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/saas/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="industries_saas">SaaS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/education/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="education - /education">教育</a>
+</span>
+<div class="nav-dropdown-header header-orange">公眾利益</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/campaigns/">選舉活動</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/athenian/">雅典專案</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/galileo/">伽利略專案</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/fair-shot/">Fair Shot �&nbsp;�目</a>
+</span>
+</div>
+</div>
+</div>
+<div class="desktop-nav__產品 desktop-nav__container">
+<div class="nav-dropdown-container">
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">適用於基礎結構</div>
+<div class="nav-dropdown-header header-black">應用程式和網路安全性</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/apishield/">API Shield</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/products/bot-management/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="bot_management">傀儡程式管理</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/ddos/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="ddos">DDoS 保護</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/magic-transit/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="magic-transit">Magic Transit</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/magic-wan/">Magic WAN</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/network-interconnect/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="network-interconnect">網路互連</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/rate-limiting/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="rate_limiting">Rate Limiting</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/products/cloudflare-spectrum/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="spectrum">TCP / UDP 應用程式</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/ssl/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="ssl">SSL/TLS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/ssl-for-saas-providers/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="SSL/TLS for SaaS Providers">SaaS 提供者的 SSL/TLS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/waf/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="waf">WAF</a>
+</span>
+<div class="nav-dropdown-header header-black">效能與可�&nbsp;性</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/products/argo-smart-routing/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="argo_smart_routing">Argo Smart Routing</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/cdn/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="cdn">CDN</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/network/china/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_cloudflare_china">China Network</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/dns/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="dns">DNS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/load-balancing/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="load_balancing">Load Balancing (�&nbsp;載平衡)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/products/stream-delivery/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="stream-delivery-homepage">Stream Delivery</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/waiting-room/">等待室</a>
+</span>
+</div>
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">適用於團隊</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/teams-home/">Cloudflare 團隊解決方案</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/teams-access/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="teams-access">Access</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/teams-gateway/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="teams-gateway">Gateway</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/teams/browser-isolation/">瀏覽器隔離</a>
+</span>
+<div class="nav-dropdown-header header-orange">適用於開發人員</div>
+<div class="nav-dropdown-header header-black">無伺服器的應用程式</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/products/cloudflare-workers/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="cloudflare-workers">CloudFlare Workers</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/products/workers-kv/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="workers-kv">Cloudflare Workers KV</a>
+</span>
+<div class="nav-dropdown-header header-black">網域註冊</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/products/registrar/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="registrar">Cloudflare Registrar</a>
+</span>
+
+<div class="nav-dropdown-header header-black">網站開發</div>
+<span class="nav-dropdown-link">
+<a href="https://pages.cloudflare.com/">Cloudflare �&nbsp;�面</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/products/cloudflare-stream/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="cloudflare-stream">Cloudflare Stream</a>
+</span>
+<div class="nav-dropdown-header header-black">SaaS 開發人員</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/saas/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="saas">Cloudflare for SaaS</a>
+</span>
+</div>
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">適用於每個人</div>
+<span class="nav-dropdown-link">
+<a href="https://1.1.1.1" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="1111-homepage">1.1.1.1</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://blog.cloudflare.com/1111-warp-better-vpn/">1.1.1.1 和 WARP (應用程式)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://blog.cloudflare.com/introducing-1-1-1-1-for-families/">適用於家庭的 1.1.1.1</a>
+</span>
+<div class="nav-dropdown-header header-orange">深入解析</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/analytics/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="analytics">分析</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/products/cloudflare-logs/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="cloudflare_logs">Cloudflare 記錄</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/web-analytics/">Web Analytics</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://radar.cloudflare.com/">Cloudflare 雷達</a>
+</span>
+<div class="nav-dropdown-header header-orange">隱私權</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/data-localization/">資料當地語系化</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/privacy-and-compliance/">合規性</a>
+</span>
+</div>
+</div>
+</div>
+<div class="desktop-nav__文件 desktop-nav__container">
+<div class="nav-dropdown-container">
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">適用於基礎結構</div>
+<div class="nav-dropdown-header header-black">進階安全性</div>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/bots/">傀儡程式管理</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/firewall/">防火牆規則</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/magic-transit/">Magic Transit</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/spectrum/">Spectrum (TCP/UDP)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/ssl/">SSL</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/waf/">WAF</a>
+</span>
+<div class="nav-dropdown-header">效能與可�&nbsp;性</div>
+<span class="nav-dropdown-link">
+<a href="https://support.cloudflare.com/hc/en-us/articles/200172516-Understanding-Cloudflare-s-CDN" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="cdn-documentation">CDN</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/dns/">DNS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/images/">Image Resizing</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/load-balancing">Load Balancing (�&nbsp;載平衡)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/stream/">Stream (視訊)</a>
+</span>
+</div>
+<div class="dropdown-column">
+<div class="nav-dropdown-header">&nbsp;</div>
+<div class="nav-dropdown-header header-black">深入解析</div>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/analytics/">分析</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/logs/"></a>
+</span>
+<div class="nav-dropdown-header header-black">網域註冊</div>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/registrar/">registrar</a>
+</span>
+<div class="nav-dropdown-header header-orange">適用於無伺服器應用程式</div>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/quickstart">Workers 快速入門</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/pages/">Cloudflare �&nbsp;�面</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/templates/">Workers 範例專案</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/tutorials">Workers 教學課程</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/tooling/wrangler">命令串 (Wrangler)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/reference/apis">執行階段</a>
+</span>
+</div>
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">適用於團隊</div>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/cloudflare-one/">Cloudflare for Teams</a>
+</span>
+<div class="nav-dropdown-header header-orange">探索 CLOUDFLARE API</div>
+<span class="nav-dropdown-link">
+<a href="https://api.cloudflare.com/">Cloudflare API</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/api/">API 驗證</a>
+</span>
+<div class="nav-dropdown-header header-orange">文件中心</div>
+<span class="nav-dropdown-link">
+<a href="../index_4.html">開發文件中心</a>
+</span>
+</div>
+</div>
+</div>
+<div class="desktop-nav__資源 desktop-nav__container">
+<div class="nav-dropdown-container">
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">資源</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/resource-hub/">資源中心</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/resource-hub/?resourcetype=Whitepaper">白皮書</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/webinars/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_webinars">網路�&nbsp;�討會</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/resource-hub/?resourcetype=Solution+%26+Product+Guides">解決方案和產品指南</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/case-studies/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_case_studies">案例�&nbsp;�究</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/analysts/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_analysts">分析人員</a>
+</span>
+<div class="nav-dropdown-header header-orange">探索</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/whats-new/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="whats_new">新功能</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/network/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_network_map">網路分佈圖</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/network/china/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_cloudflare_china">Cloudflare 在中國</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/trust-hub/gdpr/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > GDPR">GDPR</a>
+</span>
+</div>
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">開始使用</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/products/registrar/">註冊您的網站</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/welcome-center/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_welcome_center">歡迎中心</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="../index_3.html">獲得協助</a>
+</span>
+<div class="nav-dropdown-header header-orange">學習</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/learning/">學習中心</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/learning/security/what-is-web-application-security/">安全性</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/learning/ddos/what-is-a-ddos-attack/">DDoS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/learning/bots/what-is-a-bot/">傀儡程式管理</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/learning/ssl/what-is-ssl/">SSL</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/learning/access-management/what-is-identity-and-access-management/">身分識別與存取管理</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/learning/performance/why-site-speed-matters/">效能</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/learning/cdn/what-is-a-cdn/">CDN</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/learning/dns/what-is-dns/">DNS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/learning/cloud/what-is-the-cloud/">雲端</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/learning/serverless/what-is-serverless/">無伺服器</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/learning/network-layer/what-is-the-network-layer/">網路層</a>
+</span>
+</div>
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">連線</div>
+<span class="nav-dropdown-link">
+<a href="../index_2.html" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="blog">部落�&nbsp;�</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="../index_8.html" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="community">社群</a>
+</span>
+<div class="nav-dropdown-header header-orange">信任</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/trust-hub/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > Trust Hub">信任中心</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/trust-hub/privacy-and-data-protection/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust  > Privacy &amp; Data Protection">隱私與資料保護</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/trust-hub/compliance-resources/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > Certifications">認證</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/trust-hub/trust-and-safety/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > Trust &amp; Safety">信任和安全</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/trust-hub/gdpr/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > GDPR">GDPR</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/privacypolicy/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > Legal Documentation">法律文件</a>
+</span>
+<div class="nav-dropdown-header header-orange">連絡方式</div>
+<a data-i18n-phonenumber="" href="tel:+16503198930" style="display:none">+1 650 319 8930</a>
+</div>
+</div>
+</div>
+<div class="desktop-nav__合作夥伴 desktop-nav__container">
+<div class="nav-dropdown-container">
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">管道和聯盟合作夥伴</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/partners/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="partnerships">合作夥伴網路</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://portal.cloudflarepartners.com">合作夥伴入口網站</a>
+</span>
+</div>
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">技術合作夥伴</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/partners/technology-partners/">概觀</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/partners/analytics/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="partners-analytics">分析合作夥伴</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/bandwidth-alliance/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="partnerships_bandwidth_alliance">�&nbsp;�寬聯盟</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/endpoint-partners/">Endpoint Security Partnerships</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/network-interconnect-partnerships/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="network-interconnect-partnerships">互連合作夥伴</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/network-onramp-partners/">Network On-ramp Partnerships</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/partners/peering-portal/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="partnerships_peering_portal">對等入口網站</a>
+</span>
+</div>
+</div>
+</div>
+<div class="desktop-nav__定價 desktop-nav__container">
+<div class="nav-dropdown-container">
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">各�&nbsp;�方案定價</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/plans/">免費方案</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/plans/pro/">專業方案</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/plans/business/">商業方案</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/plans/enterprise/">企業方案</a>
+</span>
+</div>
+<div class="dropdown-column">
+<div class="nav-dropdown-header header-orange">比較與探索</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/about-your-website/">選擇方案時需要幫助嗎？</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/plans/#addons">附�&nbsp;服務</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/plans/">比較所有方案</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mobile-nav nav-dropdown">
+<ul class="mobile-nav__list">
+<li class="mobile-nav__list__item">
+<div class="mobile-sub-nav__title" data-submenu="解決方案">
+<span class="mobile-sub-nav__title__text">解決方案</span>
+<span class="icon icon-plus icon-plus-解決方案"></span>
+</div>
+</li>
+<div class="mobile-submenu-解決方案 mobile-sub">
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">解決方案</div>
+<div class="nav-dropdown-header header-black">提供出色的線上體驗</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/ddos/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="ddos">緩解 DDoS 攻擊</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/products/bot-management/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="malicious-bot-abuse">阻止惡意傀儡程式濫用</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/performance/accelerate-internet-applications/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="accelerate-internet-applications">�&nbsp;快您的網際網路應用程式速度</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/performance/ensure-application-availability/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="ensure-application-availability">確保應用程式可用性</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/website-optimization/">最佳化 Web 體驗</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/products/cloudflare-stream/">隨選 Stream 視訊</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/china-network/">為中國使用者提供卓越的線上體驗</a>
+</span>
+<div class="nav-dropdown-header header-black">保護員工應用程式和裝置</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/teams-access/">實現應用程式零信任存取</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/teams-sase/">實施安全存取服務邊緣 (SASE)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/teams-gateway/">在使用者存取網際網路時�&nbsp;以保護</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/teams/">保護企業網路</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/teams/third-party-access/">管理安全的承包商存取</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/teams/vpn-replacement/">取代虛擬私人網路 (VPN)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/teams/remote-workforces/">保護您的�&nbsp;端員工</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/teams/browser-isolation/">利用瀏覽器隔離阻止零日攻擊</a>
+</span>
+</div>
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header">&nbsp;</div>
+<div class="nav-dropdown-header header-black">保護並�&nbsp;速網路</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/network-services/">Cloudflare 的網路服務</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/magic-transit/">緩解 L3 DDoS 攻擊</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/network-interconnect/">使用 Cloudflare 連線網路基礎結構</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/cloudflare-one/">轉變企業網路</a>
+</span>
+<div class="nav-dropdown-header header-black">網路邊緣上的程式碼</div>
+<span class="nav-dropdown-link">
+<a href="../index_7.html">建立無伺服器的應用程式</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://workers.cloudflare.com/sites">部署靜態網站</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/tutorials/configure-your-cdn">設定 CDN</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/templates/pages/conditional_response/">定義條件式要求路由</a>
+</span>
+<div class="nav-dropdown-header header-black">管理安全雲端</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/multi-cloud/">保護混合、雲端和 SaaS 平台</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/ssl-for-saas-providers/">啟用 SSL for SaaS 應用程式</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/bandwidth-alliance/">降低雲端資料傳輸成本</a>
+</span>
+<div class="nav-dropdown-header header-black">註冊網站</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/products/registrar/">註冊或轉讓網站</a>
+</span>
+</div>
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">產業</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/ecommerce/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="industries_ecommerce">電子商務</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/financial-services/">金融服務</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/gaming/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="industries_gaming">遊戲</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/healthcare/">醫療保健與生命科學</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/media-and-entertainment/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="industries_media-and-entertainment">媒體與娛樂</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/public-sector/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="industries_publicsector">公共部門</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/saas/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="industries_saas">SaaS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/education/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="education - /education">教育</a>
+</span>
+<div class="nav-dropdown-header header-orange">公眾利益</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/campaigns/">選舉活動</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/athenian/">雅典專案</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/galileo/">伽利略專案</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/fair-shot/">Fair Shot �&nbsp;�目</a>
+</span>
+</div>
+</div>
+<li class="mobile-nav__list__item">
+<div class="mobile-sub-nav__title" data-submenu="產品">
+<span class="mobile-sub-nav__title__text">產品</span>
+<span class="icon icon-plus icon-plus-產品"></span>
+</div>
+</li>
+<div class="mobile-submenu-產品 mobile-sub">
+<div class="mobile-sub-nav">
+
+<div class="nav-dropdown-header header-orange">適用於基礎結構</div>
+<div class="nav-dropdown-header header-black">應用程式和網路安全性</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/apishield/">API Shield</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/products/bot-management/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="bot_management">傀儡程式管理</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/ddos/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="ddos">DDoS 保護</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/magic-transit/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="magic-transit">Magic Transit</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/magic-wan/">Magic WAN</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/network-interconnect/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="network-interconnect">網路互連</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/rate-limiting/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="rate_limiting">Rate Limiting</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/products/cloudflare-spectrum/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="spectrum">TCP / UDP 應用程式</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/ssl/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="ssl">SSL/TLS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/ssl-for-saas-providers/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="SSL/TLS for SaaS Providers">SaaS 提供者的 SSL/TLS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/waf/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="waf">WAF</a>
+</span>
+<div class="nav-dropdown-header header-black">效能與可�&nbsp;性</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/products/argo-smart-routing/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="argo_smart_routing">Argo Smart Routing</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/cdn/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="cdn">CDN</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/network/china/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_cloudflare_china">China Network</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/dns/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="dns">DNS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/load-balancing/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="load_balancing">Load Balancing (�&nbsp;載平衡)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/products/stream-delivery/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="stream-delivery-homepage">Stream Delivery</a>
+</span>
+
+<span class="nav-dropdown-link">
+<a href="/zh-tw/waiting-room/">等待室</a>
+</span>
+</div>
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">適用於團隊</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/teams-home/">Cloudflare 團隊解決方案</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/teams-access/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="teams-access">Access</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/teams-gateway/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="teams-gateway">Gateway</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/teams/browser-isolation/">瀏覽器隔離</a>
+</span>
+<div class="nav-dropdown-header header-orange">適用於開發人員</div>
+<div class="nav-dropdown-header header-black">無伺服器的應用程式</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/products/cloudflare-workers/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="cloudflare-workers">CloudFlare Workers</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/products/workers-kv/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="workers-kv">Cloudflare Workers KV</a>
+</span>
+<div class="nav-dropdown-header header-black">網域註冊</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/products/registrar/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="registrar">Cloudflare Registrar</a>
+</span>
+<div class="nav-dropdown-header header-black">網站開發</div>
+<span class="nav-dropdown-link">
+<a href="https://pages.cloudflare.com/">Cloudflare �&nbsp;�面</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/products/cloudflare-stream/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="cloudflare-stream">Cloudflare Stream</a>
+</span>
+<div class="nav-dropdown-header header-black">SaaS 開發人員</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/saas/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="saas">Cloudflare for SaaS</a>
+</span>
+</div>
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">適用於每個人</div>
+<span class="nav-dropdown-link">
+<a href="https://1.1.1.1" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="1111-homepage">1.1.1.1</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://blog.cloudflare.com/1111-warp-better-vpn/">1.1.1.1 和 WARP (應用程式)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://blog.cloudflare.com/introducing-1-1-1-1-for-families/">適用於家庭的 1.1.1.1</a>
+</span>
+<div class="nav-dropdown-header header-orange">深入解析</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/analytics/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="analytics">分析</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/products/cloudflare-logs/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="cloudflare_logs">Cloudflare 記錄</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/web-analytics/">Web Analytics</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://radar.cloudflare.com/">Cloudflare 雷達</a>
+</span>
+<div class="nav-dropdown-header header-orange">隱私權</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/data-localization/">資料當地語系化</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/privacy-and-compliance/">合規性</a>
+</span>
+</div>
+</div>
+<li class="mobile-nav__list__item">
+<div class="mobile-sub-nav__title" data-submenu="文件">
+<span class="mobile-sub-nav__title__text">文件</span>
+<span class="icon icon-plus icon-plus-文件"></span>
+</div>
+</li>
+<div class="mobile-submenu-文件 mobile-sub">
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">適用於基礎結構</div>
+<div class="nav-dropdown-header header-black">進階安全性</div>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/bots/">傀儡程式管理</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/firewall/">防火牆規則</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/magic-transit/">Magic Transit</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/spectrum/">Spectrum (TCP/UDP)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/ssl/">SSL</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/waf/">WAF</a>
+</span>
+<div class="nav-dropdown-header">效能與可�&nbsp;性</div>
+<span class="nav-dropdown-link">
+<a href="https://support.cloudflare.com/hc/en-us/articles/200172516-Understanding-Cloudflare-s-CDN" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="cdn-documentation">CDN</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/dns/">DNS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/images/">Image Resizing</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/load-balancing">Load Balancing (�&nbsp;載平衡)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/stream/">Stream (視訊)</a>
+</span>
+</div>
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header">&nbsp;</div>
+<div class="nav-dropdown-header header-black">深入解析</div>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/analytics/">分析</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/logs/"></a>
+</span>
+<div class="nav-dropdown-header header-black">網域註冊</div>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/registrar/">registrar</a>
+</span>
+<div class="nav-dropdown-header header-orange">適用於無伺服器應用程式</div>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/quickstart">Workers 快速入門</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/pages/">Cloudflare �&nbsp;�面</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/templates/">Workers 範例專案</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/tutorials">Workers 教學課程</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/tooling/wrangler">命令串 (Wrangler)</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/workers/reference/apis">執行階段</a>
+</span>
+</div>
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">適用於團隊</div>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/cloudflare-one/">Cloudflare for Teams</a>
+</span>
+<div class="nav-dropdown-header header-orange">探索 CLOUDFLARE API</div>
+<span class="nav-dropdown-link">
+<a href="https://api.cloudflare.com/">Cloudflare API</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://developers.cloudflare.com/api/">API 驗證</a>
+</span>
+<div class="nav-dropdown-header header-orange">文件中心</div>
+<span class="nav-dropdown-link">
+<a href="../index_4.html">開發文件中心</a>
+</span>
+</div>
+</div>
+<li class="mobile-nav__list__item">
+<div class="mobile-sub-nav__title" data-submenu="資源">
+<span class="mobile-sub-nav__title__text">資源</span>
+<span class="icon icon-plus icon-plus-資源"></span>
+</div>
+</li>
+<div class="mobile-submenu-資源 mobile-sub">
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">資源</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/resource-hub/">資源中心</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/resource-hub/?resourcetype=Whitepaper">白皮書</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/webinars/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_webinars">網路�&nbsp;�討會</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/resource-hub/?resourcetype=Solution+%26+Product+Guides">解決方案和產品指南</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/case-studies/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_case_studies">案例�&nbsp;�究</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/analysts/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_analysts">分析人員</a>
+</span>
+<div class="nav-dropdown-header header-orange">探索</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/whats-new/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="whats_new">新功能</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/network/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_network_map">網路分佈圖</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/network/china/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_cloudflare_china">Cloudflare 在中國</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/trust-hub/gdpr/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > GDPR">GDPR</a>
+</span>
+</div>
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">開始使用</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/products/registrar/">註冊您的網站</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/welcome-center/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="learn_welcome_center">歡迎中心</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="../index_3.html">獲得協助</a>
+</span>
+<div class="nav-dropdown-header header-orange">學習</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/learning/">學習中心</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/learning/security/what-is-web-application-security/">安全性</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/learning/ddos/what-is-a-ddos-attack/">DDoS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/learning/bots/what-is-a-bot/">傀儡程式管理</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/learning/ssl/what-is-ssl/">SSL</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/learning/access-management/what-is-identity-and-access-management/">身分識別與存取管理</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/learning/performance/why-site-speed-matters/">效能</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/learning/cdn/what-is-a-cdn/">CDN</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/learning/dns/what-is-dns/">DNS</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/learning/cloud/what-is-the-cloud/">雲端</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/learning/serverless/what-is-serverless/">無伺服器</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/learning/network-layer/what-is-the-network-layer/">網路層</a>
+</span>
+</div>
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">連線</div>
+<span class="nav-dropdown-link">
+<a href="../index_2.html" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="blog">部落�&nbsp;�</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="../index_8.html" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="community">社群</a>
+</span>
+<div class="nav-dropdown-header header-orange">信任</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/trust-hub/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > Trust Hub">信任中心</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/trust-hub/privacy-and-data-protection/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust  > Privacy &amp; Data Protection">隱私與資料保護</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/trust-hub/compliance-resources/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > Certifications">認證</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/trust-hub/trust-and-safety/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > Trust &amp; Safety">信任和安全</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/trust-hub/gdpr/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > GDPR">GDPR</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/privacypolicy/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Resources > Trust > Legal Documentation">法律文件</a>
+</span>
+<div class="nav-dropdown-header header-orange">連絡方式</div>
+<a data-i18n-phonenumber="" href="tel:+16503198930" style="display:none">+1 650 319 8930</a>
+</div>
+</div>
+<li class="mobile-nav__list__item">
+<div class="mobile-sub-nav__title" data-submenu="合作夥伴">
+<span class="mobile-sub-nav__title__text">合作夥伴</span>
+<span class="icon icon-plus icon-plus-合作夥伴"></span>
+</div>
+</li>
+<div class="mobile-submenu-合作夥伴 mobile-sub">
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">管道和聯盟合作夥伴</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/partners/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="partnerships">合作夥伴網路</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://portal.cloudflarepartners.com">合作夥伴入口網站</a>
+</span>
+</div>
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">技術合作夥伴</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/partners/technology-partners/">概觀</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/partners/analytics/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="partners-analytics">分析合作夥伴</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/bandwidth-alliance/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="partnerships_bandwidth_alliance">�&nbsp;�寬聯盟</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/endpoint-partners/">Endpoint Security Partnerships</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/network-interconnect-partnerships/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="network-interconnect-partnerships">互連合作夥伴</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/network-onramp-partners/">Network On-ramp Partnerships</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/partners/peering-portal/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="partnerships_peering_portal">對等入口網站</a>
+</span>
+</div>
+</div>
+<li class="mobile-nav__list__item">
+<span class="nav-dropdown-link">
+<a href="/zh-tw/enterprise/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="for-enterprise">企業適用</a>
+</span>
+</li>
+<li class="mobile-nav__list__item">
+<div class="mobile-sub-nav__title" data-submenu="定價">
+<span class="mobile-sub-nav__title__text">定價</span>
+<span class="icon icon-plus icon-plus-定價"></span>
+</div>
+</li>
+<div class="mobile-submenu-定價 mobile-sub">
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">各�&nbsp;�方案定價</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/plans/">免費方案</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/plans/pro/">專業方案</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/plans/business/">商業方案</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/plans/enterprise/">企業方案</a>
+</span>
+</div>
+<div class="mobile-sub-nav">
+<div class="nav-dropdown-header header-orange">比較與探索</div>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/about-your-website/">選擇方案時需要幫助嗎？</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/plans/#addons">附�&nbsp;服務</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/plans/">比較所有方案</a>
+</span>
+</div>
+</div>
+<li class="mobile-nav__list__item test-utility-menu">
+<div class="mobile-sub-nav__title" data-submenu="Support">
+<span class="mobile-sub-nav__title__text">Support</span>
+<span class="icon icon-plus icon-plus-Support"></span>
+</div>
+</li>
+<div class="mobile-submenu-Support mobile-sub">
+<div class="mobile-sub-nav">
+<span class="nav-dropdown-link">
+<a href="https://dash.cloudflare.com/?to=/:account/support">聯絡客戶支援</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="../index_3.html">幫助中心</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="../index_8.html">Cloudflare 社群</a>
+</span>
+</div>
+</div>
+<li class="mobile-nav__list__item test-utility-menu">
+<div class="mobile-sub-nav__title" data-submenu="My_Account">
+<span class="mobile-sub-nav__title__text">My Account</span>
+<span class="icon icon-plus icon-plus-My Account"></span>
+</div>
+</li>
+<div class="mobile-submenu-My_Account mobile-sub">
+<div class="mobile-sub-nav">
+<span class="nav-dropdown-link">
+<a href="https://dash.cloudflare.com/login" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="utliity_nav-log_in">Log In</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://dash.cloudflare.com/profile" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="utililty-tab-profile">我的資料</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://dash.cloudflare.com/?to=/:account/" data-tracking-category="topnav" data-tracking-action="click" data-tracking-label="Merchandise">帳戶首�&nbsp;�</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="https://dash.cloudflare.com/?to=/:account/billing">計費</a>
+</span>
+<span class="nav-dropdown-link">
+<a href="/zh-tw/teams/">使用 Cloudflare 保護�&nbsp;端員工</a>
+</span>
+</div>
+</div>
+<li class="mobile-nav__list__item mobile-language-picker">
+<div class="mobile-sub-nav__title" data-submenu="languageMobile">
+<span class="mobile-sub-nav__title__text">
+繁體中文
+</span>
+<span class="icon icon-plus icon-plus-languageMobile"></span>
+</div>
+</li>
+<div class="mobile-submenu-languageMobile mobile-sub">
+<ul class="mobile-sub-nav">
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/en-us/">
+English
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/en-gb/">
+English (United Kingdom)
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/en-ca/">
+English (Canada)
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/en-au/">
+English (Australia)
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/en-in/">
+English (India)
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/de-de/">
+Deutsch
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/es-es/">
+Español
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/fr-fr/">
+Français
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/it-it/">
+Italiano
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/ja-jp/">
+日本語
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/ko-kr/">
+한국어
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/pt-br/">
+Português
+</a>
+</li>
+<li class="desktop-nav__sub-menu__list__item">
+<a href="https://www.cloudflare.com/zh-cn/">
+简体中文
+</a>
+</li>
+</ul>
+</div>
+</ul>
+</div>
+<div class="desktop-nav top-nav-container nav-dropdown">
+</div>
+</header>
+<div class="compact-nav-dropdown js-compact-nav-dropdown">
+<ul class="marketing-list">
+<li class="desktop-nav__sub-menu__list__item">Contact Us</li>
+<li class="desktop-nav__sub-menu__list__item"><a href="/under-attack-hotline/">Help! I'm Under Attack!</a></li>
+<li class="desktop-nav__sub-menu__list__item"><a href="../contact.html">Email Sales</a></li>
+<li class="desktop-nav__sub-menu__list__item"><a href="../index_3.html">Support</a></li>
+<li class="desktop-nav__sub-menu__list__item"><a href="tel:+18889935273">1-888-993-5273</a></li>
+</ul>
+</div>
+<div class="site-content  ">
+<section class="tile" id="error-page-content">
+<div class="tile__content tile__content--fixed">
+<div class="grid">
+<div class="grid__item grid__item--four-fifths">
+<div class="grid grid--vertical-center">
+<div class="grid__item grid__item--half grid__item--no-padding">
+<img class="responsive-image" title="404" alt="404" src="/img/error-page/404-image.png" style="width: 285px; max-width: 100%;">
+</div>
+<div class="grid__item grid__item grid__item--half grid__item--no-padding">
+<p class="error-page-text text--orange text--no-pad-no-margin-bottom text--no-pad-no-margin-top">Oops! You appear to be lost.</p>
+</div>
+</div>
+<div class="grid">
+<div class="grid__item grid__item--no-margins grid__item--no-padding">
+<p class="error-page-text text--no-pad-no-margin-bottom">Handy links:</p>
+</div>
+</div>
+<div class="grid">
+<div class="grid__item grid__item--fifth" style="padding-left:0">
+<div class="grid--center grid--vertical-center grid--left-mobile-tablet">
+<a href="../index_1.html" style="display:inherit;"><img class="error-icon" title="Home" alt="Home" src="/img/error-page/404-home.png"></a>
+<p class="text--24px text--28px-mobile-tablet"><a href="../index_1.html" class="orange-alternate-link anchor text--bolder">Home</a></p></div>
+</div>
+<div class="grid__item grid__item--fifth" style="padding-left:0">
+<div class="grid--center grid--vertical-center grid--left-mobile-tablet">
+<a href="../resource-hub_1.html" style="display:inherit;"><img class="error-icon" title="Resources" alt="Resources" src="/img/error-page/404-resources.png"></a>
+<p class="text--24px text--28px-mobile-tablet"><a href="../resource-hub_1.html" class="orange-alternate-link anchor text--bolder">Resources</a></p></div>
+</div>
+<div class="grid__item grid__item--fifth" style="padding-left:0">
+<div class="grid--center grid--vertical-center grid--left-mobile-tablet">
+<a href="../plans.html" style="display:inherit;"><img class="error-icon" title="Plans" alt="Plans" src="/img/error-page/404-plans.png"></a>
+<p class="text--24px text--28px-mobile-tablet"><a href="../plans.html" class="orange-alternate-link anchor text--bolder">Plans</a></p></div>
+</div>
+<div class="grid__item grid__item--fifth" style="padding-left:0">
+<div class="grid--center grid--vertical-center grid--left-mobile-tablet">
+<a href="../index_2.html" style="display:inherit;"><img class="error-icon" title="Blog" alt="Blog" src="/img/error-page/404-blog.png"></a>
+<p class="text--24px text--28px-mobile-tablet"><a href="../index_2.html" class="orange-alternate-link anchor text--bolder">Blog</a></p></div>
+</div>
+<div class="grid__item grid__item--fifth" style="padding-left:0">
+<div class="grid--center grid--vertical-center grid--left-mobile-tablet">
+<a href="../careers.html" style="display:inherit;"><img class="error-icon" title="Careers" alt="Careers" src="/img/error-page/404-careers.png"></a>
+<p class="text--24px text--28px-mobile-tablet"><a href="../careers.html" class="orange-alternate-link anchor text--bolder">Careers</a></p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<a href="/cdn-cgi/beacon/hp-link?source=help&amp;req_id=1" target"_blank"="" class="hidden-element"></a>
+</div>
+<footer class="cms-mainfooter main-footer">
+
+<div class="main-footer__container">
+<div class="main-footer__row">
+<div class="main-footer__menu-group">
+<ul id="--menu">
+<li data-submenu="--menu" class="main-footer__menu-group__header js-toggle-footer-group">
+銷售
+<img src="/img/icons/gray/caret-down.svg" class="icon" alt="grey arrow pointing down" aria-hidden="true">
+</li>
+<li>
+<a href="/zh-tw/plans/enterprise/contact/">
+Enterprise 銷售
+</a>
+</li>
+<li>
+<a href="/zh-tw/partners/">
+成為合作夥伴
+</a>
+</li>
+</ul>
+<p class="phone">
+連絡銷售團隊<br><a data-i18n-phonenumber="" class="tel" href="tel:+16503198930" style="display:none">+1 650 319 8930</a>
+<noscript><a class="phone" href="tel:+16503198930">+1 650 319 8930</a></noscript>
+</p>
+</div>
+<div class="main-footer__menu-group">
+<ul id="--menu">
+<li data-submenu="--menu" class="main-footer__menu-group__header js-toggle-footer-group">
+由此開始
+<img src="/img/icons/gray/caret-down.svg" class="icon" alt="grey arrow pointing down" aria-hidden="true">
+</li>
+<li>
+<a href="/zh-tw/analysts/">
+產業分析人員
+</a>
+</li>
+<li>
+<a href="/zh-tw/plans/">
+定價
+</a>
+</li>
+<li>
+<a href="/zh-tw/case-studies/">
+案例�&nbsp;�究
+</a>
+</li>
+<li>
+<a href="/zh-tw/resources/">
+白皮書
+</a>
+</li>
+<li>
+<a href="/zh-tw/webinars/">
+網路�&nbsp;�討會
+</a>
+</li>
+<li>
+<a href="/zh-tw/learning/">
+學習中心
+</a>
+</li>
+</ul>
+</div>
+<div class="main-footer__menu-group">
+<ul id="--menu">
+<li data-submenu="--menu" class="main-footer__menu-group__header js-toggle-footer-group">
+社群
+<img src="/img/icons/gray/caret-down.svg" class="icon" alt="grey arrow pointing down" aria-hidden="true">
+</li>
+<li>
+<a href="../index_8.html">
+社群中心
+</a>
+</li>
+<li>
+<a href="../index_2.html">
+部落�&nbsp;�
+</a>
+</li>
+<li>
+<a href="/zh-tw/galileo/">
+Galileo 專案
+</a>
+</li>
+<li>
+<a href="/zh-tw/athenian/">
+雅典專案
+</a>
+</li>
+<li>
+<a href="/zh-tw/campaigns/">
+Cloudflare for Campaigns
+</a>
+</li>
+<li>
+<a href="../index_5.html">
+Cloudflare TV
+</a>
+</li>
+</ul>
+</div>
+<div class="main-footer__menu-group">
+<ul id="--menu">
+<li data-submenu="--menu" class="main-footer__menu-group__header js-toggle-footer-group">
+開發人員
+<img src="/img/icons/gray/caret-down.svg" class="icon" alt="grey arrow pointing down" aria-hidden="true">
+</li>
+<li>
+<a href="../index_4.html">
+開發人員中心
+</a>
+</li>
+<li>
+<a href="/zh-tw/products/cloudflare-workers/">
+CloudFlare Workers
+</a>
+</li>
+<li>
+<a href="/zh-tw/integrations/">
+整合
+</a>
+</li>
+</ul>
+</div>
+<div class="main-footer__menu-group">
+<ul id="--menu">
+<li data-submenu="--menu" class="main-footer__menu-group__header js-toggle-footer-group">
+支援
+<img src="/img/icons/gray/caret-down.svg" class="icon" alt="grey arrow pointing down" aria-hidden="true">
+</li>
+<li>
+ <a href="../index_3.html">
+幫助中心
+</a>
+</li>
+<li>
+<a href="../index_6.html">
+Cloudflare 狀態
+</a>
+</li>
+<li>
+<a href="/zh-tw/compliance/">
+合規性
+</a>
+</li>
+<li>
+<a href="/zh-tw/gdpr/introduction/">
+GDPR
+</a>
+</li>
+<li>
+<a href="/zh-tw/abuse/">
+信任和安全
+</a>
+</li>
+</ul>
+</div>
+<div class="main-footer__menu-group">
+<ul id="--menu">
+<li data-submenu="--menu" class="main-footer__menu-group__header js-toggle-footer-group">
+公司
+<img src="/img/icons/gray/caret-down.svg" class="icon" alt="grey arrow pointing down" aria-hidden="true">
+</li>
+<li>
+<a href="/zh-tw/about-overview/">
+關於 Cloudflare
+</a>
+</li>
+<li>
+<a href="/zh-tw/diversity-equity-and-inclusion/">
+多樣性、公平性和包容性
+</a>
+</li>
+<li>
+<a href="../default.aspx">
+投資人關係
+</a>
+</li>
+<li>
+<a href="/zh-tw/people/">
+我們的團隊
+</a>
+</li>
+<li>
+<a href="/zh-tw/press/">
+新聞
+</a>
+</li>
+<li>
+<a href="/zh-tw/careers/">
+人才招募
+</a>
+</li>
+<li>
+<a href="/zh-tw/connect/">
+Cloudflare Connect
+</a>
+</li>
+<li>
+<a href="/zh-tw/logo/">
+標誌
+</a>
+</li>
+<li>
+<a href="/zh-tw/network/">
+網路分佈圖
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="main-footer__menu_bottom">
+<div class="main-footer__menu_bottom__container">
+<div class="main-footer__menu_bottom__social">
+<a target="_blank" rel="noopener" href="https://www.facebook.com/Cloudflare/"><img class="" title="Facebook" alt="Facebook" src="/img/footer/facebook.svg"></a>
+<a target="_blank" rel="noopener" href="https://twitter.com/Cloudflare"><img class="" title="Twitter" alt="Twitter" src="/img/footer/twitter.svg"></a>
+<a target="_blank" rel="noopener" href="../cloudflare_1.html"><img class="" title="LinkedIn" alt="LinkedIn" src="/img/footer/linkedin.svg"></a>
+<a target="_blank" rel="noopener" href="../cloudflare.html"><img class="" title="Youtube" alt="Youtube" src="/img/footer/youtube.svg"></a>
+<a target="_blank" rel="noopener" href="https://www.instagram.com/cloudflare"><img class="" title="Instagram" alt="Instagram" src="/img/footer/instagram.svg"></a>
+</div>
+<div class="main-footer__menu_bottom__copyright">
+<span>� 2022 Cloudflare, Inc.</span>
+<div>
+<a href="/zh-tw/privacypolicy/">隱私權原則</a>
+<a href="/zh-tw/website-terms/">使用條款</a>
+<a href="/zh-tw/disclosure/">�&nbsp;�告網路安全問題</a>
+<a href="/zh-tw/abuse/">信任和安全</a>
+<a href="#" data-prevent-default="click" class="ot-sdk-show-settings">Cookie 喜好設定</a>
+<a href="/zh-tw/trademark/">商標</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<div class="eu-cookie-banner js-eu-cookie-banner">
+<div class="eu-cookie-banner__content text--white text--center">
+<p>To provide you with the best possible experience on our website, we may use cookies, as described <a href="/cookie-policy/">here</a>.<br>By clicking accept, closing this banner, or continuing to browse our websites, you consent to the use of such cookies.</p>
+<div class="grid grid--center">
+<div class="grid__item grid__item--fourth-half">
+<button style="max-width: 150px;" class="button button--white button--inline js-accept-eu-cookie">I accept</button>
+</div>
+</div>
+<div class="close_x js-accept-eu-cookie"></div>
+</div>
+</div>
+<script src="https://assets.www.cloudflare.com/js/chunk-d1d241eda36aa08700f5.js" nonce="a1258fc6-4643-40ad-8a5a-98f0113fcea7"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-50c2888dc9fc9d219699.js" nonce="a1258fc6-4643-40ad-8a5a-98f0113fcea7"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-ad048942265b0bf93d6c.js" nonce="a1258fc6-4643-40ad-8a5a-98f0113fcea7"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-ed2cdfc0465e7134a1ed.js" nonce="a1258fc6-4643-40ad-8a5a-98f0113fcea7"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-d0f1f4ebd38c39f7095a.js" nonce="a1258fc6-4643-40ad-8a5a-98f0113fcea7"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-6cb50819ee379c1477b0.js" nonce="a1258fc6-4643-40ad-8a5a-98f0113fcea7"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-fe08601582edb624164b.js" nonce="a1258fc6-4643-40ad-8a5a-98f0113fcea7"></script>
+<script src="https://assets.www.cloudflare.com/js/chunk-2998cc3b7d6bdd8fefa3.js" nonce="a1258fc6-4643-40ad-8a5a-98f0113fcea7"></script>
+<script nonce="a1258fc6-4643-40ad-8a5a-98f0113fcea7">
+        $(document).ready(function() {
+          var NavMiniBanner = new CFJS.FlashBanner('not-localized');
+        });
+      </script>
+<script async="" src="https://assets.www.cloudflare.com/js/chunk-a15957a83aa617098672.js" nonce="a1258fc6-4643-40ad-8a5a-98f0113fcea7"></script>
+<script async="" src="https://assets.www.cloudflare.com/js/chunk-eaa36412b9cad4cd7179.js" nonce="a1258fc6-4643-40ad-8a5a-98f0113fcea7"></script>
+<script type="application/ld+json" nonce="a1258fc6-4643-40ad-8a5a-98f0113fcea7">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "cloudflare.com",
+        "url": "http://www.cloudflare.com",
+        "sameAs": [
+          "http://www.facebook.com/cloudflare",
+          "http://www.twitter.com/cloudflare",
+          "http://plus.google.com/+cloudflare",
+          "https://www.linkedin.com/company/cloudflare",
+          "http://www.youtube.com/user/CloudflareTeam"
+        ]
+      }
+    </script>
+<script type="application/ld+json" nonce="a1258fc6-4643-40ad-8a5a-98f0113fcea7">
+      {
+        "@context": "http://schema.org",
+        "@type": "Corporation",
+        "name": "Cloudflare",
+        "url": "http://www.cloudflare.com",
+        "description": "Cloudflare is a free global CDN and DNS provider that can speed up and protect any site online."
+      }
+    </script>
+<script>
+      function renderNav () {
+        document.querySelectorAll('.cms-topnav').forEach(function(el) {
+          if (window.renderModalNav) {
+            window.renderModalNav(el);
+            el.classList.add('br-refresh')
+          }
+        })
+      }
+    </script>
+<script src="/compiledNav/navigation.js" onload="renderNav()"></script>
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" data-cf-beacon="{&quot;rayId&quot;:&quot;74490b9808ffd414&quot;,&quot;token&quot;:&quot;6f9a2202213848f5bff934592489e351&quot;,&quot;version&quot;:&quot;2022.8.1&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+
+</body></html>
