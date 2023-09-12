@@ -31,7 +31,7 @@
 
             <div class="header-left">
                 <a href="index.html" class="logo">
-                    <img src="{{ \App\Models\ThemeSetting::first()->website_favicon }}" width="40" height="40" alt="">
+                    <img src="{{ \App\Models\ThemeSetting::first()->website_logo }}" width="40" height="40" alt="" style="width: 100%;">
                 </a>
             </div>
 
