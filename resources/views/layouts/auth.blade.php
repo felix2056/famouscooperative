@@ -26,7 +26,7 @@
                 <div class="container">
 
                     <div class="account-logo">
-                        <a href="index.html"><img src="{{ asset('images/logo/famous-cooperative-website-favicon-black.png') }}" alt="Famous Cooperative" style="width: 40%;"></a>
+                        <a href="index.html"><img src="{{ asset('images/logo/famous-cooperative-high-resolution-logo-black-on-transparent-background.png') }}" alt="Famous Cooperative" style="width: 25%;"></a>
                     </div>
 
                     <div class="account-box">
